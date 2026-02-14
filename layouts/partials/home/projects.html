@@ -70,7 +70,7 @@
                 <div class="modal-body-image"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
                     {{ range first 1 (sort . "Params.weight") }}
                         {{ $image := .Resize "400x" }}
-                        <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}">
+                        <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}" loading="lazy">
                     {{ end }}
                 </div>
                 {{ end }}
@@ -83,7 +83,7 @@
             <div class="modal-body-image{{ if eq $page.Params.text_wrap false }} no-wrap{{ end }}"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
                 {{ range first 1 (sort . "Params.weight") }}
                     {{ $image := .Resize "400x" }}
-                    <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}">
+                    <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}" loading="lazy">
                 {{ end }}
             </div>
             {{ end }}
