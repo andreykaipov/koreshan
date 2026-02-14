@@ -1,0 +1,79 @@
+{{ with .Site.GetPage "/projects" }}
+<div class="section" id="{{ .Title | urlize }}">
+    <!-- Begin Projects container -->
+    <div class="container">
+        <h2 class="title is-2 has-text-centered">
+            {{ .Title | markdownify }}
+        </h2>
+        <div class="section">
+            <div class="columns is-multiline">
+                {{ $totalProjects := (len .Pages) }}
+                {{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default $totalProjects }}
+                {{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
+                {{ $columWidth := "is-one-third" }}
+                {{ if .Site.Params.projects.useTwoColumns }}
+                  {{ $columWidth = "is-half" }}
+                {{ end}}
+                <div class="column {{ $columWidth }}">
+                    <div class="card" data-target="#project-{{ $index }}">
+                        <div class="card-content has-text-centered top-pad">
+                            <h1><a {{ if .Params.external_link }} href="{{ .Params.external_link }}" {{ end }}>
+                                {{ .Title | markdownify }}
+                            </a></h1>
+                            {{ if .Params.project_timeframe }}
+                            <p class="fa-xs">{{ .Params.project_timeframe }}</p>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ if lt $numberOfProjectsToShow $totalProjects }}
+        <div class="container has-text-centered top-pad">
+            <a href="{{ .Permalink }}">{{ i18n "index_projects_allProjects" . }}</a>
+        </div>
+        {{ end }}
+    </div>
+    <!-- End Projects container -->
+    {{ partial "top-icon.html" . }}
+</div>
+<!-- End Projects section -->
+<div class="container"><hr></div>
+<!-- Projects modals (outside section to avoid stacking context issues) -->
+{{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default (len .Pages) }}
+{{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
+{{ if not .Params.external_link }}
+{{ $page := . }}
+<div class="modal" id="project-{{ $index }}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        {{ with .Title }}
+        <header class="modal-card-header bottom-pad">
+            <h1 class="modal-card-title has-text-centered">{{ . }}</h1>
+            {{ if $page.Params.project_timeframe }}
+            <p class="fa-xs has-text-centered" style="width:100%">{{ $page.Params.project_timeframe }}</p>
+            {{ end }}
+        </header>
+        {{ end }}
+        <section class="modal-card-body markdown">
+            <div class="modal-body-layout">
+            {{ with .Resources.ByType "image" }}
+            <div class="modal-body-image">
+                {{ range first 1 (sort . "Params.weight") }}
+                    {{ $image := .Resize "400x" }}
+                    <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}">
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="modal-body-text">
+                {{ .Content }}
+            </div>
+            </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close" data-target="#project-{{ $index }}"></button>
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

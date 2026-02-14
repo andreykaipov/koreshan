@@ -11,6 +11,7 @@
 body {
   font-family: "victorian-orchid", serif;
   background-color: var(--color-background);
+  font-size: 1.2rem;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6,
@@ -65,4 +66,105 @@ hr {
 
 .navbar-burger:hover {
   background-color: var(--color-background) !important;
+}
+
+/* Modal styling */
+.modal {
+  z-index: 100 !important;
+}
+
+.modal-background {
+  background-color: rgba(74, 72, 54, 0.85) !important;
+}
+
+.modal-card-body {
+  background-color: var(--color-background) !important;
+  color: var(--color-slate) !important;
+  font-family: "victorian-orchid", serif;
+  padding: 0rem 3rem !important;
+}
+
+.modal-card {
+  width: 90% !important;
+  max-width: 56rem !important;
+}
+
+.modal-body-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.modal-body-image {
+  flex: 0 0 18rem;
+}
+
+.modal-body-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+.modal-body-text {
+  flex: 1;
+}
+
+@media screen and (max-width: 48rem) {
+  .modal-body-layout {
+    flex-wrap: wrap;
+  }
+
+  .modal-body-image {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .modal-body-image img {
+    max-width: 18rem;
+  }
+}
+
+.modal-card-title {
+  font-family: "rotunda-veneta", sans-serif !important;
+  color: var(--color-blood) !important;
+  font-size: 2rem !important;
+}
+
+.modal-card-header {
+  background-color: var(--color-background) !important;
+  border-bottom: 0.0625rem solid var(--color-slate) !important;
+  padding: 1.5rem 2rem !important;
+  flex-wrap: wrap;
+}
+
+.modal-card-header .fa-xs {
+  margin-top: 0.7rem;
+  font-size: 1.1em;
+}
+
+.modal-close {
+  background-color: var(--color-blood) !important;
+}
+
+.modal-close:hover {
+  background-color: var(--color-blood-dark) !important;
+}
+
+img {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.card-content .fa-xs {
+  margin-top: 0.3rem;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(74, 72, 54, 0.25);
 }
