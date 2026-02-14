@@ -77,50 +77,119 @@ hr {
   background-color: rgba(74, 72, 54, 0.85) !important;
 }
 
+.modal-card-header {
+  background-color: var(--color-background) !important;
+  border-bottom: 0.0625rem solid var(--color-slate) !important;
+  padding: 1.5rem 2rem 1.5rem 2rem!important;
+  flex-wrap: wrap;
+}
+
+.modal-card-header .fa-xs {
+  margin-top: 1rem;
+  font-size: 1.1em;
+}
+
+.modal-header-links {
+  margin-top: 1rem;
+  font-size: 0.9em;
+}
+
 .modal-card-body {
   background-color: var(--color-background) !important;
   color: var(--color-slate) !important;
   font-family: "victorian-orchid", serif;
-  padding: 0rem 3rem !important;
+  padding: 2rem 4rem 2rem 4rem!important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal-card-body::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-card {
   width: 90% !important;
-  max-width: 56rem !important;
+  max-width: 60rem !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.modal-body-layout {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-}
+.modal-card::-webkit-scrollbar {
+  display: none;
+} 
 
 .modal-body-image {
-  flex: 0 0 18rem;
+  float: left;
+  width: 60%;
+  max-width: 100%;
+  margin: 0 2rem 0rem 0; /* gap between image and text */
 }
 
 .modal-body-image img {
   width: 100%;
   height: auto;
-  border-radius: 0.3rem;
+  display: block;
+  margin: 0.3rem 0 0 0;
 }
 
-.modal-body-text {
+.modal-body-image.no-wrap {
+  float: none;
+}
+
+.modal-body-nowrap {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.modal-body-nowrap .modal-body-image {
+  float: none;
+  flex-shrink: 0;
+  margin: 0 0rem 0rem 0; /* gap between image and text */
+}
+
+.modal-body-nowrap .modal-body-text {
   flex: 1;
 }
 
+.modal-body-nowrap .modal-body-text p:first-child {
+  margin-top: 0 !important;
+}
+
 @media screen and (max-width: 48rem) {
-  .modal-body-layout {
-    flex-wrap: wrap;
+  .modal-body-nowrap {
+    flex-direction: column;
   }
 
-  .modal-body-image {
-    flex: 0 0 100%;
+  .modal-body-nowrap .modal-body-image {
+    width: 100% !important;
     text-align: center;
   }
 
+  .modal-body-nowrap .modal-body-image img {
+    max-width: 15rem;
+    margin: 0 auto;
+  }
+}
+
+.modal-card-body.markdown > p:first-of-type {
+  margin-top: 0 !important;
+}
+
+@media screen and (max-width: 48rem) {
+  .modal-body-image {
+    float: none;
+    width: 15rem !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
   .modal-body-image img {
-    max-width: 18rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-body-nowrap {
+    gap: 0rem;
   }
 }
 
@@ -128,18 +197,6 @@ hr {
   font-family: "rotunda-veneta", sans-serif !important;
   color: var(--color-blood) !important;
   font-size: 2rem !important;
-}
-
-.modal-card-header {
-  background-color: var(--color-background) !important;
-  border-bottom: 0.0625rem solid var(--color-slate) !important;
-  padding: 1.5rem 2rem !important;
-  flex-wrap: wrap;
-}
-
-.modal-card-header .fa-xs {
-  margin-top: 0.7rem;
-  font-size: 1.1em;
 }
 
 .modal-close {
@@ -157,6 +214,7 @@ img {
 
 .card-content .fa-xs {
   margin-top: 0.3rem;
+  line-height: 1;
 }
 
 .card {
@@ -167,4 +225,9 @@ img {
 .card:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.25rem 0.75rem rgba(74, 72, 54, 0.25);
+}
+
+#team .section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

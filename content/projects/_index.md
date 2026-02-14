@@ -3,4 +3,4 @@ title: "Team"
 weight: 10
 ---
 
-Introducing some of the crew…
+Introducing some of the crew...

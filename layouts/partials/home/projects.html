@@ -54,22 +54,41 @@
             {{ if $page.Params.project_timeframe }}
             <p class="fa-xs has-text-centered" style="width:100%">{{ $page.Params.project_timeframe }}</p>
             {{ end }}
+            {{ if or $page.Params.website $page.Params.instagram }}
+            <div class="modal-header-links has-text-centered" style="width:100%">
+                {{ with $page.Params.website }}<a href="{{ . }}" target="_blank"><i class="fas fa-globe"></i> Website</a>{{ end }}
+                {{ if and $page.Params.website $page.Params.instagram }} · {{ end }}
+                {{ with $page.Params.instagram }}<a href="{{ . }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>{{ end }}
+            </div>
+            {{ end }}
         </header>
         {{ end }}
         <section class="modal-card-body markdown">
-            <div class="modal-body-layout">
+            {{ if eq $page.Params.text_wrap false }}
+            <div class="modal-body-nowrap">
+                {{ with .Resources.ByType "image" }}
+                <div class="modal-body-image"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
+                    {{ range first 1 (sort . "Params.weight") }}
+                        {{ $image := .Resize "400x" }}
+                        <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}">
+                    {{ end }}
+                </div>
+                {{ end }}
+                <div class="modal-body-text">
+                    {{ .Content }}
+                </div>
+            </div>
+            {{ else }}
             {{ with .Resources.ByType "image" }}
-            <div class="modal-body-image">
+            <div class="modal-body-image{{ if eq $page.Params.text_wrap false }} no-wrap{{ end }}"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
                 {{ range first 1 (sort . "Params.weight") }}
                     {{ $image := .Resize "400x" }}
                     <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}">
                 {{ end }}
             </div>
             {{ end }}
-            <div class="modal-body-text">
-                {{ .Content }}
-            </div>
-            </div>
+            {{ .Content }}
+            {{ end }}
         </section>
     </div>
     <button class="modal-close is-large" aria-label="close" data-target="#project-{{ $index }}"></button>
