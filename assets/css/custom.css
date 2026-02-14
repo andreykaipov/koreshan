@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/tfq8jrt.css");
+
+body {
+  font-family: "victorian-orchid", serif;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "rotunda-veneta", sans-serif;
+}
+
+body h1 .title-of {
+  font-family: "victorian-orchid", sans-serif; /* or whichever */
+  font-weight: 2;
+}
