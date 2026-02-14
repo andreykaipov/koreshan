@@ -62,13 +62,16 @@ $(document).ready(function () {
 
   // Avoid repeating recently shown taglines
   var recentKey = 'recentTaglines';
-  var historySize = Math.floor(taglines.length * 2 / 3); // don't repeat until 2/3 seen
+  var historySize = taglines.length; // don't repeat until all seen
   var recent = JSON.parse(localStorage.getItem(recentKey) || '[]');
+  // Sanitize: remove any indices that no longer exist in the taglines array
+  recent = recent.filter(function (i) { return i >= 0 && i < taglines.length; });
+  var recentSet = new Set(recent);
   var allIndices = taglines.map(function (_, i) { return i; });
-  var available = allIndices.filter(function (i) { return recent.indexOf(i) === -1; });
+  var available = allIndices.filter(function (i) { return !recentSet.has(i); });
   if (available.length === 0) {
-    recent = recent.slice(-3);
-    available = allIndices.filter(function (i) { return recent.indexOf(i) === -1; });
+    recent = []; // all seen, start fresh
+    available = allIndices;
   }
   var pickedIndex = available[Math.floor(Math.random() * available.length)];
   recent.push(pickedIndex);
