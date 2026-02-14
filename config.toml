@@ -2,7 +2,7 @@ baseURL                          = "/"   # Your domain name. Must end with "/"
 theme                            = "introduction"
 DefaultContentLanguage           = "en"                    # Default language for multilingual sites
 # disqusshortname                 = ""                     # https://gohugo.io/content-management/comments
-# googleAnalytics                 = ""                     # https://gohugo.io/templates/internal/#google-analytics
+googleAnalytics                 = "G-PYJLD53W7J"                     # https://gohugo.io/templates/internal/#google-analytics
 
 [params]
     customCSS = ["css/custom.css"]
