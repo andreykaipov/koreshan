@@ -41,16 +41,19 @@
         {{ $home := . }}
         {{ $pages := .Resources.ByType "page" }}
 
+        {{/* Temporarily hidden: blog section
         {{ with .Site.GetPage "/blog" }}
             {{ $pages = $pages | append . }}
         {{ end }}
+        */}}
 
         {{ with .Site.GetPage "/projects" }}
             {{ $pages = $pages | append . }}
         {{ end }}
 
         {{ range sort $pages "Params.weight" }}
-        {{ if ne .Name "contact.md" }}
+        {{/* Temporarily hidden sections: blog, watch */}}
+        {{ if and (ne .Name "contact.md") (ne .Name "watch.md") (ne .Name "_index.md") }}
         {{ if .File }}
         {{ if eq (os.Stat .File.Dir).Name "projects" }}
             <!-- Now for some cool projects -->
