@@ -1,0 +1,23 @@
+{{ template "_internal/google_analytics.html" . }}
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+{{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+<title>
+{{ .Title | humanize | title }}{{ if ne .Title .Site.Title }} - {{ .Site.Title | markdownify }}{{ end }}
+</title>
+
+{{ with .OutputFormats.Get "RSS" }}
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<!-- Preload fonts to avoid render-blocking @import chains -->
+<link rel="preload" href="https://use.typekit.net/tfq8jrt.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://use.typekit.net/tfq8jrt.css"></noscript>
+<link rel="preload" href="https://db.onlinewebfonts.com/c/4667e2bdcd7b23b51872259e8feae69a?family=Krul-Regular" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://db.onlinewebfonts.com/c/4667e2bdcd7b23b51872259e8feae69a?family=Krul-Regular"></noscript>
