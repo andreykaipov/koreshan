@@ -150,6 +150,7 @@ hr {
   padding: 2rem 4rem 2rem 4rem!important;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  container-type: inline-size;
 }
 
 .modal-card-body::-webkit-scrollbar {
@@ -181,8 +182,17 @@ hr {
   margin: 0.3rem 0 0 0;
 }
 
-.modal-body-image.no-wrap {
-  float: none;
+@container (max-width: 40rem) {
+  .modal-body-image {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .modal-body-image img {
+    max-width: 15rem;
+    margin: 0 auto;
+  }
 }
 
 .modal-body-nowrap {
@@ -229,7 +239,7 @@ hr {
   .modal-body-image {
     float: none !important;
     width: 100% !important;
-    margin: 0 0 1rem 0 !important;
+    margin: 0 auto 1rem auto !important;
     text-align: center;
   }
 
