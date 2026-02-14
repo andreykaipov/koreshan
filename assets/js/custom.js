@@ -47,7 +47,7 @@ $(document).ready(function () {
     // 8 ball esque
     "Try asking again later.",
     "Refresh for another prophecy.",
-    "This prophecy is still loading.",
+    "This prophecy is still loading...",
     // lame jokes but not that lame
     "Hollow World!",
     "Join us. We have electricity.",
