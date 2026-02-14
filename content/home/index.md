@@ -3,4 +3,4 @@ title: "<span class='title-line'>Last Days</span><span class='title-of'>of</span
 headless: true
 ---
 
-<span id="tagline">Hollow World!</span>
+<span id="tagline">Gender equality, socialism, and a hollow Earth.</span>

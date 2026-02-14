@@ -7,78 +7,111 @@ if (localStorage.getItem('visited')) {
 
 // Random tagline
 $(document).ready(function () {
-  var taglines = [
-    // Original
-    "Hollow World!",
+  // Tier 1: On-brand, shown from the start
+  var seriousTags = [
     "We live inside!",
     "Come and be healed!",
+    "Victoria is coming.",
+    "Emma kept the faith.",
     "Salvation is upon us.",
+    "Cosmogeny is the truth.",
     "A New Jerusalem awaits.",
-    "Immortality through unity.",
-    "Celibate, socialist, Floridian.",
-    // Cult recruitment energy
-    "Have you accepted Koresh as your leader?",
-    "Join us. We have electricity.",
-    "No marriage. No money. No problem.",
-    "Free real estate in Estero, Florida.",
-    "Step inside. The Earth is hollow.",
-    "Apply within. Celibacy required.",
-    // Florida
-    "Florida Man starts cult. Here's Tom with the weather.",
-    "The most Florida thing to ever happen.",
-    "A tale of a Yankee-turned-Florida-Man.",
-    "The Everglades wasn't ready for communism.",
-    // Dark humor
-    "He's not dead. He's transferring.",
-    "Day 3. Still waiting by the bathtub.",
-    "How long can a body last in a zinc tub?",
-    "Resurrection TBD.",
-    "The prophecy was unclear on this timeline.",
-    "Have faith. OP will surely deliver.",
-    // Meta / self-aware
-    "Refresh for another prophecy.",
-    "The Earth is hollow and so is this promise.",
-    "Based on a true story. Unfortunately.",
-    "Stranger than fiction. Weirder than Florida.",
-    // Koreshan philosophy
     "The stars are beneath us.",
+    "I am Koresh, the shepherd.",
+    "Immortality through unity.",
     "We are the Victoria Gratia.",
     "The body awaits in the tub.",
-    "Cosmogeny is the truth.",
     "The sun is inside the Earth.",
-    "Victoria is coming.",
-    "The transfer has been foretold.",
-    "Emma kept the faith.",
     "Sister Emma tends the vigil.",
+    "The transfer has been foretold.",
+    "Have you accepted Koresh as your leader?",
     "Gender equality, socialism, and a hollow Earth.",
-    "I am Koresh, the shepherd.",
-    // Idk
-    "They were right about gender equality, at least.",
-    "Communists with a corporation.",
-    "I'm somewhat of a prophet myself.",
-    "I like them concave, not convex.",
   ];
-  var random = taglines[Math.floor(Math.random() * taglines.length)];
 
-  // Avoid repeating recently shown taglines
-  var recentKey = 'recentTaglines';
-  var historySize = taglines.length; // don't repeat until all seen
-  var recent = JSON.parse(localStorage.getItem(recentKey) || '[]');
-  // Sanitize: remove any indices that no longer exist in the taglines array
-  recent = recent.filter(function (i) { return i >= 0 && i < taglines.length; });
-  var recentSet = new Set(recent);
-  var allIndices = taglines.map(function (_, i) { return i; });
-  var available = allIndices.filter(function (i) { return !recentSet.has(i); });
-  if (available.length === 0) {
-    recent = []; // all seen, start fresh
-    available = allIndices;
+  // Tier 2: Meta jokes, unlocked after seeing enough core taglines
+  var funnyTags = [
+    // waiting
+    "Resurrection to be determined.",
+    "Darn, straight to voicemail...",
+    "Scrub-a-dub-dub, I love my tub.",
+    "Invites will be sent out shortly.",
+    "Have faith. OP will surely deliver.",
+    "Day 3. Still waiting by the bathtub.",
+    "How long do you think a body lasts in a zinc tub?",
+    "He's not dead. We're transferring your call right now.",
+    // florida
+    "Celibate, socialist, Floridian.",
+    "The most Florida thing to ever happen.",
+    "Florida Man starts cult. Here's Tom with the weather.",
+    // 8 ball esque
+    "Try asking again later.",
+    "Refresh for another prophecy.",
+    "This prophecy is still loading.",
+    // lame jokes but not that lame
+    "Hollow World!",
+    "Join us. We have electricity.",
+    "Communists with a corporation.",
+    "Apply within. Celibacy required.",
+    "No marriage. No money. No problem.",
+    "Free real estate in Estero, Florida.",
+    "They were right about gender equality, at least.",
+    // even lamer jokes
+    "Hollow Earth? I hardly know her!",
+    "I'm somewhat of a prophet myself.",
+    "I like my Earths concave. Don't convex me.",
+    "The Earth is hollow but our promises aren't.",
+    "I joined a cult and all I got was this lousy tagline.",
+  ];
+
+  var visitKey = 'visitCount';
+  var funnyThreshold = 3; // unlock funny tags after 3rd visit
+
+  // Track visit count
+  var visitCount = parseInt(localStorage.getItem(visitKey) || '0', 10) + 1;
+  localStorage.setItem(visitKey, String(visitCount));
+
+  var seriousRecentKey = 'recentSerious';
+  var funnyRecentKey = 'recentFunny';
+  var lastTierKey = 'lastTagTier';
+
+  function pickFrom(pool, key) {
+    var recent = JSON.parse(localStorage.getItem(key) || '[]');
+    recent = recent.filter(function (i) { return i >= 0 && i < pool.length; });
+    var recentSet = new Set(recent);
+    var allIndices = pool.map(function (_, i) { return i; });
+    var available = allIndices.filter(function (i) { return !recentSet.has(i); });
+    if (available.length === 0) {
+      recent = [];
+      available = allIndices;
+    }
+    var pickedIndex = available[Math.floor(Math.random() * available.length)];
+    recent.push(pickedIndex);
+    if (recent.length > pool.length) recent.shift();
+    localStorage.setItem(key, JSON.stringify(recent));
+    return pool[pickedIndex];
   }
-  var pickedIndex = available[Math.floor(Math.random() * available.length)];
-  recent.push(pickedIndex);
-  if (recent.length > historySize) recent.shift();
-  localStorage.setItem(recentKey, JSON.stringify(recent));
 
-  $('#tagline').text(taglines[pickedIndex]);
+  function pickTagline() {
+    var unlocked = visitCount > funnyThreshold;
+    var lastTier = localStorage.getItem(lastTierKey) || 'funny';
+
+    if (!unlocked || lastTier === 'funny') {
+      localStorage.setItem(lastTierKey, 'serious');
+      return pickFrom(seriousTags, seriousRecentKey);
+    } else {
+      localStorage.setItem(lastTierKey, 'funny');
+      return pickFrom(funnyTags, funnyRecentKey);
+    }
+  }
+
+  $('#tagline').text(pickTagline());
+
+  // Auto-cycle every 6 seconds
+  setInterval(function () {
+    $('#tagline').fadeOut(400, function () {
+      $(this).text(pickTagline()).fadeIn(400);
+    });
+  }, 6000);
 });
 
 // Close modal on Escape key
