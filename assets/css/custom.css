@@ -204,14 +204,20 @@ hr {
 
 @media screen and (max-width: 48rem) {
   .modal-body-image {
-    float: none;
-    width: 15rem !important;
-    margin: 0 auto 1rem auto !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+    text-align: center;
   }
 
   .modal-body-image img {
-    max-width: 100%;
+    max-width: 15rem;
     margin: 0 auto;
+    display: block;
+  }
+
+  .modal-card-body {
+    padding: 2rem 1.5rem !important;
   }
 
   .modal-body-nowrap {
