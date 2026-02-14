@@ -39,7 +39,6 @@ $(document).ready(function () {
     "Refresh for another prophecy.",
     "The Earth is hollow and so is this promise.",
     "Based on a true story. Unfortunately.",
-    "History's most overlooked cult.",
     "Stranger than fiction. Weirder than Florida.",
     // Koreshan philosophy
     "The stars are beneath us.",
@@ -56,7 +55,8 @@ $(document).ready(function () {
     // Idk
     "They were right about gender equality, at least.",
     "Communists with a corporation.",
-    "Concavity, not convexity.",
+    "I'm somewhat of a prophet myself.",
+    "I like them concave, not convex.",
   ];
   var random = taglines[Math.floor(Math.random() * taglines.length)];
 
