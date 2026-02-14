@@ -34,7 +34,6 @@ $(document).ready(function () {
     "How long can a body last in a zinc tub?",
     "Resurrection TBD.",
     "The prophecy was unclear on this timeline.",
-    "Still waiting...",
     "Have faith. OP will surely deliver.",
     "Trust the process.",
     // Meta / self-aware
@@ -42,7 +41,6 @@ $(document).ready(function () {
     "The Earth is hollow and so is this promise.",
     "Based on a true story. Unfortunately.",
     "History's most overlooked cult.",
-    "You can't make this stuff up.",
     "Stranger than fiction. Weirder than Florida.",
     // Koreshan philosophy
     "The stars are beneath us.",
@@ -57,13 +55,28 @@ $(document).ready(function () {
     "Gender equality, socialism, and a hollow Earth.",
     "I am Koresh, the shepherd.",
     // Idk
-    "The movie is actually better than the book!",
     "They were right about gender equality, at least.",
     "Communists with a corporation.",
     "Concavity, not convexity.",
   ];
   var random = taglines[Math.floor(Math.random() * taglines.length)];
-  $('#tagline').text(random);
+
+  // Avoid repeating recently shown taglines
+  var recentKey = 'recentTaglines';
+  var historySize = Math.floor(taglines.length * 2 / 3); // don't repeat until 2/3 seen
+  var recent = JSON.parse(localStorage.getItem(recentKey) || '[]');
+  var allIndices = taglines.map(function (_, i) { return i; });
+  var available = allIndices.filter(function (i) { return recent.indexOf(i) === -1; });
+  if (available.length === 0) {
+    recent = recent.slice(-3);
+    available = allIndices.filter(function (i) { return recent.indexOf(i) === -1; });
+  }
+  var pickedIndex = available[Math.floor(Math.random() * available.length)];
+  recent.push(pickedIndex);
+  if (recent.length > historySize) recent.shift();
+  localStorage.setItem(recentKey, JSON.stringify(recent));
+
+  $('#tagline').text(taglines[pickedIndex]);
 });
 
 // Close modal on Escape key

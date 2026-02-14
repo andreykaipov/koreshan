@@ -312,7 +312,7 @@ img {
 }
 .returning-visitor .fade-in.two {
   animation-delay: 0s !important;
-  animation-duration: 2s !important;
+  animation-duration: 1.5s !important;
 }
 .returning-visitor .fade-in.three {
   animation-delay: 0s !important;
