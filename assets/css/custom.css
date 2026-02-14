@@ -22,7 +22,8 @@ body {
   background-color: var(--color-background);
   font-size: 1.2rem;
   background-repeat: repeat;
-  background-image: url("/img/texture-old-map.png");
+  /* background-image: url("/img/texture-old-map.png"); */
+  background-image: url("/img/texture-custom2.png");
   background-size: 256px 256px;
 }
 
