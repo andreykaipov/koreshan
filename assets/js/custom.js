@@ -33,10 +33,11 @@ $(document).ready(function () {
     // waiting
     "Resurrection to be determined.",
     "Darn, straight to voicemail...",
-    "Scrub-a-dub-dub, I love my tub.",
     "Invites will be sent out shortly.",
     "Have faith. OP will surely deliver.",
-    "Day 3. Still waiting by the bathtub.",
+    // tub
+    "Scrub-a-dub-dub, I love my tub.",
+    "The tub is ready. Are you to ready to bathe me?",
     "How long do you think a body lasts in a zinc tub?",
     "He's not dead. We're transferring your call right now.",
     // florida
