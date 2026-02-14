@@ -61,8 +61,16 @@ hr {
 .navbar-item:active {
   background-color: transparent !important;
   color: var(--color-slate) !important;
-  box-shadow: 0 0.25rem 0.75rem rgba(74, 72, 54, 0.25);
-  transition: box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .navbar-item:hover {
+    /* Intentional: shadow only on left and right sides */
+    box-shadow:
+      0.25rem 0 0.5rem -0.15rem rgba(74, 72, 54, 0.25),
+      -0.25rem 0 0.5rem -0.15rem rgba(74, 72, 54, 0.25);
+    transition: box-shadow 0.2s ease;
+  }
 }
 
 .navbar,
@@ -83,6 +91,8 @@ hr {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 .navbar-menu::-webkit-scrollbar {
