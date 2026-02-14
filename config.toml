@@ -121,7 +121,7 @@ googleAnalytics                 = "G-PYJLD53W7J"                     # https://g
         title            = "Last Days of Koreshan"
         [languages.en.params]
             description  = "A historical drama short film based on a true story of a Turn of the Century South Florida cult waiting for the resurrection of their leader."
-            # footerText   = ""                      # Text to override default footer text (markdown allowed)
+            footerText   = "[Subscribe to our newsletter →](http://eepurl.com/jpmjF-/)"
 
     # [languages.es]
     #     languageName     = "Español"
