@@ -17,9 +17,7 @@
                 <div class="column {{ $columWidth }}">
                     <div class="card" data-target="#project-{{ $index }}">
                         <div class="card-content has-text-centered top-pad">
-                            <h1><a {{ if .Params.external_link }} href="{{ .Params.external_link }}" {{ end }}>
-                                {{ .Title | markdownify }}
-                            </a></h1>
+                            <h1>{{ if .Params.external_link }}<a href="{{ .Params.external_link }}">{{ .Title | markdownify }}</a>{{ else }}<span class="team-name">{{ .Title | markdownify }}</span>{{ end }}</h1>
                             {{ if .Params.project_timeframe }}
                             <p class="fa-xs">{{ .Params.project_timeframe }}</p>
                             {{ end }}
