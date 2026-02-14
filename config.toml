@@ -118,9 +118,9 @@ DefaultContentLanguage           = "en"                    # Default language fo
         languageCode     = "en-us"
         contentDir       = "content"
         weight           = 0
-        title            = "Introduction"
+        title            = "Last Days of Koreshan"
         [languages.en.params]
-            description  = "Website Description"   # Max 160 characters show in search results
+            description  = "A historical drama short film based on a true story of a Turn of the Century South Florida cult waiting for the resurrection of their leader."
             # footerText   = ""                      # Text to override default footer text (markdown allowed)
 
     # [languages.es]
