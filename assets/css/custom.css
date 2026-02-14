@@ -271,16 +271,30 @@ img {
   padding-bottom: 0 !important;
 }
 
-/* Fade-in: faster for returning visitors */
-.returning-visitor .fade-in {
-  animation-duration: 0.3s !important;
+/* Fade-in: slightly quicker for new visitors */
+.fade-in.one {
+  animation-delay: 0s !important;
+  animation-duration: 1.3s !important;
 }
+.fade-in.two {
+  animation-delay: 1s !important;
+  animation-duration: 2s !important;
+}
+.fade-in.three {
+  animation-delay: 0s !important;
+  animation-duration: 2s !important;
+}
+
+/* Fade-in: faster for returning visitors */
 .returning-visitor .fade-in.one {
-  animation-delay: 0.1s !important;
+  animation-delay: 0s !important;
+  animation-duration: 0s !important;
 }
 .returning-visitor .fade-in.two {
-  animation-delay: 0.2s !important;
+  animation-delay: 0s !important;
+  animation-duration: 2s !important;
 }
 .returning-visitor .fade-in.three {
-  animation-delay: 0.3s !important;
+  animation-delay: 0s !important;
+  animation-duration: 0s !important;
 }
