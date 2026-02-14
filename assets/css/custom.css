@@ -17,6 +17,10 @@
   font-display: swap;
 }
 
+.bold-title {
+  font-size: 7rem;
+}
+
 body {
   font-family: "victorian-orchid", serif;
   background-color: var(--color-background);
@@ -30,6 +34,14 @@ body {
   background-size: 1024px 1024px;
 }
 
+@media screen and (max-width: 44rem) {
+  .bold-title {
+    font-size: 3.3rem;
+  }
+  body {
+    font-size: 1rem !important;
+  }
+}
 
 body h1, body h2, body h3, body h4, body h5, body h6,
 .title, .subtitle {
@@ -37,6 +49,9 @@ body h1, body h2, body h3, body h4, body h5, body h6,
   color: var(--color-slate) !important;
 }
 
+.section .title.is-2 {
+  font-size: 3rem;
+}
 .title-line {
   display: block;
   line-height: 1.1;
@@ -91,30 +106,37 @@ hr {
   background-color: transparent !important;
 }
 
+.navbar {
+  min-height: 0 !important;
+}
+
 .navbar-burger {
   display: none !important;
 }
 
 .navbar-menu {
   display: flex !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
   justify-content: center;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  gap: 0;
   box-shadow: none !important;
   padding: 0 !important;
-}
-
-.navbar-menu::-webkit-scrollbar {
-  display: none;
+  margin: 0 !important;
 }
 
 .navbar-menu .navbar-item {
   flex-shrink: 0;
   white-space: nowrap;
+  font-size: 1.2rem;
+  display: inline-flex !important;
+  padding: 0.5rem 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu .navbar-item {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 /* Modal styling */
