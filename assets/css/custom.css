@@ -70,8 +70,28 @@ hr {
   background-color: transparent !important;
 }
 
-.navbar-burger:hover {
-  background-color: transparent !important;
+.navbar-burger {
+  display: none !important;
+}
+
+.navbar-menu {
+  display: flex !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-menu .navbar-item {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* Modal styling */
