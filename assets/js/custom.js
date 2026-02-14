@@ -1,8 +1,11 @@
+// Track visit count (used for returning-visitor class and tagline tiers)
+var visitKey = 'visitCount';
+var visitCount = parseInt(localStorage.getItem(visitKey) || '0', 10) + 1;
+localStorage.setItem(visitKey, String(visitCount));
+
 // Faster fade-in for returning visitors, slower for first-timers
-if (localStorage.getItem('visited')) {
+if (visitCount > 1) {
   document.documentElement.classList.add('returning-visitor');
-} else {
-  localStorage.setItem('visited', 'true');
 }
 
 // Random tagline
@@ -64,12 +67,7 @@ $(document).ready(function () {
     "I joined a cult and all I got was this lousy tagline.",
   ];
 
-  var visitKey = 'visitCount';
   var funnyThreshold = 3; // unlock funny tags after 3rd visit
-
-  // Track visit count
-  var visitCount = parseInt(localStorage.getItem(visitKey) || '0', 10) + 1;
-  localStorage.setItem(visitKey, String(visitCount));
 
   var seriousRecentKey = 'recentSerious';
   var funnyRecentKey = 'recentFunny';
