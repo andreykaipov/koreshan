@@ -12,7 +12,11 @@ body {
   font-family: "victorian-orchid", serif;
   background-color: var(--color-background);
   font-size: 1.2rem;
+  background-repeat: repeat;
+  background-image: url("/img/texture-old-map.png");
+  background-size: 256px 256px;
 }
+
 
 body h1, body h2, body h3, body h4, body h5, body h6,
 .title, .subtitle {
@@ -55,17 +59,17 @@ hr {
 
 .navbar-item:hover,
 .navbar-item:active {
-  background-color: var(--color-background) !important;
+  background-color: transparent !important;
   color: var(--color-slate) !important;
 }
 
 .navbar,
 .navbar-menu {
-  background-color: var(--color-background) !important;
+  background-color: transparent !important;
 }
 
 .navbar-burger:hover {
-  background-color: var(--color-background) !important;
+  background-color: transparent !important;
 }
 
 /* Modal styling */
