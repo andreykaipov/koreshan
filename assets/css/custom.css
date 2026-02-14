@@ -32,6 +32,7 @@ body {
     linear-gradient(rgba(237, 220, 180, 0.5), rgba(237, 220, 180, 0.5)), /* slate color */
     url("/img/texture-custom2.jpg");
   background-size: 1024px 1024px;
+  background-position: 100px 100px;
 }
 
 @media screen and (max-width: 44rem) {
