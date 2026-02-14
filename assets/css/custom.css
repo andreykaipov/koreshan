@@ -61,6 +61,8 @@ hr {
 .navbar-item:active {
   background-color: transparent !important;
   color: var(--color-slate) !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(74, 72, 54, 0.25);
+  transition: box-shadow 0.2s ease;
 }
 
 .navbar,
