@@ -35,7 +35,6 @@ $(document).ready(function () {
     "Resurrection TBD.",
     "The prophecy was unclear on this timeline.",
     "Have faith. OP will surely deliver.",
-    "Trust the process.",
     // Meta / self-aware
     "Refresh for another prophecy.",
     "The Earth is hollow and so is this promise.",
