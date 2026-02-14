@@ -26,7 +26,7 @@ body {
   background-image:
     /* url("/img/texture-old-map.png"), */
     linear-gradient(rgba(237, 220, 180, 0.5), rgba(237, 220, 180, 0.5)), /* slate color */
-    url("/img/texture-custom2.png");
+    url("/img/texture-custom2.jpg");
   background-size: 1024px 1024px;
 }
 
