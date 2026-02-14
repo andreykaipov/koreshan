@@ -1,3 +1,10 @@
+// Faster fade-in for returning visitors, slower for first-timers
+if (localStorage.getItem('visited')) {
+  document.documentElement.classList.add('returning-visitor');
+} else {
+  localStorage.setItem('visited', 'true');
+}
+
 // Random tagline
 $(document).ready(function () {
   var taglines = [

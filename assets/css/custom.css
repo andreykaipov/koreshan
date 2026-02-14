@@ -273,3 +273,17 @@ img {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/* Fade-in: faster for returning visitors */
+.returning-visitor .fade-in {
+  animation-duration: 0.3s !important;
+}
+.returning-visitor .fade-in.one {
+  animation-delay: 0.1s !important;
+}
+.returning-visitor .fade-in.two {
+  animation-delay: 0.2s !important;
+}
+.returning-visitor .fade-in.three {
+  animation-delay: 0.3s !important;
+}
