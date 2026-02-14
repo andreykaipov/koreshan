@@ -1,14 +1,68 @@
 @import url("https://use.typekit.net/tfq8jrt.css");
+@import url("https://db.onlinewebfonts.com/c/4667e2bdcd7b23b51872259e8feae69a?family=Krul-Regular");
+
+:root {
+  --color-background: #eddcb4;
+  --color-slate: #4a4836;
+  --color-blood: #cb3727;
+  --color-blood-dark: #a02c1f;
+}
 
 body {
   font-family: "victorian-orchid", serif;
+  background-color: var(--color-background);
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body h1, body h2, body h3, body h4, body h5, body h6,
+.title, .subtitle {
   font-family: "rotunda-veneta", sans-serif;
+  color: var(--color-slate) !important;
 }
 
-body h1 .title-of {
-  font-family: "victorian-orchid", sans-serif; /* or whichever */
+.title-line {
+  display: block;
+  line-height: 1.1;
+  font-size: 1.4em;
+  color: var(--color-blood) !important;
+}
+
+.title-of {
+  font-family: "Krul-Regular";
   font-weight: 2;
+  font-size: 0.5em;
+  display: block;
+  line-height: 1;
+  margin: -0.7em 0;
+}
+
+.subtitle.is-3 {
+  font-size: 1.2em !important;
+}
+
+a,
+code {
+  color: var(--color-blood) !important;
+}
+
+a:hover {
+  color: var(--color-blood-dark) !important;
+}
+
+hr {
+  background-color: var(--color-slate) !important;
+}
+
+.navbar-item:hover,
+.navbar-item:active {
+  background-color: var(--color-background) !important;
+  color: var(--color-slate) !important;
+}
+
+.navbar,
+.navbar-menu {
+  background-color: var(--color-background) !important;
+}
+
+.navbar-burger:hover {
+  background-color: var(--color-background) !important;
 }

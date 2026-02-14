@@ -1,5 +1,5 @@
 ---
-title: "Last Days <span class='title-of'>of</span> Koreshan"
+title: "<span class='title-line'>Last Days</span><span class='title-of'>of</span><span class='title-line'>Koreshan</span>"
 headless: true
 ---
 
