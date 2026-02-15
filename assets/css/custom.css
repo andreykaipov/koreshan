@@ -91,7 +91,7 @@ html::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("/img/option1-400-3000-1.webp") center / cover no-repeat;
+  background: url("/img/bg-3000-1.webp") center / cover no-repeat;
   filter: sepia(1);
   opacity: 0.05;
   pointer-events: none;
