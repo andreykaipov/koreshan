@@ -75,10 +75,22 @@ body {
   font-size: 1.2rem;
   background-repeat: repeat;
   background-image:
-    linear-gradient(rgba(237, 220, 180, 0.8), rgba(237, 220, 180, 0.8)), /* slate color */
+    linear-gradient(rgba(237, 220, 180, 0.85), rgba(237, 220, 180, 0.85)),
     url("/img/texture-parchment.jpg");
   background-size: 1024px 1024px;
-  /* background-position: 100px 100px; */
+  background-position: 0 0;
+}
+
+/* Flaming Sword clouds watermark overlay */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/img/flaming-sword-clouds-trans.png") center / cover no-repeat;
+  filter: sepia(1);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Fixed torches on left and right edges */
@@ -119,6 +131,7 @@ body h1, body h2, body h3, body h4, body h5, body h6,
 .section .title.is-2 {
   font-size: 3rem;
 }
+
 .title-line {
   display: block;
   line-height: 1.1;
@@ -147,6 +160,15 @@ a:hover {
 hr {
   background-color: var(--color-slate) !important;
   height: 1px;
+}
+
+.lions-divider {
+  width: 100vw;
+  max-width: max(50%, 60rem);
+  margin: 0 auto;
+  padding-bottom: 0.25rem;
+  display: block;
+  opacity: 0.7;
 }
 
 .navbar-item:hover,
@@ -213,7 +235,8 @@ hr {
 }
 
 .modal-card-header {
-  background-color: var(--color-background) !important;
+  background: linear-gradient(rgba(237, 220, 180, 0.7), rgba(237, 220, 180, 0.7)), url("/img/texture-parchment.jpg") !important;
+  background-size: 1024px 1024px !important;
   border-bottom: 0.0625rem solid var(--color-slate) !important;
   padding: 1.5rem 2rem 1.5rem 2rem!important;
   flex-wrap: wrap;
@@ -230,7 +253,8 @@ hr {
 }
 
 .modal-card-body {
-  background-color: var(--color-background) !important;
+  background: linear-gradient(rgba(237, 220, 180, 0.7), rgba(237, 220, 180, 0.7)), url("/img/texture-parchment.jpg") !important;
+  background-size: 1024px 1024px !important;
   color: var(--color-slate) !important;
   font-family: "victorian-orchid", serif;
   padding: 2rem 4rem 2rem 4rem!important;
@@ -351,11 +375,7 @@ hr {
 }
 
 .modal-close {
-  background-color: var(--color-blood) !important;
-}
-
-.modal-close:hover {
-  background-color: var(--color-blood-dark) !important;
+  display: none !important;
 }
 
 img {
