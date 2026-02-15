@@ -69,6 +69,11 @@
   }
 }
 
+html {
+  background-color: var(--color-background);
+  overscroll-behavior: none;
+}
+
 body {
   font-family: "victorian-orchid", serif;
   background-color: var(--color-background);
