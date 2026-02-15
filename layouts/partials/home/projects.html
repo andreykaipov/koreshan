@@ -37,7 +37,7 @@
     {{ partial "top-icon.html" . }}
 </div>
 <!-- End Projects section -->
-<div class="container"><hr></div>
+<div class="container"><hr class="section-divider"></div>
 <!-- Projects modals (outside section to avoid stacking context issues) -->
 {{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default (len .Pages) }}
 {{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}

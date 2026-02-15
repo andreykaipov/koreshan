@@ -109,7 +109,7 @@ body::after {
   background: url("/img/torch-trans-slate.png") top center / contain no-repeat;
   z-index: 999;
   pointer-events: none;
-  opacity: 1;
+  opacity: 0.75;
 }
 body::before {
   left: 0;
@@ -163,6 +163,23 @@ a:hover {
 }
 
 hr {
+  background: none !important;
+  height: 0;
+  border: none;
+}
+
+/* Eagle ornament above section headings */
+.section .title.is-2::before {
+  content: "";
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: max(6vh, 6rem);
+  max-width: 100%;
+  background: url("/img/eagle-trans-slate.png") center / contain no-repeat;
+  opacity: 0.75;
+}
+
+hr.nav-divider {
   background-color: var(--color-slate) !important;
   height: 1px;
 }
@@ -173,7 +190,7 @@ hr {
   margin: 0 auto;
   padding-bottom: 0.25rem;
   display: block;
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .navbar-item:hover,
