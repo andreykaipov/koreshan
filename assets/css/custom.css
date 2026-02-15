@@ -86,7 +86,7 @@ html::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("/img/flaming-sword-clouds-trans.png") center / cover no-repeat;
+  background: url("/img/option1-400-3000-1.webp") center / cover no-repeat;
   filter: sepia(1);
   opacity: 0.05;
   pointer-events: none;
@@ -162,13 +162,13 @@ hr {
   height: 1px;
 }
 
-.lions-divider {
+.lions-footer {
   width: 100vw;
   max-width: max(50%, 60rem);
   margin: 0 auto;
   padding-bottom: 0.25rem;
   display: block;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .navbar-item:hover,

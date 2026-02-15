@@ -62,7 +62,7 @@ $(document).ready(function () {
     // even lamer jokes
     "Hollow Earth? I hardly know her!",
     "I'm somewhat of a prophet myself.",
-    "I like my Earths concave. Don't convex me.",
+    "I like my Earth concave; not convex.",
     "The Earth is hollow but our promises aren't.",
     "I joined a cult and all I got was this lousy tagline.",
   ];
