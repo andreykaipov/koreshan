@@ -81,6 +81,35 @@ body {
   /* background-position: 100px 100px; */
 }
 
+/* Fixed torches on left and right edges */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc(100vh / 6.5); /* match torch aspect ratio (304:196310) */
+  background: url("/img/torch-trans-slate.png") top center / contain no-repeat;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 1;
+}
+body::before {
+  left: 0;
+  transform: scaleX(-1); /* flip left torch horizontally */
+}
+body::after {
+  right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  body::before,
+  body::after,
+  .torch-flame {
+    display: none;
+  }
+}
+
 body h1, body h2, body h3, body h4, body h5, body h6,
 .title, .subtitle {
   font-family: "rotunda-veneta", sans-serif;
