@@ -56,7 +56,7 @@
 
         {{ range sort $pages "Params.weight" }}
         {{/* Temporarily hidden sections: blog, watch */}}
-        {{ if and (ne .Name "contact.md") (ne .Name "watch.md") (ne .Name "_index.md") }}
+        {{ if and (ne .Name "contact.md") (ne .Name "watch.md") }}
         {{ if .File }}
         {{ if eq (os.Stat .File.Dir).Name "projects" }}
             <!-- Now for some cool projects -->
