@@ -22,6 +22,7 @@ googleAnalytics                 = "G-PYJLD53W7J"                     # https://g
     # Configure the home page
     [params.home]
         introHeight              = "fullheight"            # Input either "medium" or "large" or "fullheight"
+        heroEmblem               = "/img/angel.png"          # Image shown below the tagline on the home page
         showLatest               = true                    # Show latest blog post summary
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         allPostsArchiveFormat    = true                    # show all posts in an archive format

@@ -18,7 +18,52 @@
 }
 
 .bold-title {
-  font-size: 7rem;
+  font-size: 6rem;
+}
+
+.subtitle.is-3 {
+  font-size: 2rem;
+}
+
+
+/* Shift hero content upward so everything fits on one screen */
+.hero-body > .container {
+  margin-top: -2rem;
+  /* margin-bottom: -10rem; */
+}
+
+.hero-emblem {
+  max-width: 32rem;
+  margin: 2rem auto 0 auto;
+  display: block;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 44rem) {
+  /* Spread hero content vertically on mobile */
+  .hero.is-fullheight .hero-body {
+    flex-grow: 0 !important;
+    padding-top: 4rem !important;
+    padding-bottom: 0 !important;
+  }
+  .hero.is-fullheight {
+    justify-content: space-evenly !important;
+  }
+  .hero-emblem {
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+  .bold-title {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+  }
+  .subtitle.is-3 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem !important;
+  }
 }
 
 body {
@@ -26,22 +71,11 @@ body {
   background-color: var(--color-background);
   font-size: 1.2rem;
   background-repeat: repeat;
-  /* background-image: url("/img/texture-old-map.png"); */
   background-image:
-    /* url("/img/texture-old-map.png"), */
-    linear-gradient(rgba(237, 220, 180, 0.5), rgba(237, 220, 180, 0.5)), /* slate color */
-    url("/img/texture-custom2.jpg");
+    linear-gradient(rgba(237, 220, 180, 0.8), rgba(237, 220, 180, 0.8)), /* slate color */
+    url("/img/texture-parchment.png");
   background-size: 1024px 1024px;
-  background-position: 100px 100px;
-}
-
-@media screen and (max-width: 44rem) {
-  .bold-title {
-    font-size: 3.3rem;
-  }
-  body {
-    font-size: 1rem !important;
-  }
+  /* background-position: 100px 100px; */
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6,
@@ -69,10 +103,6 @@ body h1, body h2, body h3, body h4, body h5, body h6,
   margin: -0.7em 0;
 }
 
-.subtitle.is-3 {
-  font-size: 1.4em !important;
-}
-
 a,
 code {
   color: var(--color-blood) !important;
@@ -84,6 +114,7 @@ a:hover {
 
 hr {
   background-color: var(--color-slate) !important;
+  height: 1px;
 }
 
 .navbar-item:hover,

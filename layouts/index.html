@@ -26,6 +26,9 @@
                     <div class="subtitle is-3 {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in two{{ end }}">
                         {{ .Content }}
                     </div>
+                    {{ with .Site.Params.home.heroEmblem }}
+                    <img class="hero-emblem {{ if or ($.Site.Params.fadeIn | default true) $.Site.Params.fadeInIndex }}fade-in one{{ end }}" src="{{ . }}" alt="Emblem">
+                    {{ end }}
                     <!-- End title and tagline -->
                 </div>
             </div> <!-- End of Hero body -->
