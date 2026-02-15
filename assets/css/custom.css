@@ -26,29 +26,32 @@
 }
 
 
-/* Shift hero content upward so everything fits on one screen */
-.hero-body > .container {
-  margin-top: -2rem;
-  /* margin-bottom: -10rem; */
+/* Fit title+tagline+image+nav on one screen, scale with viewport */
+.hero-body {
+  padding-top: clamp(1.5rem, 5vh, 6rem) !important;
+  padding-bottom: 0 !important;
 }
 
 .hero-emblem {
-  max-width: 32rem;
-  margin: 2rem auto 0 auto;
+  max-width: clamp(16rem, 35vh, 40rem);
+  margin: clamp(0.5rem, 3vh, 4rem) auto 0 auto;
   display: block;
   border: none !important;
   box-shadow: none !important;
 }
 
 @media screen and (max-width: 44rem) {
-  /* Spread hero content vertically on mobile */
-  .hero.is-fullheight .hero-body {
-    flex-grow: 0 !important;
-    padding-top: 4rem !important;
-    padding-bottom: 0 !important;
+  /* Distribute content evenly on mobile */
+  .hero.is-fullheight .hero-head {
+    display: none !important;
   }
   .hero.is-fullheight {
-    justify-content: space-evenly !important;
+    justify-content: center !important;
+  }
+  .hero.is-fullheight .hero-body {
+    flex-grow: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   .hero-emblem {
     max-width: 18rem;
