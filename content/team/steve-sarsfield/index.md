@@ -1,7 +1,7 @@
 ---
 title: Steve Sarsfield
-photo: /static/img/team/steve-sarsfield.png
 role: Casting Assistance
+photo: /img/team/steve-sarsfield.png
 weight: 6
 ---
 :)
