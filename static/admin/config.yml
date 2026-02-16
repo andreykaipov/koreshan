@@ -18,6 +18,13 @@ collections:
   - name: "home"
     label: "Home Sections"
     files:
+      - name: "index"
+        label: "Home Title & Tagline"
+        file: "content/home/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
+
       - name: "about"
         label: "About"
         file: "content/home/about.md"
@@ -41,13 +48,6 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-      - name: "index"
-        label: "Home Title & Tagline"
-        file: "content/home/index.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
-
   # ─── Team members ───
   - name: "team"
     label: "Team Members"
@@ -67,15 +67,3 @@ collections:
       - { label: "Website", name: "website", widget: "string", required: false }
       - { label: "Instagram", name: "instagram", widget: "string", required: false }
       - { label: "Bio", name: "body", widget: "markdown", required: true }
-
-  # ─── Team section settings ───
-  - name: "team-index"
-    label: "Team Section"
-    files:
-      - name: "team-index"
-        label: "Team Section Header"
-        file: "content/team/_index.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Display Order", name: "weight", widget: "number", hint: "Lower = appears earlier" }
-          - { label: "Intro text", name: "body", widget: "markdown" }
