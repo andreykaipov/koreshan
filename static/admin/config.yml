@@ -1,0 +1,105 @@
+backend:
+  name: github
+  branch: main
+  repo: andreykaipov/koreshan
+  base_url: https://decap.kaipov.com    # <-- This should contain your PROXY URL
+  auth_endpoint: /auth
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  # ─── Home page sections ───
+  - name: "home"
+    label: "Home Sections"
+    files:
+      - name: "about"
+        label: "About"
+        file: "content/home/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Weight (sort order)", name: "weight", widget: "number" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "support"
+        label: "Support"
+        file: "content/home/support.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Weight (sort order)", name: "weight", widget: "number" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/home/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "index"
+        label: "Home Title & Tagline"
+        file: "content/home/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
+
+  # ─── Team members (individual files) ───
+  - name: "team"
+    label: "Team Members"
+    files:
+      - name: "adrienne-tabet"
+        label: "Adrienne Tabet"
+        file: "content/team/adrienne-tabet/index.md"
+        fields: &team-fields
+          - { label: "Name", name: "title", widget: "string" }
+          - { label: "Role", name: "project_timeframe", widget: "string", required: false }
+          - { label: "Weight (sort order)", name: "weight", widget: "number" }
+          - { label: "Image Width", name: "image_width", widget: "string", required: false }
+          - { label: "Text Wrap", name: "text_wrap", widget: "boolean", required: false }
+          - { label: "Website", name: "website", widget: "string", required: false }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Resources"
+            name: "resources"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Source", name: "src", widget: "string" }
+              - label: "Params"
+                name: "params"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Weight", name: "weight", widget: "number", required: false }
+          - { label: "Bio", name: "body", widget: "markdown" }
+      - name: "bianca-vucetich"
+        label: "Bianca Vucetich"
+        file: "content/team/bianca-vucetich/index.md"
+        fields: *team-fields
+      - name: "giovanna-espinal"
+        label: "Giovanna Espinal"
+        file: "content/team/giovanna-espinal/index.md"
+        fields: *team-fields
+      - name: "lyn-millner"
+        label: "Lyn Millner"
+        file: "content/team/lyn-millner/index.md"
+        fields: *team-fields
+      - name: "steve-sarsfield"
+        label: "Steve Sarsfield"
+        file: "content/team/steve-sarsfield/index.md"
+        fields: *team-fields
+      - name: "tabatha-mudra"
+        label: "Tabatha Mudra"
+        file: "content/team/tabatha-mudra/index.md"
+        fields: *team-fields
+
+  # ─── Team section settings ───
+  - name: "team-index"
+    label: "Team Section"
+    files:
+      - name: "team-index"
+        label: "Team Section Header"
+        file: "content/team/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Weight (sort order)", name: "weight", widget: "number" }
+          - { label: "Intro text", name: "body", widget: "markdown" }
