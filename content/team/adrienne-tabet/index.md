@@ -1,4 +1,5 @@
 ---
+type: member
 title: Adrienne Tabet
 role: SFX Sculptor
 photo: /img/team/adrienne-tabet.png

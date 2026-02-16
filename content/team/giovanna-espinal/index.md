@@ -1,4 +1,5 @@
 ---
+type: member
 title: Giovanna Espinal
 role: Production Designer
 photo: /img/team/giovanna-espinal.png

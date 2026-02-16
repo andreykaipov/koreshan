@@ -55,7 +55,9 @@ collections:
     path: "{{slug}}/index"
     create: true
     slug: "{{slug}}"
+    filter: { field: "type", value: "event" }
     fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "event" }
       - { label: "Event Name", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
       - { label: "Location", name: "location", widget: "string" }
@@ -82,9 +84,11 @@ collections:
     path: "{{slug}}/index"
     create: true
     slug: "{{slug}}"
+    filter: { field: "type", value: "member" }
     media_folder: "/static/img/team"
     public_folder: "/img/team"
     fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "member" }
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Role", name: "role", widget: "string" }
       - { label: "Photo", name: "photo", widget: "image", choose_url: false }

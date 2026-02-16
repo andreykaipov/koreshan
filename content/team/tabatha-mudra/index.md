@@ -1,4 +1,5 @@
 ---
+type: member
 title: Tabatha Mudra
 role: Cinematographer
 photo: /img/team/tabatha-mudra.png
