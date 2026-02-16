@@ -1,6 +1,6 @@
 ---
 title: Steve Sarsfield
-photo: /img/team/giovanna-espinal.png
+photo: /static/img/team/steve-sarsfield.png
 project_timeframe: Casting Assistance
 weight: 6
 ---
