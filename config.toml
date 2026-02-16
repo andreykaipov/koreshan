@@ -1,6 +1,7 @@
 baseURL                = "/"
 theme                  = "introduction"
 DefaultContentLanguage = "en"
+buildFuture            = true
 googleAnalytics        = "G-PYJLD53W7J"
 
 [params]

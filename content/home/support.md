@@ -1,6 +1,6 @@
 ---
 title: "Support"
-weight: 30
+weight: 50
 ---
 
 Based on a true story, *Last Days of Koreshan* explores how utopian idealism can crumble when unfulfilled promises are made by false prophets. Although it occurred over a century ago, the tale of the Koreshans is one both overlooked and quite prescient towards today's climate.

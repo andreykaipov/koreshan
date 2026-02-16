@@ -48,9 +48,36 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+  # ─── Watch events ───
+  - name: "watch"
+    label: "Watch"
+    folder: "content/watch"
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Event Name", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Tickets Link", name: "tickets", widget: "string", required: false }
+      - { label: "Display Order", name: "weight", widget: "number", hint: "Lower = appears first" }
+
+  # ─── News posts ───
+  - name: "news"
+    label: "News"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Series", name: "series", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   # ─── Team members ───
   - name: "team"
-    label: "Team Members"
+    label: "Team"
     folder: "content/team"
     path: "{{slug}}/index"
     create: true

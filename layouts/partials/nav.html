@@ -52,6 +52,10 @@
                 {{ $pages = $pages | append . }}
             {{ end }}
 
+            {{ with .Site.GetPage "/watch" }}
+                {{ $pages = $pages | append . }}
+            {{ end }}
+
             {{ range sort $pages "Params.weight" }}
             {{ if (ne .Name "contact.md") }}
             {{ if eq (os.Stat .File.Dir).Name "team" }}
@@ -71,6 +75,13 @@
                   {{ end }}
                   </a>
                 {{ end }}
+                {{ end }}
+            {{ else if eq (os.Stat .File.Dir).Name "watch" }}
+                <!-- Watch section -->
+                {{ if $isHome }}
+                <a class="navbar-item" href="{{ printf "#%s" ( .Title | urlize) | relLangURL }}">{{ .Title | markdownify }}</a>
+                {{ else }}
+                <a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
                 {{ end }}
             {{ else if eq (os.Stat .File.Dir).Name "blog" }}
                 <!-- Let`s show some blog posts -->

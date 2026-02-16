@@ -1,7 +1,7 @@
 ---
 title: "About"
 image: "profile.png"
-weight: 8
+weight: 10
 ---
 
 *Last Days of Koreshan* is a historical drama short film based on a true story, exploring how utopian idealism can crumble when unfulfilled promises are made by false prophets.

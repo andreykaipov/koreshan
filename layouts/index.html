@@ -52,12 +52,19 @@
             {{ $pages = $pages | append . }}
         {{ end }}
 
+        {{ with .Site.GetPage "/watch" }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+
         {{ range sort $pages "Params.weight" }}
         {{ if (ne .Name "contact.md") }}
         {{ if .File }}
         {{ if eq (os.Stat .File.Dir).Name "team" }}
             <!-- Team section -->
             {{ partial "home/team.html" . }}
+        {{ else if eq (os.Stat .File.Dir).Name "watch" }}
+            <!-- Watch section -->
+            {{ partial "home/watch.html" . }}
         {{ else if eq (os.Stat .File.Dir).Name "blog" }}
             <!-- Let`s show some blog posts -->
             {{ partial "home/blog.html" . }}

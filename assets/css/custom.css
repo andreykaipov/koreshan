@@ -414,14 +414,38 @@ img {
   color: var(--color-blood) !important;
 }
 
-.card {
+#team .card {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+#team .card:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.25rem 0.75rem rgba(74, 72, 54, 0.25);
+}
+
+#watch .card {
+  box-shadow: 0 0.1rem 0.3rem rgba(74, 72, 54, 0.2);
+}
+
+#watch .card h1 {
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.watch-clickable {
+  cursor: pointer;
+}
+.watch-past {
+  background-color: rgba(74, 72, 54, 0.06);
+  opacity: 0.9;
+}
+
+.watch-past .team-name::after {
+  font-size: 0.6rem;
+  font-style: italic;
+  color: var(--color-slate);
+  opacity: 0.5;
 }
 
 #team .section {
