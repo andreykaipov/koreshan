@@ -1,7 +1,7 @@
 ---
-title: "Bianca Vucetich"
-weight: 5
-role: "Production Assistant"
+title: Bianca Vucetich
+role: Production Assistant
 photo: /img/team/bianca-vucetich.png
+weight: 5
 ---
-
+:)
