@@ -5,10 +5,7 @@ image_width: "20rem"
 project_timeframe: "Cinematographer"
 website: "https://tabathamudraphotovideo.com/"
 instagram: "https://www.instagram.com/thetabathamudra/"
-resources:
-    - src: photo.png
-      params:
-          weight: -100
+photo: /img/team/tabatha-mudra.png
 ---
 
 Tabatha Mudra is an award-winning director, cinematographer, and producer whose work has been featured by PBS, the United Nations Women's Fund, and the American Heart Association. She is the recipient of the Dejunius Hughes Award for activism and a back-to-back winner of the 48-Hour Film Festival, leading the first female-led team to win in Miami.

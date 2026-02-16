@@ -64,12 +64,9 @@
         <section class="modal-card-body markdown">
             {{ if eq $page.Params.text_wrap false }}
             <div class="modal-body-nowrap">
-                {{ with .Resources.ByType "image" }}
+                {{ with $page.Params.photo }}
                 <div class="modal-body-image"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
-                    {{ range first 1 (sort . "Params.weight") }}
-                        {{ $image := .Resize "400x" }}
-                        <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}" loading="lazy">
-                    {{ end }}
+                    <img src="{{ . }}" class="img-responsive" alt="{{ $page.Title }}" loading="lazy">
                 </div>
                 {{ end }}
                 <div class="modal-body-text">
@@ -77,12 +74,9 @@
                 </div>
             </div>
             {{ else }}
-            {{ with .Resources.ByType "image" }}
+            {{ with $page.Params.photo }}
             <div class="modal-body-image{{ if eq $page.Params.text_wrap false }} no-wrap{{ end }}"{{ with $page.Params.image_width }} style="max-width: {{ . }}"{{ end }}>
-                {{ range first 1 (sort . "Params.weight") }}
-                    {{ $image := .Resize "400x" }}
-                    <img src="{{ $image.Permalink }}" class="img-responsive" alt="{{ $image.Name }}" loading="lazy">
-                {{ end }}
+                <img src="{{ . }}" class="img-responsive" alt="{{ $page.Title }}" loading="lazy">
             </div>
             {{ end }}
             {{ .Content }}

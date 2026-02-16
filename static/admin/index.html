@@ -7,7 +7,43 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>
+    <script>
+      // Inject site styles into the CMS preview pane
+      CMS.registerPreviewStyle("https://use.typekit.net/tfq8jrt.css");
+      CMS.registerPreviewStyle("/css/custom.css");
+      CMS.registerPreviewStyle("/css/main.css");
+      CMS.registerPreviewStyle("data:text/css," + encodeURIComponent(`
+        html, body {
+          font-family: "victorian-orchid", serif !important;
+          background-color: #eddcb4 !important;
+          color: #4a4836 !important;
+          padding: 2rem !important;
+          font-size: 1.2rem !important;
+          min-height: 100% !important;
+          line-height: 1.6 !important;
+        }
+        /* Hide torches in preview */
+        body::before, body::after {
+          display: none !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-family: "rotunda-veneta", sans-serif !important;
+          color: #4a4836 !important;
+        }
+        h1 { font-size: 3rem !important; }
+        h2 { font-size: 2.5rem !important; }
+        h3 { font-size: 2rem !important; }
+        p { font-size: 1.2rem !important; margin-bottom: 1em !important; }
+        a { color: #cb3727 !important; }
+        img { max-width: 100% !important; border: none !important; box-shadow: none !important; border-radius: 5px; }
+        /* Fill the preview iframe background */
+        #nc-root, [data-slate-editor] {
+          background-color: #eddcb4 !important;
+        }
+      `));
+    </script>
   </body>
 </html>
