@@ -4,7 +4,7 @@ title: L. Fried
 role: Director, Writer, Producer
 photo: /img/team/lfried.jpg
 weight: -1
-image_width: 25rem
+image_width: 44%
 website: https://fried.works/
 instagram: https://www.instagram.com/fried.works/
 ---
