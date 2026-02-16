@@ -1,6 +1,6 @@
 ---
 title: Steve Sarsfield
-photo: /static/img/team/bianca-vucetich.png
+photo: /img/team/tabatha-mudra.png
 project_timeframe: Casting Assistance
 weight: 6
 ---
