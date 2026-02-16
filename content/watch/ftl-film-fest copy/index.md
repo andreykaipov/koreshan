@@ -1,7 +1,7 @@
 ---
 type: event
-title: "Fort Lauderdale Film Festival1"
-date: "2024-03-15"
-location: "Cinema Paradiso, Fort Lauderdale, FL"
-tickets: "https://example.com/tickets"
+title: Fort Lauderdale Film Festival0
+date: 2026-07-15
+location: Cinema Paradiso, Fort Lauderdale, FL
+tickets: https://example.com/tickets
 ---
