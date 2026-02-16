@@ -3,7 +3,8 @@ type: member
 title: L. Fried
 role: Director, Writer, Producer
 photo: /img/team/lfried.jpg
-weight: 0
+weight: -1
+image_width: 26rem
 website: https://fried.works/
 instagram: https://www.instagram.com/fried.works/
 ---
