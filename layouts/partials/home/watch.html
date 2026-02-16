@@ -23,7 +23,7 @@
         {{ with $upcoming }}
         <h3 class="title is-4 has-text-centered" style="margin-top: 1rem;">Upcoming</h3>
         <div class="columns is-multiline is-centered">
-            {{ range sort . "Params.date" }}
+            {{ range sort . "Params.date" "desc" }}
             <div class="column is-one-third">
                 <div class="card watch-card{{ with .Params.tickets }} watch-clickable{{ end }}"{{ with .Params.tickets }} onclick="window.open('{{ . }}', '_blank')"{{ end }}>
                     <div class="card-content has-text-centered top-pad">
