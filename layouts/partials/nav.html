@@ -50,22 +50,22 @@
             {{ end }}
             */}}
 
-            {{ with .Site.GetPage "/projects" }}
+            {{ with .Site.GetPage "/team" }}
                 {{ $pages = $pages | append . }}
             {{ end }}
 
             {{ range sort $pages "Params.weight" }}
             {{/* Temporarily hidden sections: blog, watch */}}
             {{ if and (ne .Name "contact.md") (ne .Name "watch.md") }}
-            {{ if eq (os.Stat .File.Dir).Name "projects" }}
-                <!-- Now for some cool projects -->
+            {{ if eq (os.Stat .File.Dir).Name "team" }}
+                <!-- Team section -->
                 {{ if $isHome }}
                 <a class="navbar-item" href="{{ printf "#%s" ( .Title | urlize) | relLangURL }}">{{ .Title | markdownify }}</a>
                 {{ else }}
-                {{ $pageIsInProjects := eq $.Page.Section "projects"}}
-                {{ if not (and $pageIsInProjects (eq $.Page.Kind "section")) }}
+                {{ $pageIsInTeam := eq $.Page.Section "team"}}
+                {{ if not (and $pageIsInTeam (eq $.Page.Kind "section")) }}
                   <a class="navbar-item" href="{{ .Permalink }}">
-                  {{ if $pageIsInProjects }}
+                  {{ if $pageIsInTeam }}
                   {{ i18n "nav_backToSection" . }}
                   {{ else }}
                   <!-- fix-224 -->

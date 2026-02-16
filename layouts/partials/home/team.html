@@ -1,6 +1,6 @@
-{{ with .Site.GetPage "/projects" }}
+{{ with .Site.GetPage "/team" }}
 <div class="section" id="{{ .Title | urlize }}">
-    <!-- Begin Projects container -->
+    <!-- Begin Team container -->
     <div class="container">
         <h2 class="title is-2 has-text-centered">
             {{ .Title | markdownify }}
@@ -11,7 +11,7 @@
                 {{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default $totalProjects }}
                 {{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
                 {{ $columWidth := "is-one-third" }}
-                {{ if .Site.Params.projects.useTwoColumns }}
+                {{ if .Site.Params.team.useTwoColumns }}
                   {{ $columWidth = "is-half" }}
                 {{ end}}
                 <div class="column {{ $columWidth }}">
@@ -33,12 +33,12 @@
         </div>
         {{ end }}
     </div>
-    <!-- End Projects container -->
+    <!-- End Team container -->
     {{ partial "top-icon.html" . }}
 </div>
-<!-- End Projects section -->
+<!-- End Team section -->
 <div class="container"><hr class="section-divider"></div>
-<!-- Projects modals (outside section to avoid stacking context issues) -->
+<!-- Team modals (outside section to avoid stacking context issues) -->
 {{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default (len .Pages) }}
 {{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
 {{ if not .Params.external_link }}
