@@ -1,6 +1,6 @@
 ---
 title: Adrienne Tabet
-project_timeframe: SFX Sculptor
+role: SFX Sculptor
 weight: 3
 image_width: 28rem
 website: https://www.adriennetabet.com/

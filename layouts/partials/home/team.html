@@ -18,8 +18,8 @@
                     <div class="card" data-target="#project-{{ $index }}">
                         <div class="card-content has-text-centered top-pad">
                             <h1>{{ if .Params.external_link }}<a href="{{ .Params.external_link }}">{{ .Title | markdownify }}</a>{{ else }}<span class="team-name">{{ .Title | markdownify }}</span>{{ end }}</h1>
-                            {{ if .Params.project_timeframe }}
-                            <p class="fa-xs">{{ .Params.project_timeframe }}</p>
+                            {{ if .Params.role }}
+                            <p class="fa-xs">{{ .Params.role }}</p>
                             {{ end }}
                         </div>
                     </div>
@@ -49,8 +49,8 @@
         {{ with .Title }}
         <header class="modal-card-header bottom-pad">
             <h1 class="modal-card-title has-text-centered">{{ . }}</h1>
-            {{ if $page.Params.project_timeframe }}
-            <p class="fa-xs has-text-centered" style="width:100%">{{ $page.Params.project_timeframe }}</p>
+            {{ if $page.Params.role }}
+            <p class="fa-xs has-text-centered" style="width:100%">{{ $page.Params.role }}</p>
             {{ end }}
             {{ if or $page.Params.website $page.Params.instagram }}
             <div class="modal-header-links has-text-centered" style="width:100%">

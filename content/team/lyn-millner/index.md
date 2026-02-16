@@ -3,7 +3,7 @@ title: "Lyn Millner"
 weight: 4
 image_width: "19rem"
 text_wrap: false
-project_timeframe: "Consultant"
+role: "Consultant"
 website: "https://www.lynmillner.com/"
 photo: /img/team/lyn-millner.png
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Bianca Vucetich"
 weight: 5
-project_timeframe: "Production Assistant"
+role: "Production Assistant"
 photo: /img/team/bianca-vucetich.png
 ---
 

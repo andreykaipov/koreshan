@@ -2,7 +2,7 @@
 title: "Tabatha Mudra"
 weight: 1
 image_width: "20rem"
-project_timeframe: "Cinematographer"
+role: "Cinematographer"
 website: "https://tabathamudraphotovideo.com/"
 instagram: "https://www.instagram.com/thetabathamudra/"
 photo: /img/team/tabatha-mudra.png

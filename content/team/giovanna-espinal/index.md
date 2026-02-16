@@ -1,6 +1,6 @@
 ---
 title: Giovanna Espinal
-project_timeframe: Production Designer
+role: Production Designer
 weight: 2
 image_width: "26rem"
 instagram: "https://www.instagram.com/gio.vanna.espinal/"
