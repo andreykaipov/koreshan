@@ -56,13 +56,15 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "event" }
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - { label: "Upcoming", field: "date", pattern: "" }
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "event" }
       - { label: "Event Name", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Tickets Link", name: "tickets", widget: "string", required: false }
-      - { label: "Display Order", name: "weight", widget: "number", hint: "Lower = appears first" }
 
   # ─── News posts ───
   - name: "news"
@@ -85,6 +87,7 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "member" }
+    sortable_fields: ["weight", "title"]
     media_folder: "/static/img/team"
     public_folder: "/img/team"
     fields:
