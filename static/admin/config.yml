@@ -51,6 +51,7 @@ collections:
   # ─── Watch events ───
   - name: "watch"
     label: "Watch"
+    label_singular: "Event"
     folder: "content/watch"
     path: "{{slug}}/index"
     create: true
@@ -69,6 +70,7 @@ collections:
   # ─── News posts ───
   - name: "news"
     label: "News"
+    label_singular: "Post"
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
@@ -82,6 +84,7 @@ collections:
   # ─── Team members ───
   - name: "team"
     label: "Team"
+    label_singular: "Team Member"
     folder: "content/team"
     path: "{{slug}}/index"
     create: true
