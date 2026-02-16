@@ -61,9 +61,9 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Role", name: "role", widget: "string" }
       - { label: "Photo", name: "photo", widget: "image", choose_url: false }
-      - { label: "Display Order", name: "weight", widget: "number", hint: "Lower number = appears earlier" }
-      - { label: "Image Width", name: "image_width", widget: "string", required: false }
-      - { label: "Text Wrap", name: "text_wrap", widget: "boolean", required: false }
+      - { label: "Display Order", name: "weight", widget: "number", hint: "Lower number = appears earlier. Could even be negative." }
+      - { label: "Image Width", name: "image_width", widget: "string", required: false, hint: "Depending on how the dimensions of the image, you might want to adjust its width so that it doesn't look weird next to the text." }
+      - { label: "Text Wrap", name: "text_wrap", widget: "boolean", required: false, hint: "Depending on how much you write in the bio, you might want to wrap the text around the image for stylistic purposes." }
       - { label: "Website", name: "website", widget: "string", required: false }
       - { label: "Instagram", name: "instagram", widget: "string", required: false }
       - { label: "Bio", name: "body", widget: "markdown", required: true }
