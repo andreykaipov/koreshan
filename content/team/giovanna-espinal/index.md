@@ -1,13 +1,14 @@
 ---
-title: "Giovanna Espinal"
+title: Giovanna Espinal
+photo: linehq.png
+project_timeframe: Production Designer
 weight: 2
-image_width: "26rem"
-project_timeframe: "Production Designer"
-instagram: "https://www.instagram.com/gio.vanna.espinal/"
+image_width: 26rem
+instagram: https://www.instagram.com/gio.vanna.espinal/
 resources:
-    - src: photo.png
-      params:
-          weight: -100
+  - src: photo.png
+    params:
+      weight: -100
 ---
 
 Originally from Miami, Giovanna is a production designer drawn to visual storytelling through character and space. Her work focuses on world-building, with an emphasis on creating environments that feel lived-in and emotionally grounded.
