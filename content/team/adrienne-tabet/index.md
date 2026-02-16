@@ -5,8 +5,7 @@ weight: 3
 image_width: 28rem
 website: https://www.adriennetabet.com/
 instagram: https://www.instagram.com/adrienne_tabet/
-resources:
-  - src: https://i.imgur.com/mUXSw4K.jpeg
+resources: []
 photo: photo.png
 ---
 
