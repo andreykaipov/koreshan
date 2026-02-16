@@ -1,0 +1,9 @@
+{
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "evenBetterToml.taplo.bundled": false,
+  "evenBetterToml.taplo.path": "/Users/andrey/.nix-profile/bin/taplo",
+  "evenBetterToml.taplo.configFile.enabled": true,
+  "evenBetterToml.taplo.configFile.path": "taplo.toml"
+}
