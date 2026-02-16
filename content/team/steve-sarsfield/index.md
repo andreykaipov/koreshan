@@ -1,6 +1,6 @@
 ---
 title: Steve Sarsfield
-photo: /img/team/tabatha-mudra.png
+photo: /img/team/steve-sarsfield.png
 project_timeframe: Casting Assistance
 weight: 6
 ---
