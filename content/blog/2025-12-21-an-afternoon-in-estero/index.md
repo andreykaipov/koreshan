@@ -10,6 +10,6 @@ instagram_url: "https://www.instagram.com/p/DDuJgn4kccX/"
 
 What a lovely afternoon in Estero.
 
-![](/img/blog/2025-12-21-an-afternoon-in-estero/1.jpg)
+![](/img/blog/an-afternoon-in-estero/1.jpg)
 
-![](/img/blog/2025-12-21-an-afternoon-in-estero/2.jpg)
+![](/img/blog/an-afternoon-in-estero/2.jpg)

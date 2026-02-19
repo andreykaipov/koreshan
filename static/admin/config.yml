@@ -75,7 +75,8 @@ collections:
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     create: true
     slug: "{{slug}}"
-    media_folder: "/static/img/blog/{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "/static/img/blog/{{slug}}"
+    public_folder: "/img/blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "L. Fried" }
