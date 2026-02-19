@@ -14,8 +14,8 @@ Will you support the Koreshan vision?
 
 [**Support us on Seed&Spark →**](https://seedandspark.com/fund/last-days-of-koreshan)
 
-![](1.jpg)
+![](/img/blog/2026-02-14-crowdfunding-campaign-live/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2026-02-14-crowdfunding-campaign-live/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2026-02-14-crowdfunding-campaign-live/3.jpg)

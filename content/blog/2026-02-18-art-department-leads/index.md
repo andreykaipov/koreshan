@@ -18,8 +18,8 @@ This period piece relies on world building to bring audiences to Florida in 1908
 
 Support Last Days of Koreshan today by helping us reach our goal of $7,700 for art department. Link in Bio.
 
-![](1.jpg)
+![](/img/blog/2026-02-18-art-department-leads/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2026-02-18-art-department-leads/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2026-02-18-art-department-leads/3.jpg)

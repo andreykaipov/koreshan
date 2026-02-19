@@ -18,12 +18,12 @@ Now Casting for Last Days of Koreshan: the characters of Cyrus Teed, Emma Norton
 
 **Themes:** Mortality, Religious uncertainty, loyalty to false prophets.
 
-![](1.jpg)
+![](/img/blog/2026-02-03-now-casting/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2026-02-03-now-casting/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2026-02-03-now-casting/3.jpg)
 
-![](4.jpg)
+![](/img/blog/2026-02-03-now-casting/4.jpg)
 
-![](5.jpg)
+![](/img/blog/2026-02-03-now-casting/5.jpg)

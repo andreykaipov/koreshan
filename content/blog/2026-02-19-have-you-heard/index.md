@@ -16,7 +16,7 @@ Camera work by Tabatha Mudra.
 
 <div style="display: flex; justify-content: center;">
 <video style="max-height: 80vh; width: auto;" controls>
-    <source src="1.mp4" type="video/mp4">
+    <source src="/img/blog/2026-02-19-have-you-heard/1.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 </div>

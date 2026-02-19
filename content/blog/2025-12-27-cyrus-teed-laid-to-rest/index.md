@@ -25,14 +25,14 @@ Sister Lydia”
 
 Courtesy of @floridamemory & Florida State Archives
 
-![](1.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/3.jpg)
 
-![](4.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/4.jpg)
 
-![](5.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/5.jpg)
 
-![](6.jpg)
+![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/6.jpg)

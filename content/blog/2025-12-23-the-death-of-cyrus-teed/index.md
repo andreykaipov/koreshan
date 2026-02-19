@@ -10,8 +10,8 @@ instagram_url: "https://www.instagram.com/p/DDzaePbE6KB/"
 
 He apparently has been dead for more than 24 hours, in fact his death is stated by his friends to have occurred as 9.30 a.m. on 22nd
 
-![](1.jpg)
+![](/img/blog/2025-12-23-the-death-of-cyrus-teed/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2025-12-23-the-death-of-cyrus-teed/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2025-12-23-the-death-of-cyrus-teed/3.jpg)

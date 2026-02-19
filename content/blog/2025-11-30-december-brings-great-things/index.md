@@ -12,6 +12,6 @@ Tis the last day of November. December brings great things.
 
 “Remember me for who I was, not who I am”
 
-![](1.jpg)
+![](/img/blog/2025-11-30-december-brings-great-things/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2025-11-30-december-brings-great-things/2.jpg)

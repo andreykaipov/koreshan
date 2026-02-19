@@ -11,10 +11,10 @@ instagram_url: "https://www.instagram.com/p/DCuMGp2kWzE/"
 
 The Empress, Victoria Gratia, and I
 
-![](1.jpg)
+![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/2.jpg)
 
-![](3.jpg)
+![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/3.jpg)
 
-![](4.jpg)
+![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/4.jpg)
