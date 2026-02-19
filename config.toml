@@ -1,8 +1,11 @@
 baseURL                = "/"
-theme                  = "introduction"
+theme                  = "koresh"
 DefaultContentLanguage = "en"
 buildFuture            = true
 googleAnalytics        = "G-PYJLD53W7J"
+
+[permalinks]
+blog = "/news/:slug/"
 
 [params]
 customCSS = ["css/custom.css"]
@@ -22,7 +25,7 @@ email         = "hello@fried.works" # E-mail address for contact section
     introHeight           = "fullheight"          # Input either "medium" or "large" or "fullheight"
     heroEmblem            = "/img/angel.png"      # Image shown below the tagline on the home page
     showLatest            = true                  # Show latest blog post summary
-    showAllPosts          = false                 # Set true to list all posts on home page, or set false to link to separate blog list page
+    showAllPosts          = true                  # Set true to list all posts on home page, or set false to link to separate blog list page
     allPostsArchiveFormat = true                  # show all posts in an archive format
     localTime             = false                 # Show your current local time in contact section
     timeZone              = "America/Los_Angeles" # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -42,23 +45,23 @@ email         = "hello@fried.works" # E-mail address for contact section
     # icon is icon name without the 'fa-'
     [[params.social]]
     url       = "https://www.instagram.com/lastdaysofkoreshan/"
-    icon      = "instagram"                                    
+    icon      = "instagram"
     icon_pack = "fab"
     [[params.social]]
     url       = "https://www.youtube.com/@lfried"
-    icon      = "youtube"                                      
+    icon      = "youtube"
     icon_pack = "fab"
     [[params.social]]
     url       = "https://www.linkedin.com/in/l-fried-81510a6a"
-    icon      = "linkedin-in"                                  
+    icon      = "linkedin-in"
     icon_pack = "fab"
     [[params.social]]
     url       = "https://www.facebook.com/howyoulikeyourcoffee"
-    icon      = "facebook-f"                                   
+    icon      = "facebook-f"
     icon_pack = "fab"
     [[params.social]]
     url       = "mailto:hello@fried.works"
-    icon      = "paper-plane"                                  
+    icon      = "paper-plane"
     icon_pack = "fas"
 
 
