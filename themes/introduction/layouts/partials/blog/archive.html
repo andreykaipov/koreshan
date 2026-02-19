@@ -1,0 +1,48 @@
+<section>
+    {{ $news := where .Pages "Params.category" "news" }}
+    {{ $archives := where .Pages "Params.category" "archives" }}
+
+    {{ with $news }}
+    <h3 class="title is-4" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Communiqué</h3>
+    {{ $prevYear := "" }}
+    {{ range .ByPublishDate.Reverse }}
+    {{ $currYear := .Date.Format "2006" }}
+    <li class="post-item" style="display: flex; gap: 0;">
+        {{ if .Params.date }}
+        <span style="flex-shrink: 0; width: 3.5rem; text-align: left;">{{ if ne $currYear $prevYear }}{{ $currYear }}{{ end }}</span>
+        {{ if eq .Params.date_display "year" }}
+        <span style="flex-shrink: 0; width: 4rem;"></span>
+        {{ else }}
+        <span style="flex-shrink: 0; width: 2.5rem; text-align: left;">{{ .Date.Format "Jan" }}</span>
+        <span style="flex-shrink: 0; width: 1.5rem; text-align: right;">{{ .Date.Format "2" }}</span>
+        {{ end }}
+        <span style="flex-shrink: 0; width: 1.5rem;"></span>
+        {{ end }}
+        <span><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></span>
+    </li>
+    {{ $prevYear = $currYear }}
+    {{ end }}
+    {{ end }}
+
+    {{ with $archives }}
+    <h3 class="title is-4" style="margin-top: 2rem; margin-bottom: 0.5rem;">From the Archives</h3>
+    {{ $prevYear := "" }}
+    {{ range .ByPublishDate.Reverse }}
+    {{ $currYear := .Date.Format "2006" }}
+    <li class="post-item" style="display: flex; gap: 0;">
+        {{ if .Params.date }}
+        <span style="flex-shrink: 0; width: 3.5rem; text-align: left;">{{ if ne $currYear $prevYear }}{{ $currYear }}{{ end }}</span>
+        {{ if eq .Params.date_display "year" }}
+        <span style="flex-shrink: 0; width: 4rem;"></span>
+        {{ else }}
+        <span style="flex-shrink: 0; width: 2.5rem; text-align: left;">{{ .Date.Format "Jan" }}</span>
+        <span style="flex-shrink: 0; width: 1.5rem; text-align: right;">{{ .Date.Format "2" }}</span>
+        {{ end }}
+        <span style="flex-shrink: 0; width: 1.5rem;"></span>
+        {{ end }}
+        <span><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></span>
+    </li>
+    {{ $prevYear = $currYear }}
+    {{ end }}
+    {{ end }}
+</section>
