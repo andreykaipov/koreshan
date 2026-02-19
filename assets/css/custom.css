@@ -168,8 +168,12 @@ hr {
   border: none;
 }
 
-/* Eagle ornament above section headings */
-.section .title.is-2::before {
+/* Eagle ornament above homepage section headings only */
+#about .title.is-2::before,
+#watch .title.is-2::before,
+#team .title.is-2::before,
+#support .title.is-2::before,
+#contact .title.is-2::before {
   content: "";
   display: block;
   margin: 0 auto 1rem auto;
@@ -451,6 +455,19 @@ img {
 #team .section {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/* Style blog list page headings */
+.container > .title.is-2.top-pad {
+  padding-top: 0rem;
+  text-align: center;
+}
+
+/* Disable fade-in on inner pages (blog, news, etc.) */
+.section.fade-in,
+.container.hero.fade-in {
+  animation: none !important;
+  opacity: 1 !important;
 }
 
 /* Fade-in: slightly quicker for new visitors */
