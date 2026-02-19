@@ -1,5 +1,6 @@
 ---
 title: "Doctrines and Principles of Koreshanity (Part 1)"
+author: "L. Fried"
 category: "news"
 date: 2025-11-09T18:52:28
 tags: ["production"]

@@ -1,5 +1,6 @@
 ---
 title: "Introducing Art Department Leads"
+author: "L. Fried"
 category: "news"
 date: 2026-02-18T12:00:00
 tags: ["production"]

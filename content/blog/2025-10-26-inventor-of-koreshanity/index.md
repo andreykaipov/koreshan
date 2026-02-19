@@ -1,5 +1,6 @@
 ---
 title: "Inventor of Koreshanity, Immortal Son"
+author: "L. Fried"
 category: "archives"
 date: 1894-01-01T00:00:00
 tags: ["history"]

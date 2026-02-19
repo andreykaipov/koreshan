@@ -1,5 +1,6 @@
 ---
 title: "December Brings Great Things"
+author: "L. Fried"
 category: "archives"
 date: 1890-11-30T00:00:00
 tags: ["history"]

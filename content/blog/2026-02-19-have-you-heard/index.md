@@ -1,5 +1,6 @@
 ---
 title: "Have You Heard About the Koreshans?"
+author: "L. Fried"
 category: "news"
 date: 2026-02-19T12:00:00
 tags: ["production"]

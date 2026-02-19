@@ -1,5 +1,6 @@
 ---
 title: "Cyrus Teed Laid to Rest"
+author: "L. Fried"
 category: "archives"
 date: 1908-12-27T00:00:00
 tags: ["history"]

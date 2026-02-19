@@ -1,5 +1,6 @@
 ---
 title: "An Afternoon in Estero"
+author: "L. Fried"
 category: "news"
 date: 2025-12-21T22:04:22
 tags: ["production"]
@@ -9,6 +10,6 @@ instagram_url: "https://www.instagram.com/p/DDuJgn4kccX/"
 
 What a lovely afternoon in Estero.
 
-![](1.jpg)
+![](/img/blog/2025-12-21-an-afternoon-in-estero/1.jpg)
 
-![](2.jpg)
+![](/img/blog/2025-12-21-an-afternoon-in-estero/2.jpg)

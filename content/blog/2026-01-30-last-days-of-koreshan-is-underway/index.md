@@ -1,5 +1,6 @@
 ---
 title: "Last Days of Koreshan is underway!"
+author: "L. Fried"
 category: "news"
 date: 2026-01-30T12:00:00
 tags: ["production"]

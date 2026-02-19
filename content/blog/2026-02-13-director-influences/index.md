@@ -1,5 +1,6 @@
 ---
 title: "Director Influences Behind Last Days of Koreshan"
+author: "L. Fried"
 category: "news"
 date: 2026-02-13T12:00:00
 tags: ["production"]

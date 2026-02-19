@@ -1,5 +1,6 @@
 ---
 title: "Crowdfunding Campaign is Live!"
+author: "L. Fried"
 category: "news"
 date: 2026-02-14T12:00:00
 tags: ["crowdfunding"]

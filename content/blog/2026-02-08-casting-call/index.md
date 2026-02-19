@@ -1,5 +1,6 @@
 ---
 title: "Casting Call: South Florida Actors Wanted"
+author: "L. Fried"
 category: "news"
 date: 2026-02-08T12:00:00
 tags: ["casting"]

@@ -72,13 +72,31 @@ collections:
     label: "News"
     label_singular: "Post"
     folder: "content/blog"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     create: true
     slug: "{{slug}}"
+    media_folder: "/static/img/blog/{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "L. Fried" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["news", "archives"]
+        default: "news"
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Series", name: "series", widget: "list", required: false }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["history", "production", "casting", "crowdfunding"]
+        required: false
+      - { label: "Instagram URL", name: "instagram_url", widget: "string", required: false, hint: "Link to the original Instagram post" }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image", choose_url: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   # ─── Team members ───

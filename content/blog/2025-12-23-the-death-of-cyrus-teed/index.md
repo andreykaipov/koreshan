@@ -1,5 +1,6 @@
 ---
 title: "The Death of Cyrus Teed"
+author: "L. Fried"
 category: "archives"
 date: 1908-12-22T09:30:00
 tags: ["history"]

@@ -1,5 +1,6 @@
 ---
 title: "Now Casting for Last Days of Koreshan"
+author: "L. Fried"
 category: "news"
 date: 2026-02-03T12:00:00
 tags: ["casting"]

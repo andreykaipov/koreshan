@@ -1,5 +1,6 @@
 ---
 title: "Seed&Spark Campaign Announcement"
+author: "L. Fried"
 category: "news"
 date: 2026-02-01T12:00:00
 tags: ["crowdfunding"]

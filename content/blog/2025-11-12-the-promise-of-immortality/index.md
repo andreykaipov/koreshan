@@ -1,5 +1,6 @@
 ---
 title: "The Promise of Immortality (Part 2)"
+author: "L. Fried"
 category: "news"
 date: 2025-11-12T17:51:34
 tags: ["production"]
