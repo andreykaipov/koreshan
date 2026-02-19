@@ -9,18 +9,11 @@
     <h2 class="title is-1 top-pad strong-post-title">
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </h2>
-    {{ if .Params.author }}
-    <h4 class="title is-4">
-        {{ $data := .Params.author }}
-        By&nbsp;{{- range first 1 $data -}}
-            {{ . | markdownify }}
-        {{- end -}}
-        {{- range after 1 $data -}}
-            ,&nbsp;{{ . | markdownify }}
-        {{- end -}}
-    </h4>
-    {{ end }}
     <div class="post-data">
+        {{ with .Params.author }}
+        By {{ . }}
+        {{ if $.Params.date }} | {{ end }}
+        {{ end }}
         {{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}{{ end }}
         {{ if .Site.Params.showReadingTime | default true }}
         {{ if .Params.date }} | {{ end }}
@@ -64,7 +57,7 @@
     <div class="post-data">
         {{ $taxonomy_term | title }}:
         {{ range $key, $value := $taxonomy }}
-        <a href="{{ (printf "/%s/" $taxonomy_term) | relLangURL }}{{ . | urlize }}">
+        <a href="{{ (printf " /%s/" $taxonomy_term) | relLangURL }}{{ . | urlize }}">
             {{ $value }}</a>{{ if ne (add $key 1) $len }},{{ end }}
         {{ end }}
     </div>
@@ -74,6 +67,13 @@
 <!-- Begin blog post content -->
 <div class="container markdown top-pad">
     {{ .Content }}
+    {{ with .Params.images }}
+    <div class="post-images">
+        {{ range . }}
+        <img src="{{ . }}" alt="" style="max-width:100%; border-radius:5px; margin-bottom:1em;">
+        {{ end }}
+    </div>
+    {{ end }}
 </div>
 <!-- End blog post content -->
 {{ with .Site.GetPage "/blog" }}
