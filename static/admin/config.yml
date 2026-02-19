@@ -75,8 +75,8 @@ collections:
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     create: true
     slug: "{{slug}}"
-    media_folder: "/static/img/blog/{{slug}}"
-    public_folder: "/img/blog/{{slug}}"
+    media_folder: "/static/img/blog/{{year}}-{{month}}-{{day}}-{{slug}}"
+    public_folder: "/img/blog/{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "L. Fried" }
@@ -95,9 +95,10 @@ collections:
       - { label: "Instagram URL", name: "instagram_url", widget: "string", required: false, hint: "Link to the original Instagram post" }
       - label: "Images"
         name: "images"
-        widget: "list"
-        required: false
-        field: { label: "Image", name: "image", widget: "image", choose_url: false }
+        hint: "Upload images here, and reference them in the body, no need to select them afterwards."
+        widget: "image"
+        choose_url: false
+        multiple: true
       - { label: "Body", name: "body", widget: "markdown" }
 
   # ─── Team members ───
