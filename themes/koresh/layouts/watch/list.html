@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container markdown top-pad">
+    {{ .Content }}
+</div>
+<div class="container">
+    {{ $now := now }}
+    {{ $upcoming := slice }}
+    {{ $past := slice }}
+    {{ range .Pages }}
+      {{ if ge (time .Params.date) $now }}
+        {{ $upcoming = $upcoming | append . }}
+      {{ else }}
+        {{ $past = $past | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ with $upcoming }}
+    <h3 class="title is-4 has-text-centered" style="margin-top: 1.5rem;">Upcoming</h3>
+    <div class="columns is-multiline is-centered">
+        {{ range sort . "Params.date" }}
+        <div class="column is-one-third">
+            <div class="card watch-card{{ with .Params.tickets }} watch-clickable{{ end }}"{{ with .Params.tickets }} onclick="window.open('{{ . }}', '_blank')" title="Get Tickets"{{ end }}>
+                <div class="card-content has-text-centered top-pad">
+                    <h1 class="team-name">{{ .Title | markdownify }}</h1>
+                    {{ with .Params.date }}
+                    <p class="fa-xs" style="margin-top: 0.5rem;">
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ time.Format "January 2, 2006" . }}
+                    </p>
+                    {{ end }}
+                    {{ with .Params.location }}
+                    <p class="fa-xs" style="margin-top: 0.3rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{ . }}
+                    </p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $past }}
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Past Events</h3>
+    <div class="columns is-multiline is-centered">
+        {{ range sort . "Params.date" "desc" }}
+        <div class="column is-one-third">
+            <div class="card watch-card watch-past">
+                <div class="card-content has-text-centered top-pad">
+                    <h1 class="team-name">{{ .Title | markdownify }}</h1>
+                    {{ with .Params.date }}
+                    <p class="fa-xs" style="margin-top: 0.5rem;">
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ time.Format "January 2, 2006" . }}
+                    </p>
+                    {{ end }}
+                    {{ with .Params.location }}
+                    <p class="fa-xs" style="margin-top: 0.3rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{ . }}
+                    </p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

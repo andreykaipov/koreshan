@@ -1,0 +1,24 @@
+{{ define "title" }}
+    <h1 class="bold-title">Page Not Found</h1>
+{{ end }}
+
+{{ define "main" }}
+    <div class="container has-text-centered top-pad" style="padding-bottom: 4rem;">
+        <div class="markdown" style="max-width: 36rem; margin: 0 auto;">
+            <p style="font-size: 6rem; margin-bottom: 0;">404</p>
+            <p style="font-size: 1.4rem; margin-bottom: 2rem;">
+                The prophecy was wrong.<br>
+                Perhaps Koresh took this page with him.
+            </p>
+            <p>
+                <a href="/" class="button" style="margin-top: 1rem;">
+                    Return to the Unity
+                </a>
+            </p>
+        </div>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+    {{ partial "footer/text.html" . }}
+{{ end }}
