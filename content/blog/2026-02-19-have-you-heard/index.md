@@ -14,9 +14,5 @@ Based on a true story, this short explores how utopian idealism can crumble when
 
 Camera work by Tabatha Mudra.
 
-<div style="display: flex; justify-content: center;">
-<video style="max-height: 80vh; width: auto;" controls>
-    <source src="/img/blog/2026-02-19-have-you-heard/1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-</div>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DU63pYpDKeI/" style="max-width:540px; width:100%; margin:auto;"></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
