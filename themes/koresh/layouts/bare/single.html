@@ -12,7 +12,6 @@
 <body>
     <section id="top" class="section">
         <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
-            {{ partial "nav.html" . }}
 
             <div class="container markdown top-pad">
                 {{ .Content }}

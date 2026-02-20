@@ -410,9 +410,9 @@ $(document).ready(function () {
     if (Math.random() > 0.5) return; // 30% chance
     var flash = document.createElement('div');
     flash.className = 'arg-flash';
-    flash.textContent = ['WE LIVE INSIDE', 'THE SEVENTH TRUTH', 'VICTORIA', 'KORESH'][Math.floor(Math.random() * 4)];
+    flash.textContent = ['HOLLOW', 'SEVEN', 'VICTORIA', 'KORESH'][Math.floor(Math.random() * 4)];
     document.body.appendChild(flash);
-    setTimeout(function () { flash.remove(); }, 150);
+    setTimeout(function () { flash.remove(); }, 400);
   });
 })();
 

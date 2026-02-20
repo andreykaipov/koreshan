@@ -913,7 +913,7 @@ img {
   opacity: 0.15;
   pointer-events: none;
   z-index: 9998;
-  animation: arg-flash-pop 0.15s ease-out forwards;
+  animation: arg-flash-pop 0.4s ease-out forwards;
 }
 
 @keyframes arg-flash-pop {
