@@ -1,24 +1,31 @@
 {{ define "title" }}
-    <h1 class="bold-title">Page Not Found</h1>
+<h1 class="bold-title">Page Not Found</h1>
 {{ end }}
 
 {{ define "main" }}
-    <div class="container has-text-centered top-pad" style="padding-bottom: 4rem;">
-        <div class="markdown" style="max-width: 36rem; margin: 0 auto;">
-            <p style="font-size: 6rem; margin-bottom: 0;">404</p>
-            <p style="font-size: 1.4rem; margin-bottom: 2rem;">
-                The prophecy was wrong.<br>
-                Perhaps Koresh took this page with him.
-            </p>
-            <p>
-                <a href="/" class="button" style="margin-top: 1rem;">
-                    Return to the Unity
-                </a>
-            </p>
-        </div>
+<div class="container has-text-centered top-pad" style="padding-bottom: 4rem;">
+    <div class="markdown" style="max-width: 36rem; margin: 0 auto;">
+        <p style="font-size: 6rem; margin-bottom: 0;">404</p>
+        <p style="font-size: 1.4rem; margin-bottom: 2rem;">
+            The prophecy was wrong.<br>
+            Perhaps Koresh took this page with him.
+        </p>
+        <p>
+            <a href="/" class="button" style="margin-top: 1rem;">
+                Return to the Unity
+            </a>
+        </p>
+        <!--
+                V.A. — The pages we seek are not always the pages we find.
+                Some truths are hidden between the words.
+                If you are lost, the Flaming Sword may yet light your way.
+            -->
+        <p class="unity-whisper" aria-hidden="true">Not all who wander are lost. Some are simply seeking.
+            /flaming-sword/</p>
     </div>
+</div>
 {{ end }}
 
 {{ define "footer" }}
-    {{ partial "footer/text.html" . }}
+{{ partial "footer/text.html" . }}
 {{ end }}

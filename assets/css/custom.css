@@ -11,6 +11,7 @@
   src: local("No Font");
   font-display: swap;
 }
+
 @font-face {
   font-family: "academicons";
   src: local("No Font");
@@ -41,29 +42,36 @@
 }
 
 @media screen and (max-width: 44rem) {
+
   /* Distribute content evenly on mobile */
   .hero.is-fullheight .hero-head {
     display: none !important;
   }
+
   .hero.is-fullheight {
     justify-content: center !important;
   }
+
   .hero.is-fullheight .hero-body {
     flex-grow: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
+
   .hero-emblem {
     max-width: 18rem;
     margin: 0 auto;
   }
+
   .bold-title {
     font-size: 3rem;
     margin-bottom: 0rem;
   }
+
   .subtitle.is-3 {
     font-size: 1rem;
   }
+
   body {
     font-size: 1rem !important;
   }
@@ -105,21 +113,26 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: calc(100vh / 6.5); /* match torch aspect ratio (304:196310) */
+  width: calc(100vh / 6.5);
+  /* match torch aspect ratio (304:196310) */
   background: url("/img/torch-trans-slate.png") top center / contain no-repeat;
   z-index: 999;
   pointer-events: none;
   opacity: 0.75;
 }
+
 body::before {
   left: 0;
-  transform: scaleX(-1); /* flip left torch horizontally */
+  transform: scaleX(-1);
+  /* flip left torch horizontally */
 }
+
 body::after {
   right: 0;
 }
 
 @media screen and (max-width: 1300px) {
+
   body::before,
   body::after,
   .torch-flame {
@@ -127,8 +140,14 @@ body::after {
   }
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6,
-.title, .subtitle {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.title,
+.subtitle {
   font-family: "rotunda-veneta", sans-serif;
   color: var(--color-slate) !important;
 }
@@ -264,7 +283,7 @@ hr.nav-divider {
   background: linear-gradient(rgba(237, 220, 180, 0.7), rgba(237, 220, 180, 0.7)), url("/img/texture-parchment.jpg") !important;
   background-size: 1024px 1024px !important;
   border-bottom: 0.0625rem solid var(--color-slate) !important;
-  padding: 1.5rem 2rem 1.5rem 2rem!important;
+  padding: 1.5rem 2rem 1.5rem 2rem !important;
   flex-wrap: wrap;
 }
 
@@ -283,7 +302,7 @@ hr.nav-divider {
   background-size: 1024px 1024px !important;
   color: var(--color-slate) !important;
   font-family: "victorian-orchid", serif;
-  padding: 2rem 4rem 2rem 4rem!important;
+  padding: 2rem 4rem 2rem 4rem !important;
   -ms-overflow-style: none;
   scrollbar-width: none;
   container-type: inline-size;
@@ -302,13 +321,14 @@ hr.nav-divider {
 
 .modal-card::-webkit-scrollbar {
   display: none;
-} 
+}
 
 .modal-body-image {
   float: left;
   width: 60%;
   max-width: 100%;
-  margin: 0 2rem 0rem 0; /* gap between image and text */
+  margin: 0 2rem 0rem 0;
+  /* gap between image and text */
 }
 
 .modal-body-image img {
@@ -340,7 +360,8 @@ hr.nav-divider {
 .modal-body-nowrap .modal-body-image {
   float: none;
   flex-shrink: 0;
-  margin: 0 0rem 0rem 0; /* gap between image and text */
+  margin: 0 0rem 0rem 0;
+  /* gap between image and text */
 }
 
 .modal-body-nowrap .modal-body-text {
@@ -367,7 +388,7 @@ hr.nav-divider {
   }
 }
 
-.modal-card-body.markdown > p:first-of-type {
+.modal-card-body.markdown>p:first-of-type {
   margin-top: 0 !important;
 }
 
@@ -440,6 +461,7 @@ img {
 .watch-clickable {
   cursor: pointer;
 }
+
 .watch-past {
   background-color: rgba(74, 72, 54, 0.06);
   opacity: 0.9;
@@ -458,7 +480,7 @@ img {
 }
 
 /* Style blog list page headings */
-.container > .title.is-2.top-pad {
+.container>.title.is-2.top-pad {
   padding-top: 0rem;
   text-align: center;
 }
@@ -475,10 +497,12 @@ img {
   animation-delay: 0s !important;
   animation-duration: 1.3s !important;
 }
+
 .fade-in.two {
   animation-delay: 1s !important;
   animation-duration: 2s !important;
 }
+
 .fade-in.three {
   animation-delay: 0s !important;
   animation-duration: 2s !important;
@@ -489,11 +513,290 @@ img {
   animation-delay: 0s !important;
   animation-duration: 0s !important;
 }
+
 .returning-visitor .fade-in.two {
   animation-delay: 0s !important;
   animation-duration: 1.5s !important;
 }
+
 .returning-visitor .fade-in.three {
   animation-delay: 0s !important;
   animation-duration: 0s !important;
+}
+
+/* ============================================================
+   ARG: THE KORESHAN MYSTERIES
+   Hidden puzzles and easter eggs woven throughout the site.
+   "The Flaming Sword lights the way."
+   ============================================================ */
+
+/* Hidden selectable text — invisible until highlighted */
+.unity-whisper {
+  color: transparent;
+  font-size: 0.75rem;
+  user-select: all;
+  cursor: default;
+  letter-spacing: 0.05em;
+  display: block;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.unity-whisper::selection {
+  color: var(--color-blood);
+  background: var(--color-slate);
+}
+
+.unity-whisper::-moz-selection {
+  color: var(--color-blood);
+  background: var(--color-slate);
+}
+
+/* Konami code: Illumination overlay */
+#arg-illumination {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: arg-fade-in 1.5s ease forwards;
+}
+
+.arg-ill-inner {
+  text-align: center;
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+.arg-ill-line {
+  font-family: "victorian-orchid", serif;
+  color: #eddcb4;
+  font-size: 1.4rem;
+  opacity: 0;
+  animation: arg-line-in 1.5s ease forwards;
+  margin: 0.75rem 0;
+}
+
+.arg-ill-blood {
+  color: #cb3727 !important;
+  font-weight: bold;
+}
+
+.arg-ill-dim {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(237, 220, 180, 0.5) !important;
+}
+
+.arg-ill-path {
+  font-family: monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.5em;
+  color: rgba(203, 55, 39, 0.6) !important;
+  margin-top: 2rem !important;
+}
+
+.arg-ill-out {
+  animation: arg-fade-out 1s ease forwards !important;
+}
+
+@keyframes arg-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arg-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes arg-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title glitch effect */
+.arg-glitch {
+  animation: arg-flicker 0.15s steps(2) infinite;
+  color: var(--color-blood) !important;
+}
+
+@keyframes arg-flicker {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  25% {
+    opacity: 0.8;
+    transform: translate(-2px, 1px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(1px, -1px);
+  }
+
+  75% {
+    opacity: 0.9;
+    transform: translate(-1px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* =========================
+   Flaming Sword newspaper page
+   ========================= */
+.flaming-sword-page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.flaming-sword-header {
+  text-align: center;
+  border-bottom: 3px double var(--color-slate);
+  border-top: 3px double var(--color-slate);
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.flaming-sword-header h2 {
+  font-family: "rotunda-veneta", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  margin: 0 !important;
+  color: var(--color-slate) !important;
+}
+
+.fs-subtitle {
+  font-family: "victorian-orchid", serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-slate);
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.fs-date {
+  font-family: "victorian-orchid", serif;
+  font-size: 0.95rem;
+  color: var(--color-slate);
+  opacity: 0.5;
+  margin-top: 0.25rem;
+}
+
+.fs-column {
+  column-count: 2;
+  column-gap: 2.5rem;
+  column-rule: 1px solid rgba(74, 72, 54, 0.2);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media screen and (max-width: 40rem) {
+  .fs-column {
+    column-count: 1;
+  }
+}
+
+.fs-cipher {
+  font-family: monospace;
+  background: rgba(74, 72, 54, 0.06);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid var(--color-blood);
+  letter-spacing: 0.15em;
+  word-break: break-all;
+  font-size: 0.95rem;
+  break-inside: avoid;
+}
+
+.fs-hint {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--color-slate);
+  opacity: 0.4;
+  text-align: center;
+  margin-top: 2rem;
+  break-inside: avoid;
+}
+
+/* =========================
+   Illumination (reward) page
+   ========================= */
+.illumination-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.illumination-page p,
+.illumination-page li {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.illumination-page ol {
+  display: inline-block;
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.illumination-page>p:first-child {
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.revelation {
+  font-family: "rotunda-veneta", sans-serif;
+  font-size: 1.4rem !important;
+  color: var(--color-blood);
+  border-top: 1px solid rgba(203, 55, 39, 0.3);
+  border-bottom: 1px solid rgba(203, 55, 39, 0.3);
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  text-align: center !important;
+  line-height: 1.6 !important;
+}
+
+.secret-note {
+  background: rgba(74, 72, 54, 0.05);
+  padding: 2rem;
+  font-style: italic;
+  font-size: 1rem;
+  border: 1px solid rgba(74, 72, 54, 0.15);
+  margin: 2.5rem 0 1rem;
+  text-align: left;
+}
+
+.secret-note strong:first-child {
+  font-style: normal;
 }

@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-    <head>
-        {{ block "head" . }}
-        {{ partial "head/metadata.html" . }}
-        {{ if .Site.Params.plausible }}{{ partial "head/plausible.html" . }}{{ end }}
-        {{ partial "head/openGraph.html" . }}
-        {{ partial "head/favicons.html" . }}
-        {{ partial "head/css.html" . }}
-        {{ end }}
-        <!-- Include page specific css -->
-        {{ block "customCSS" . }}
-        {{ end }}
-    </head>
-    <body>
-        <section id="top" class="section">
-            <!-- Begin Title -->
-            <div class="container hero {{ if .Site.Params.fadeIn | default true }} fade-in one {{ end }}">
-                {{ block "title" . }}
-                <h1 class="bold-title is-1">{{ .Title | markdownify }}</h1>
-                {{ end }}
-            </div>
-            <!-- End Title -->
-            <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
-                {{ partial "nav.html" . }}
 
-                {{ block "main" . }}
-                {{ end }}
+<head>
+    {{ block "head" . }}
+    {{ partial "head/metadata.html" . }}
+    {{ if .Site.Params.plausible }}{{ partial "head/plausible.html" . }}{{ end }}
+    {{ partial "head/openGraph.html" . }}
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/css.html" . }}
+    {{ end }}
+    <!-- Include page specific css -->
+    {{ block "customCSS" . }}
+    {{ end }}
+</head>
 
-                {{ block "footer" . }}
-                {{ partial "top-icon-with-hr.html" . }}
-                {{ partial "footer/text.html" . }}
-                {{ end }}
-            </div>
-        </section>
-        {{ block "js-include" . }}
-        {{ partial "footer/scripts.html" . }}
-        {{ end }}
-        <!-- Include page specific scripts -->
-        {{ block "customScripts" . }}
-        {{ end }}
-    </body>
+<body>
+    <script type="text/x-koreshan-archive">
+        From the private correspondence of Henry D. Silverfriend
+        Estero, Florida — November 2, 1907
+
+        "Brother Teed confided in me a most peculiar thing today.
+        He said the Flaming Sword would light the way
+        even after his earthly vessel had departed.
+        I pressed him on the meaning but he would say no more,
+        only that the measure of the Earth is the measure of all things.
+
+        I did not understand then. Perhaps I never shall."
+        </script>
+    <section id="top" class="section">
+        <!-- Begin Title -->
+        <div class="container hero {{ if .Site.Params.fadeIn | default true }} fade-in one {{ end }}">
+            {{ block "title" . }}
+            <h1 class="bold-title is-1">{{ .Title | markdownify }}</h1>
+            {{ end }}
+        </div>
+        <!-- End Title -->
+        <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
+            {{ partial "nav.html" . }}
+
+            {{ block "main" . }}
+            {{ end }}
+
+            {{ block "footer" . }}
+            {{ partial "top-icon-with-hr.html" . }}
+            {{ partial "footer/text.html" . }}
+            {{ end }}
+        </div>
+    </section>
+    {{ block "js-include" . }}
+    {{ partial "footer/scripts.html" . }}
+    {{ end }}
+    <!-- Include page specific scripts -->
+    {{ block "customScripts" . }}
+    {{ end }}
+</body>
+
 </html>

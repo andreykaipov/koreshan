@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ partial "head/metadata.html" . }}
+    {{ if .Site.Params.plausible }}{{ partial "head/plausible.html" . }}{{ end }}
+    {{ partial "head/openGraph.html" . }}
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/css.html" . }}
+</head>
+
+<body>
+    <section id="top" class="section">
+        <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
+            {{ partial "nav.html" . }}
+
+            <div class="container markdown top-pad">
+                {{ .Content }}
+            </div>
+
+            {{ partial "top-icon-with-hr.html" . }}
+            {{ partial "footer/text.html" . }}
+        </div>
+    </section>
+    {{ partial "footer/scripts.html" . }}
+</body>
+
+</html>

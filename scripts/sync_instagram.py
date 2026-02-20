@@ -31,7 +31,7 @@ import instaloader
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-LOOKBACK_DAYS = 7  # Only check posts from the last N days
+LOOKBACK_DAYS = 3  # Only check posts from the last N days
 MAX_VIDEO_SIZE_MB = 20  # Compress videos to stay under Cloudflare's 25MB limit
 INSTAGRAM_ACCOUNTS = [
     {
