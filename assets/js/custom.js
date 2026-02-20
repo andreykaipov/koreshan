@@ -315,7 +315,7 @@ $(document).ready(function () {
 (function () {
   if (!$('.hero-emblem').length) return; // homepage only
   var vigilTimer, vigilActive = false;
-  var idleTime = 150 * 1000; // 150s
+  var idleTime = 180 * 1000; // 180s
 
   function resetVigil() {
     clearTimeout(vigilTimer);
