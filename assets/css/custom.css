@@ -514,6 +514,7 @@ img {
   opacity: 1 !important;
 }
 
+
 /* Fade-in: slightly quicker for new visitors */
 .fade-in.one {
   animation-delay: 0s !important;
