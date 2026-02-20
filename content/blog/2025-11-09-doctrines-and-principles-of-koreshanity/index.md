@@ -5,7 +5,7 @@ category: "news"
 date: 2025-11-09T18:52:28
 tags: ["production"]
 slug: "doctrines-and-principles-of-koreshanity"
-instagram_url: "https://www.instagram.com/p/DCFy7FPk80s/"
+instagram_url: "https://www.instagram.com/p/DQ2tX3MjP5y/"
 ---
 
 A General Summary of the Doctrines and Principles of the Religio-Science

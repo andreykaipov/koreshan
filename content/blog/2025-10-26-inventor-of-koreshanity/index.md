@@ -6,7 +6,7 @@ date: 1894-01-01T00:00:00
 tags: ["history"]
 date_display: "year"
 slug: "inventor-of-koreshanity"
-instagram_url: "https://www.instagram.com/p/DCqzMfNkr0Z/"
+instagram_url: "https://www.instagram.com/p/DQSvfTFDDKV/"
 ---
 
 Inventor of Koreshanity, Immortal Son. 

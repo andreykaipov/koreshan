@@ -5,7 +5,7 @@ category: "archives"
 date: 1908-12-22T09:30:00
 tags: ["history"]
 slug: "the-death-of-cyrus-teed"
-instagram_url: "https://www.instagram.com/p/DDzaePbE6KB/"
+instagram_url: "https://www.instagram.com/p/DSny9beEjhk/"
 ---
 
 He apparently has been dead for more than 24 hours, in fact his death is stated by his friends to have occurred as 9.30 a.m. on 22nd

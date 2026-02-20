@@ -5,7 +5,7 @@ category: "archives"
 date: 1908-12-27T00:00:00
 tags: ["history"]
 slug: "cyrus-teed-laid-to-rest"
-instagram_url: "https://www.instagram.com/p/DD8rKiIEyTi/"
+instagram_url: "https://www.instagram.com/p/DSxm5pQkWH-/"
 ---
 
 Cyrus Teed was laid to rest today, December 27, 1908
