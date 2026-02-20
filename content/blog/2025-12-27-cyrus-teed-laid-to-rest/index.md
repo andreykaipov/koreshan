@@ -8,6 +8,8 @@ slug: "cyrus-teed-laid-to-rest"
 instagram_url: "https://www.instagram.com/p/DSxm5pQkWH-/"
 ---
 
+<p class="arg-hero-whisper">Anastasia's testament was sealed in the wall. The hurricane took the stone. It did not take the words. /flaming-sword/</p>
+
 Cyrus Teed was laid to rest today, December 27, 1908
 
 “In compliance with the law, and only for such reason, the body of Cyrus R. Teed i placed in this stone vault. 
@@ -24,8 +26,6 @@ Sister Lydia”
 (L to R: Virginia Andrews, Christine Hamilton, Esther Stotler (standing), Evelyn Bubbett (seated), K.U. president James H. Bubbett, Elizabeth Robinson, Etta Silverfriend, George W. Hunt, Bertha Boomer.) 
 
 Courtesy of @floridamemory & Florida State Archives
-
-<p class="arg-hero-whisper">Anastasia's testament was sealed in the wall. The hurricane took the stone. It did not take the words. /flaming-sword/</p>
 
 ![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/1.jpg)
 
