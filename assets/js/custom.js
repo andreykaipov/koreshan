@@ -10,64 +10,19 @@ if (visitCount > 1) {
 
 // Random tagline
 $(document).ready(function () {
-  // Tier 1: On-brand, shown from the start
-  var seriousTags = [
-    "We live inside!",
-    "Come and be healed!",
-    "Victoria is coming.",
-    "Emma kept the faith.",
-    "Salvation is upon us.",
-    "Cosmogeny is the truth.",
-    "A New Jerusalem awaits.",
-    "The stars are beneath us.",
-    "I am Koresh, the shepherd.",
-    "Immortality through unity.",
-    "We are the Victoria Gratia.",
-    "The body awaits in the tub.",
-    "The sun is inside the Earth.",
-    "Sister Emma tends the vigil.",
-    "The transfer has been foretold.",
-    "Have you accepted Koresh as your leader?",
-    "Gender equality, socialism, and a hollow Earth.",
-  ];
-
-  // Tier 2: Meta jokes, unlocked after seeing enough core taglines
-  var funnyTags = [
-    // waiting
-    "Resurrection to be determined.",
-    "Darn, straight to voicemail...",
-    "Invites will be sent out shortly.",
-    "Have faith. OP will surely deliver.",
-    // tub
-    "Scrub-a-dub-dub, I love my tub.",
-    "The tub is ready. Are you to ready to bathe me?",
-    "How long do you think a body lasts in a zinc tub?",
-    "He's not dead. We're transferring your call right now.",
-    // florida
-    "Celibate, socialist, Floridian.",
-    "The most Florida thing to ever happen.",
-    "Florida Man starts cult. Here's Tom with the weather.",
-    // 8 ball esque
-    "Try asking again later.",
-    "Refresh for another prophecy.",
-    "This prophecy is still loading...",
-    // lame jokes but not that lame
-    "Hollow World!",
-    "Join us. We have electricity.",
-    "Communists with a corporation.",
-    "Apply within. Celibacy required.",
-    "No marriage. No money. No problem.",
-    "Free real estate in Estero, Florida.",
-    "They were right about gender equality, at least.",
-    // even lamer jokes
-    "Hollow Earth? I hardly know her!",
-    "I'm somewhat of a prophet myself.",
-    "I like my Earth concave; not convex.",
-    "The Earth is hollow but our promises aren't.",
-    "I joined a cult and all I got was this lousy tagline.",
-  ];
-
-  var funnyThreshold = 3; // unlock funny tags after 3rd visit
+  // Taglines are injected by Hugo from data/taglines.json via window.siteTaglines
+  var taglineData = window.siteTaglines || {};
+  function splitLines(s) {
+    return (s || '').split('\n').map(function (l) { return l.trim(); }).filter(Boolean);
+  }
+  var seriousTags = Array.isArray(taglineData.serious)
+    ? taglineData.serious
+    : splitLines(taglineData.serious);
+  if (!seriousTags.length) seriousTags = ["Gender equality, socialism, and a hollow Earth."];
+  var funnyTags = Array.isArray(taglineData.funny)
+    ? taglineData.funny
+    : splitLines(taglineData.funny);
+  var funnyThreshold = taglineData.funnyThreshold || 3;
 
   var seriousRecentKey = 'recentSerious';
   var funnyRecentKey = 'recentFunny';

@@ -138,6 +138,9 @@
         </div>
 
         <!-- End of fade in three section -->
+        {{ with $.Site.Data.taglines }}
+        <script>window.siteTaglines = {{ . | jsonify | safeJS }};</script>
+        {{ end }}
         {{ partial "footer/scripts.html" . }}
         {{ partial "js/owlCarousel.html" . }}
 

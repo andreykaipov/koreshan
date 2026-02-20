@@ -25,6 +25,24 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
 
+      - name: "taglines"
+        label: "Rotating Taglines"
+        file: "data/taglines.yaml"
+        format: "yaml"
+        fields:
+          - label: "Funny Threshold"
+            name: "funnyThreshold"
+            widget: "number"
+            hint: "Number of visits before funny taglines start appearing"
+          - label: "Serious Taglines"
+            name: "serious"
+            widget: "text"
+            hint: "On-brand taglines shown from the start. One per line."
+          - label: "Funny Taglines"
+            name: "funny"
+            widget: "text"
+            hint: "Meta jokes, unlocked after the visitor threshold. One per line."
+
       - name: "about"
         label: "About"
         file: "content/home/about.md"
