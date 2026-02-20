@@ -6,7 +6,7 @@
 <div class="container has-text-centered top-pad" style="padding-bottom: 4rem;">
     <div class="markdown" style="max-width: 36rem; margin: 0 auto;">
         <p style="font-size: 6rem; margin-bottom: 0;">404</p>
-        <p style="font-size: 1.4rem; margin-bottom: 2rem;">
+        <p id="arg-404-message" style="font-size: 1.4rem; margin-bottom: 2rem;">
             The prophecy was wrong.<br>
             Perhaps Koresh took this page with him.
         </p>
@@ -24,6 +24,25 @@
             /flaming-sword/</p>
     </div>
 </div>
+<script>
+    (function () {
+        var path = window.location.pathname.toLowerCase().replace(/[\/\-]/g, '');
+        var messages = {
+            'newjerusalem': 'The New Jerusalem was never built.<br>But you are looking in the right place.',
+            'bethophra': 'Beth-Ophra &mdash; the House of the Rising Sun.<br>It burned long ago. Only the name remains.',
+            'rectilineator': 'The Rectilineator measured eight inches to the mile.<br>It measures other things too. Open your console.',
+            'cellularcosmogony': 'The universe is a cell. You are inside it.<br>So is everything else.',
+            'victoriagratia': 'She was supposed to arrive.<br>Some say she still hasn&rsquo;t left.',
+            'seventhtruth': 'You are close.<br>The Planetary Court kept records.',
+            'jointheunity': 'Membership requires celibacy, communal property, and faith in the hollow Earth.<br>Are you prepared?',
+            'guidingstar': 'The Guiding Star was the first Koreshan publication, December 1886.<br>It guided many. It misled more.',
+        };
+        var el = document.getElementById('arg-404-message');
+        if (el && messages[path]) {
+            el.innerHTML = messages[path];
+        }
+    })();
+</script>
 {{ end }}
 
 {{ define "footer" }}

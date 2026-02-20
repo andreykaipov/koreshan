@@ -25,6 +25,8 @@ Sister Lydia”
 
 Courtesy of @floridamemory & Florida State Archives
 
+<p class="arg-hero-whisper">Anastasia's testament was sealed in the wall. The hurricane took the stone. It did not take the words. /flaming-sword/</p>
+
 ![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/1.jpg)
 
 ![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/2.jpg)

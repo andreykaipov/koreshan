@@ -110,4 +110,4 @@ defaultMarkdownHandler = "goldmark"
     title        = "Last Days of Koreshan"
         [languages.en.params]
         description = "A historical drama short film based on a true story of a Turn of the Century South Florida cult waiting for the resurrection of their leader."
-        footerText  = "[Subscribe to our newsletter →](http://eepurl.com/jpmjF-/)"
+        footerText  = "[Subscribe to our newsletter →](http://eepurl.com/jpmjF-/) · [⚔](/flaming-sword/ \"The Flaming Sword lights the way\")"

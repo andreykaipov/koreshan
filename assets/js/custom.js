@@ -73,11 +73,15 @@ $(document).ready(function () {
   $('#tagline').text(pickTagline());
 
   // Auto-cycle every 6 seconds
-  setInterval(function () {
+  var taglineCycler = setInterval(function () {
     $('#tagline').fadeOut(400, function () {
       $(this).text(pickTagline()).fadeIn(400);
     });
   }, 6000);
+
+  // Expose cycler control for ARG events
+  window._taglineCycler = taglineCycler;
+  window._pickTagline = pickTagline;
 });
 
 // Close modal on Escape key
@@ -102,9 +106,9 @@ $('.modal-background').click(function () {
 
 // --- Console Messages ---
 (function () {
-  var sh = 'font-size:20px;font-weight:bold;color:#cb3727;font-family:serif;text-shadow:1px 1px 2px rgba(0,0,0,.3)';
-  var sb = 'font-size:13px;color:#4a4836;font-style:italic;line-height:1.8';
-  var st = 'font-size:11px;color:#a02c1f;font-family:monospace';
+  var sh = 'font-size:20px;font-weight:bold;color:#e8453a;font-family:serif;text-shadow:1px 1px 2px rgba(0,0,0,.3);background:#1a1a18;padding:6px 12px';
+  var sb = 'font-size:13px;color:#c2b99a;font-style:italic;line-height:1.8;background:#1a1a18;padding:4px 12px';
+  var st = 'font-size:11px;color:#d4584a;font-family:monospace;background:#1a1a18;padding:4px 12px';
   console.log('%c\u2694 THE FLAMING SWORD \u2694', sh);
   console.log(
     '%c\u201cYou have peered behind the veil.\n' +
@@ -141,27 +145,34 @@ $('.modal-background').click(function () {
   };
 })();
 
-// --- Konami Code or typing "KORESH": The Illumination ---
+// --- Secret passcodes: The Illumination ---
 (function () {
   var seq = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
   var idx = 0;
-  var word = 'KORESH';
-  var wIdx = 0;
+  var words = ['KORESH', 'CYRUS', 'TEED', 'VICTORIA', 'HOLLOW', 'ESTERO', 'SWORD', 'SEVEN'];
+  var wIdxs = words.map(function () { return 0; });
   document.addEventListener('keydown', function (e) {
     // Konami code
     if (e.keyCode === seq[idx]) {
       idx++;
-      if (idx === seq.length) { showIllumination(); idx = 0; wIdx = 0; }
+      if (idx === seq.length) { showIllumination(); idx = 0; wIdxs = words.map(function () { return 0; }); }
     } else { idx = 0; }
-    // Typing "KORESH"
+    // Typed words
     var key = (e.key || '').toUpperCase();
-    if (key === word[wIdx]) {
-      wIdx++;
-      if (wIdx === word.length) { showIllumination(); wIdx = 0; idx = 0; }
-    } else if (key === word[0]) {
-      wIdx = 1;
-    } else {
-      wIdx = 0;
+    for (var i = 0; i < words.length; i++) {
+      if (key === words[i][wIdxs[i]]) {
+        wIdxs[i]++;
+        if (wIdxs[i] === words[i].length) {
+          showIllumination();
+          wIdxs = words.map(function () { return 0; });
+          idx = 0;
+          return;
+        }
+      } else if (key === words[i][0]) {
+        wIdxs[i] = 1;
+      } else {
+        wIdxs[i] = 0;
+      }
     }
   });
   function showIllumination() {
@@ -170,18 +181,18 @@ $('.modal-background').click(function () {
     el.id = 'arg-illumination';
     el.innerHTML =
       '<div class="arg-ill-inner">' +
-      '<p class="arg-ill-line" style="animation-delay:.5s">In the autumn of 1869,</p>' +
-      '<p class="arg-ill-line" style="animation-delay:1.8s">in a laboratory in Utica, New York,</p>' +
-      '<p class="arg-ill-line" style="animation-delay:3.2s">Cyrus Teed beheld a woman wreathed in light.</p>' +
-      '<p class="arg-ill-line" style="animation-delay:5s">She revealed seven truths.</p>' +
-      '<p class="arg-ill-line arg-ill-blood" style="animation-delay:6.8s">The seventh was never written down.</p>' +
-      '<p class="arg-ill-line arg-ill-dim" style="animation-delay:9s">Until now.</p>' +
-      '<p class="arg-ill-line arg-ill-path" style="animation-delay:11s">/ i l l u m i n a t i o n /</p>' +
+      '<p class="arg-ill-line" style="animation-delay:1.5s">In the autumn of 1869,</p>' +
+      '<p class="arg-ill-line" style="animation-delay:4.5s">in a laboratory in Utica, New York,</p>' +
+      '<p class="arg-ill-line" style="animation-delay:8s">Cyrus Teed beheld a woman wreathed in light.</p>' +
+      '<p class="arg-ill-line" style="animation-delay:12s">She revealed seven truths.</p>' +
+      '<p class="arg-ill-line arg-ill-blood" style="animation-delay:17s">The seventh was never written down.</p>' +
+      '<p class="arg-ill-line arg-ill-dim" style="animation-delay:21s">Until now.</p>' +
+      '<p class="arg-ill-line arg-ill-path" style="animation-delay:25s">/ i l l u m i n a t i o n /</p>' +
       '</div>';
     document.body.appendChild(el);
     localStorage.setItem('arg_illumination_seen', 'true');
     el.addEventListener('click', dismiss);
-    setTimeout(dismiss, 15000);
+    setTimeout(dismiss, 36000);
     function dismiss() {
       if (!el.parentNode) return;
       el.classList.add('arg-ill-out');
@@ -204,10 +215,23 @@ $(document).ready(function () {
       setTimeout(function () { $('body').css('filter', ''); }, 200);
       setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 350);
       setTimeout(function () { $('body').css('filter', ''); }, 500);
+      setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 650);
+      setTimeout(function () { $('body').css('filter', ''); }, 800);
+      setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 950);
+      setTimeout(function () { $('body').css('filter', ''); }, 1100);
       $('#tagline').fadeOut(200, function () {
         $(this).html('Seven sisters. Seven truths. <em>One still waits.</em>').fadeIn(600);
       });
       localStorage.setItem('arg_seven_sisters', 'true');
+      // Pause the tagline cycler, resume after 30 seconds
+      clearInterval(window._taglineCycler);
+      setTimeout(function () {
+        window._taglineCycler = setInterval(function () {
+          $('#tagline').fadeOut(400, function () {
+            $(this).text(window._pickTagline()).fadeIn(400);
+          });
+        }, 6000);
+      }, 30000);
       clicks = 0;
       return;
     }
@@ -275,6 +299,145 @@ $(document).ready(function () {
     $(this).attr('data-unity', 'N26.4324 W81.8126');
     if (i === 0) {
       $(this).attr('data-message', 'DQKBWZQI TQDMA');
+    }
+  });
+});
+
+// ============================================================
+// ARG LAYER 2: DEEPER MYSTERIES
+// "The deeper you look, the more the hollow reveals."
+// ============================================================
+
+// --- The Vigil: idle watcher ---
+// If you sit on the homepage for 3+ minutes without interacting,
+// the screen dims and a message appears — like the followers
+// waiting by Teed's bathtub.
+(function () {
+  if (!$('.hero-emblem').length) return; // homepage only
+  var vigilTimer, vigilActive = false;
+  var idleTime = 150 * 1000; // 150s
+
+  function resetVigil() {
+    clearTimeout(vigilTimer);
+    if (vigilActive) dismissVigil();
+    vigilTimer = setTimeout(startVigil, idleTime);
+  }
+
+  function startVigil() {
+    if (vigilActive || document.hidden) return;
+    vigilActive = true;
+    var el = document.createElement('div');
+    el.id = 'arg-vigil';
+    el.innerHTML =
+      '<div class="arg-vigil-inner">' +
+      '<p class="arg-vigil-line" style="animation-delay:0s">You are still here.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:4s">So were they.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:8s">December 22, 1908.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:12s">The body in the tub. The sisters in prayer.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:16s">How long will you wait?</p>' +
+      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:20s">They waited seven days.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:24s">The angel watches.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:28s">She will answer.</p>' +
+      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:34s">Speak their name.</p>' +
+      '</div>';
+    document.body.appendChild(el);
+    localStorage.setItem('arg_vigil_kept', 'true');
+    el.addEventListener('click', dismissVigil);
+  }
+
+  function dismissVigil() {
+    var el = document.getElementById('arg-vigil');
+    if (!el) return;
+    vigilActive = false;
+    el.classList.add('arg-ill-out');
+    setTimeout(function () { el.remove(); }, 1200);
+    resetVigil();
+  }
+
+  ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(function (evt) {
+    document.addEventListener(evt, resetVigil, { passive: true });
+  });
+  resetVigil();
+})();
+
+// --- December 22: The Death Anniversary ---
+// On the anniversary of Teed's death, the site behaves differently.
+(function () {
+  var now = new Date();
+  if (now.getMonth() !== 11 || now.getDate() !== 22) return; // Dec 22 only
+  document.documentElement.classList.add('death-anniversary');
+
+  $(document).ready(function () {
+    // Replace tagline with something solemn
+    $('#tagline').text('On this day in 1908, the shepherd departed.');
+
+    // Override the tagline cycler — freeze it
+    setTimeout(function () {
+      $('#tagline').stop(true, true).css('opacity', '1');
+    }, 100);
+
+    // Add a memorial whisper at the top
+    $('body').prepend(
+      '<div class="anniversary-banner">' +
+      '<span>In Memoriam &mdash; Cyrus R. Teed &mdash; December 22, 1908</span>' +
+      '</div>'
+    );
+  });
+})();
+
+// --- Deeper Console: The Planetary Court ---
+// Typing specific words in the console reveals deeper lore.
+(function () {
+  var deeper = {
+    anastasia: '"We the disciples of Koresh, Shepherd, Stone of Israel, know that this sepulcher cannot hold his body." I sealed this testament inside the mausoleum wall. The hurricane took the stone. It did not take the words. — Sister Anastasia',
+    damkohler: 'Gustave Damkohler. German immigrant. Homesteader on the Estero River since 1882. He never heard Teed speak, only read his pamphlet. For $200 he sold 300 acres of his life to a stranger\'s dream. Was he a fool, or did he see what we could not?',
+    morrow: 'Professor Ulysses Grant Morrow designed the Rectilineator and led the Geodetic Survey of 1897. The apparatus was built of seasoned mahogany and brass. It measured concavity at Naples Beach. The results were published. The world did not listen.',
+    hedwig: 'Hedwig Michel. Born in Germany. Fled the Nazis. Found the Koreshans. Became the last one. She said: "I found in The Koreshan Unity the mission for my life work, complete fulfillment." She died in 1982 — the last believer in a hollow Earth, buried in the park where paradise was supposed to rise.',
+    bethophra: 'Beth-Ophra. The House of the Rising Sun. The commune in Chicago, 1888. One hundred and twenty souls seeking a New Jerusalem. They found it in the swamps of Florida. Or thought they did.',
+    planetarycourt: 'The Planetary Court housed the Seven Sisters — the women who governed the Unity. Teed placed women in power because a woman had appeared to him in the laboratory. Seven truths from a woman of light. Seven sisters to carry them forward. The court still stands in Koreshan State Park. The sisters are gone. /planetary-court/',
+  };
+  Object.keys(deeper).forEach(function (k) {
+    Object.defineProperty(window, k, {
+      get: function () { return deeper[k]; },
+    });
+  });
+})();
+
+// --- Right-Click Flash ---
+// A subliminal flash when right-clicking, like something was there for a moment.
+(function () {
+  document.addEventListener('contextmenu', function () {
+    if (Math.random() > 0.5) return; // 30% chance
+    var flash = document.createElement('div');
+    flash.className = 'arg-flash';
+    flash.textContent = ['WE LIVE INSIDE', 'THE SEVENTH TRUTH', 'VICTORIA', 'KORESH'][Math.floor(Math.random() * 4)];
+    document.body.appendChild(flash);
+    setTimeout(function () { flash.remove(); }, 150);
+  });
+})();
+
+// --- Scroll Depth: Bottom of the World ---
+// When you scroll to the absolute bottom of any page, a hidden message fades in.
+$(document).ready(function () {
+  var revealed = false;
+  var $footer = $('#footer');
+  if (!$footer.length) return;
+
+  $footer.append(
+    '<div class="arg-bottom-whisper" aria-hidden="true">' +
+    'You have reached the bottom of the world. ' +
+    'But remember — in a hollow Earth, the bottom is also the top. ' +
+    'The Planetary Court awaits those who have come this far.' +
+    '</div>'
+  );
+
+  $(window).on('scroll', function () {
+    if (revealed) return;
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    var docHeight = $(document).height();
+    if (scrollBottom >= docHeight - 10) {
+      revealed = true;
+      $('.arg-bottom-whisper').addClass('arg-bottom-visible');
     }
   });
 });
