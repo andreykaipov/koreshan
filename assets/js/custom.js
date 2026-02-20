@@ -379,7 +379,7 @@ $(document).ready(function () {
     // Add a memorial whisper at the top
     $('body').prepend(
       '<div class="anniversary-banner">' +
-      '<span>In Memoriam &mdash; Cyrus R. Teed &mdash; December 22, 1908</span>' +
+      '<span>In Memoriam \u00b7 Cyrus R. Teed \u00b7 December 22, 1908</span>' +
       '</div>'
     );
   });
@@ -389,12 +389,12 @@ $(document).ready(function () {
 // Typing specific words in the console reveals deeper lore.
 (function () {
   var deeper = {
-    anastasia: '"We the disciples of Koresh, Shepherd, Stone of Israel, know that this sepulcher cannot hold his body." I sealed this testament inside the mausoleum wall. The hurricane took the stone. It did not take the words. — Sister Anastasia',
+    anastasia: '"We the disciples of Koresh, Shepherd, Stone of Israel, know that this sepulcher cannot hold his body." I sealed this testament inside the mausoleum wall. The hurricane took the stone. It did not take the words. - Sister Anastasia',
     damkohler: 'Gustave Damkohler. German immigrant. Homesteader on the Estero River since 1882. He never heard Teed speak, only read his pamphlet. For $200 he sold 300 acres of his life to a stranger\'s dream. Was he a fool, or did he see what we could not?',
     morrow: 'Professor Ulysses Grant Morrow designed the Rectilineator and led the Geodetic Survey of 1897. The apparatus was built of seasoned mahogany and brass. It measured concavity at Naples Beach. The results were published. The world did not listen.',
-    hedwig: 'Hedwig Michel. Born in Germany. Fled the Nazis. Found the Koreshans. Became the last one. She said: "I found in The Koreshan Unity the mission for my life work, complete fulfillment." She died in 1982 — the last believer in a hollow Earth, buried in the park where paradise was supposed to rise.',
+    hedwig: 'Hedwig Michel. Born in Germany. Fled the Nazis. Found the Koreshans. Became the last one. She said: "I found in The Koreshan Unity the mission for my life work, complete fulfillment." She died in 1982, the last believer in a hollow Earth, buried in the park where paradise was supposed to rise.',
     bethophra: 'Beth-Ophra. The House of the Rising Sun. The commune in Chicago, 1888. One hundred and twenty souls seeking a New Jerusalem. They found it in the swamps of Florida. Or thought they did.',
-    planetarycourt: 'The Planetary Court housed the Seven Sisters — the women who governed the Unity. Teed placed women in power because a woman had appeared to him in the laboratory. Seven truths from a woman of light. Seven sisters to carry them forward. The court still stands in Koreshan State Park. The sisters are gone. /planetary-court/',
+    planetarycourt: 'The Planetary Court housed the Seven Sisters, the women who governed the Unity. Teed placed women in power because a woman had appeared to him in the laboratory. Seven truths from a woman of light. Seven sisters to carry them forward. The court still stands in Koreshan State Park. The sisters are gone. /planetary-court/',
   };
   Object.keys(deeper).forEach(function (k) {
     Object.defineProperty(window, k, {

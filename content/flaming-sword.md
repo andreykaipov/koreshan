@@ -11,16 +11,16 @@ build:
 <div class="flaming-sword-header">
 <h2>The Flaming Sword</h2>
 <div class="fs-subtitle">A Monthly Journal Devoted to the Promulgation of Koreshan Universology</div>
-<div class="fs-date">Vol. XII &mdash; No. 7 &nbsp;&middot;&nbsp; Estero, Lee County, Florida &nbsp;&middot;&nbsp; November 1898</div>
+<div class="fs-date">Vol. XII, No. 7 &nbsp;&middot;&nbsp; Estero, Lee County, Florida &nbsp;&middot;&nbsp; November 1898</div>
 </div>
 
 <div class="fs-column">
 
 **THE RECTILINEATOR AND THE PROOF OF CONCAVITY**
 
-The great work of the Koreshan Geodetic Survey has entered its final phase. Under the supervision of Prof. U.G. Morrow, the Rectilineator apparatus &mdash; constructed of seasoned mahogany and brass &mdash; completed its measurements along the Gulf shore at Naples Beach in 1897.
+The great work of the Koreshan Geodetic Survey has entered its final phase. Under the supervision of Prof. U.G. Morrow, the Rectilineator apparatus, constructed of seasoned mahogany and brass, completed its measurements along the Gulf shore at Naples Beach in 1897.
 
-The results confirm what Koresh has long taught: the surface of the Earth curves upward at a rate of eight inches to the mile. Not downward, as the astronomers of the old science would have you believe, but *inward* &mdash; toward the stellar center, toward the sun which burns at the heart of our cellular cosmos.
+The results confirm what Koresh has long taught: the surface of the Earth curves upward at a rate of eight inches to the mile. Not downward, as the astronomers of the old science would have you believe, but *inward*, toward the stellar center, toward the sun which burns at the heart of our cellular cosmos.
 
 The Rectilineator does not speculate. It measures. And its measure is the key to all truth.
 
@@ -28,7 +28,7 @@ The Rectilineator does not speculate. It measures. And its measure is the key to
 
 **ON THE NATURE OF THE BIUNE GOD**
 
-Koresh teaches that the Divine is neither solely male nor solely female, but both &mdash; a biune deity whose dual nature is reflected in all creation. The Planetary Court of Seven Sisters governs the temporal affairs of the Unity under this principle, for it was a woman of light who appeared to Koresh in his illumination and revealed the truths upon which our science rests.
+Koresh teaches that the Divine is neither solely male nor solely female, but both, a biune deity whose dual nature is reflected in all creation. The Planetary Court of Seven Sisters governs the temporal affairs of the Unity under this principle, for it was a woman of light who appeared to Koresh in his illumination and revealed the truths upon which our science rests.
 
 The woman spoke seven truths. Six have been published in these pages and in *The Cellular Cosmogony*. The seventh remains unspoken, held close by the Master himself. When asked, he says only: *"The seventh is not for this age."*
 
@@ -36,9 +36,9 @@ The woman spoke seven truths. Six have been published in these pages and in *The
 
 **A RECOVERED FRAGMENT**
 
-*The following passage was found among papers recovered from the Planetary Court archives. Certain words appear to have been rendered in cipher &mdash; perhaps to protect the knowledge contained within from those not yet ready to receive it.*
+*The following passage was found among papers recovered from the Planetary Court archives. Certain words appear to have been rendered in cipher, perhaps to protect the knowledge contained within from those not yet ready to receive it.*
 
-<div class="fs-cipher">BPM XZWXPMB IEIQBA QV BPM PWTTWE &mdash; AMMS BPM QTTCUQVIBQWV</div>
+<div class="fs-cipher">BPM XZWXPMB IEIQBA QV BPM PWTTWE. AMMS BPM QTTCUQVIBQWV</div>
 
 <span class="unity-whisper">The key is the Rectilineator's measure. Count the inches. Subtract from the alphabet.</span>
 
