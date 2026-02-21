@@ -11,6 +11,6 @@ instagram: https://www.instagram.com/andreykaipov
 ---
 Andrey Kaipov designed and built this site.
 
-Some of what he built is visible. Some of it isn't.
+Some of what he built is visible.
 
 <span class="unity-whisper">It would be too obvious to hide a hint right here. ⚔</span>
