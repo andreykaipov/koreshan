@@ -438,17 +438,102 @@ $(document).ready(function () {
   });
 })();
 
-// --- Right-Click Flash ---
-// A subliminal flash when right-clicking, like something was there for a moment.
+// --- Hauntings: the site whispers back ---
+// Rare, atmospheric disturbances as you browse — whispered
+// messages at screen edges and brief text possessions.
 (function () {
-  document.addEventListener('contextmenu', function () {
-    if (Math.random() > 0.5) return; // 30% chance
-    var flash = document.createElement('div');
-    flash.className = 'arg-flash';
-    flash.textContent = ['HOLLOW', 'SEVEN', 'VICTORIA', 'KORESH'][Math.floor(Math.random() * 4)];
-    document.body.appendChild(flash);
-    setTimeout(function () { flash.remove(); }, 400);
-  });
+  var lastHaunt = 0;
+  var cooldown = 15000; // minimum 15s between hauntings
+  var hauntChance = 0.006; // ~0.4% per event
+
+  var whispers = [
+    'She is still waiting…',
+    'The hollow remembers.',
+    'Five days by the tub.',
+    'We live inside.',
+    'Victoria is coming.',
+    'The seventh truth...',
+    'Seek the illumination.',
+    'The messenger watches.',
+    'Eight inches to the mile.',
+    'The sword still burns.',
+  ];
+
+  function haunt() {
+    var now = Date.now();
+    if (now - lastHaunt < cooldown) return;
+    if (Math.random() > hauntChance) return;
+    lastHaunt = now;
+
+    // Text possession: swap a single word inside a visible paragraph
+    var paragraphs = document.querySelectorAll('.container p, .content p');
+    if (!paragraphs.length) return;
+    var visible = Array.prototype.filter.call(paragraphs, function (p) {
+      var rect = p.getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= window.innerHeight && p.textContent.trim().length > 20;
+    });
+    if (!visible.length) return;
+    var target = visible[Math.floor(Math.random() * visible.length)];
+    // Find text nodes with actual words
+    var walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT, null, false);
+    var textNodes = [];
+    var node;
+    while (node = walker.nextNode()) {
+      if (node.textContent.trim().length > 1) textNodes.push(node);
+    }
+    if (!textNodes.length) return;
+    var chosenNode = textNodes[Math.floor(Math.random() * textNodes.length)];
+    var originalText = chosenNode.textContent;
+
+    // Koreshan replacement words, roughly grouped by length
+    var koreshWords = {
+      short: ['tub', 'sin', 'ark', 'vow', 'orb'],
+      medium: ['vigil', 'sword', 'unity', 'seven', 'hollow', 'Estero', 'Koresh'],
+      long: ['Victoria', 'concavity', 'illumination', 'planetary', 'messenger', 'celestial', 'rectilineator'],
+    };
+
+    // Find word boundaries in the text node
+    var wordRegex = /[a-zA-Z]{3,}/g;
+    var matches = [];
+    var m;
+    while (m = wordRegex.exec(originalText)) {
+      matches.push({ word: m[0], index: m.index });
+    }
+    if (!matches.length) return;
+    var pick = matches[Math.floor(Math.random() * matches.length)];
+
+    // Choose a Koreshan replacement of similar length
+    var bucket = pick.word.length <= 3 ? 'short' : pick.word.length <= 6 ? 'medium' : 'long';
+    var pool = koreshWords[bucket];
+    var replacement = pool[Math.floor(Math.random() * pool.length)];
+    // Match capitalization
+    if (pick.word[0] === pick.word[0].toUpperCase()) {
+      replacement = replacement[0].toUpperCase() + replacement.slice(1);
+    } else {
+      replacement = replacement[0].toLowerCase() + replacement.slice(1);
+    }
+
+    // Use Range to surgically replace just the word
+    var range = document.createRange();
+    range.setStart(chosenNode, pick.index);
+    range.setEnd(chosenNode, pick.index + pick.word.length);
+    range.deleteContents();
+    var span = document.createElement('span');
+    span.className = 'arg-possessed';
+    span.textContent = replacement;
+    range.insertNode(span);
+
+    setTimeout(function () {
+      // Restore: replace the span with the original word as text
+      var text = document.createTextNode(pick.word);
+      span.parentNode.replaceChild(text, span);
+      // Normalize to merge adjacent text nodes back together
+      target.normalize();
+    }, 2500);
+  }
+
+  document.addEventListener('mousemove', haunt, { passive: true });
+  document.addEventListener('scroll', haunt, { passive: true });
 })();
 
 // --- Scroll Depth: Bottom of the World ---

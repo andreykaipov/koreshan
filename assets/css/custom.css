@@ -906,28 +906,70 @@ img {
   border-bottom: 1px solid rgba(203, 55, 39, 0.4);
 }
 
-/* Right-click flash */
+/* Micro-glitch: subliminal word flash */
+/* Haunting: whispered messages */
+.arg-whisper {
+  position: fixed;
+  font-family: "victorian-orchid", serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-blood);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9998;
+  white-space: nowrap;
+  animation: arg-whisper-drift 4s ease-in-out forwards;
+}
+
+@keyframes arg-whisper-drift {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 0.35;
+  }
+
+  70% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Haunting: text possession */
+.arg-possessed {
+  font-style: italic !important;
+  color: var(--color-blood) !important;
+  transition: color 0.3s ease;
+}
+
+/* Emblem click subliminal flash (kept for emblem easter egg) */
 .arg-flash {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(203, 55, 39, 0.06);
+  background: rgba(203, 55, 39, 0.04);
   color: var(--color-blood);
   font-family: "rotunda-veneta", sans-serif;
   font-size: 4rem;
   letter-spacing: 0.3em;
-  opacity: 0.15;
+  opacity: 0.12;
   pointer-events: none;
   z-index: 9998;
-  animation: arg-flash-pop 0.4s ease-out forwards;
+  animation: arg-flash-pop 0.35s ease-out forwards;
 }
 
 @keyframes arg-flash-pop {
   0% {
-    opacity: 0.3;
-    transform: scale(1.1);
+    opacity: 0.25;
+    transform: scale(1.05);
   }
 
   100% {
