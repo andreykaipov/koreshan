@@ -5,6 +5,8 @@
     {{ partial "head/metadata.html" . }}
     {{ if .Site.Params.plausible }}{{ partial "head/plausible.html" . }}{{ end }}
     {{ partial "head/openGraph.html" . }}
+    {{ partial "head/twitterCard.html" . }}
+    {{ partial "head/jsonld.html" . }}
     {{ partial "head/favicons.html" . }}
     {{ partial "head/css.html" . }}
     {{ partial "css/owlCarousel.html" . }}

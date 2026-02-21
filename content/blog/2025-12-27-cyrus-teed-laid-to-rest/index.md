@@ -3,9 +3,11 @@ title: "Cyrus Teed Laid to Rest"
 author: "L. Fried"
 category: "archives"
 date: 1908-12-27T00:00:00
+lastmod: 2025-12-27
 tags: ["history"]
 slug: "cyrus-teed-laid-to-rest"
 instagram_url: "https://www.instagram.com/p/DSxm5pQkWH-/"
+description: "On December 27, 1908, Cyrus Teed was laid to rest. His followers sealed a testament of faith, awaiting his promised resurrection."
 ---
 
 <p class="arg-hero-whisper">Anastasia's testament was sealed in the wall. The hurricane took the stone. It did not take the words. /flaming-sword/</p>

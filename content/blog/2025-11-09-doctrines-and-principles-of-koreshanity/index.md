@@ -6,6 +6,7 @@ date: 2025-11-09T18:52:28
 tags: ["production"]
 slug: "doctrines-and-principles-of-koreshanity"
 instagram_url: "https://www.instagram.com/p/DQ2tX3MjP5y/"
+description: "A summary of Koreshanity's core doctrines — liberation from mortality, marriage, and capitalism through religio-science."
 ---
 
 A General Summary of the Doctrines and Principles of the Religio-Science

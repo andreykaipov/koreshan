@@ -6,6 +6,7 @@ date: 2026-02-14T12:00:00
 tags: ["crowdfunding"]
 slug: "crowdfunding-campaign-live"
 instagram_url: "https://www.instagram.com/p/DUvxy1KDnOj/"
+description: "The Seed&Spark crowdfunding campaign for Last Days of Koreshan is live — help us raise $7,700 for art department by March 31."
 ---
 
 The crowdfunding campaign for "Last Days of Koreshan" is officially live! We have until March 31 at 5:00 to raise $7,700 for art department.

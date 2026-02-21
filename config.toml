@@ -1,4 +1,4 @@
-baseURL                = "/"
+baseURL                = "https://weliveinside.earth"
 theme                  = "koresh"
 DefaultContentLanguage = "en"
 buildFuture            = true

@@ -1,0 +1,18 @@
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title"
+    content="{{ .Title | plainify }}{{ if ne (.Title | plainify) (.Site.Title | plainify) }} - {{ .Site.Title | plainify }}{{ end }}">
+<meta name="twitter:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Resources.ByType "image" }}
+{{ with index (sort . "Params.weight") 0 }}
+<meta name="twitter:image" content="{{ .Permalink }}">
+<meta name="twitter:image:alt" content="{{ $.Title | plainify }}">
+{{ end }}
+{{ else }}
+{{ with .Site.GetPage "page" "/home" }}
+{{ with index (.Resources.ByType "image") 0 }}
+<meta name="twitter:image" content="{{ .Permalink }}">
+<meta name="twitter:image:alt" content="Last Days of Koreshan — a historical drama short film">
+{{ end }}
+{{ end }}
+{{ end }}

@@ -6,6 +6,7 @@ date: 2025-11-12T17:51:34
 tags: ["production"]
 slug: "the-promise-of-immortality"
 instagram_url: "https://www.instagram.com/p/DQ-UycEEqRh/"
+description: "Koreshan teachings on devotion and the promise of immortality — this corruptible must put on incorruption."
 ---
 
 With the purest form of devotion comes the promise of immortality through salvation. 

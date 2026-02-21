@@ -8,6 +8,7 @@ tags:
 instagram_url: https://www.instagram.com/p/DSjMuJxDDPk/
 slug: an-afternoon-in-estero
 images: /img/blog/an-afternoon-in-estero/crew-announcements-introducing-art-department-leads-for-last-days-or-koreshan-gio.vanna.espin-2-.jpg
+description: "A visit to Estero, Florida — the historic home of the Koreshan Unity settlement and the setting of Last Days of Koreshan."
 ---
 
 What a lovely afternoon in Estero.

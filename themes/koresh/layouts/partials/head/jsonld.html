@@ -1,0 +1,66 @@
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Movie",
+  "name": "Last Days of Koreshan",
+  "description": "{{ .Site.Params.description }}",
+  "genre": ["Historical Drama", "Short Film"],
+  "director": {
+    "@type": "Person",
+    "name": "L. Fried"
+  },
+  "dateCreated": "2026",
+  "url": "{{ .Site.BaseURL }}",
+  "inLanguage": "en",
+  "countryOfOrigin": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "locationCreated": {
+    "@type": "Place",
+    "name": "Fort Lauderdale, Florida"
+  },
+  "keywords": ["Cyrus Teed", "Koreshan Unity", "Koreshanity", "historical drama", "short film", "Florida history", "Estero Florida", "cult", "hollow earth"]
+}
+</script>
+{{- else if eq .Section "blog" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title | plainify }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default "L. Fried" }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Last Days of Koreshan"
+  }
+  {{ with .Resources.ByType "image" }}{{ with index (sort . "Params.weight") 0 }}
+  ,"image": "{{ .Permalink }}"
+  {{ end }}{{ end }}
+}
+</script>
+{{- else if eq .Section "team" }}
+{{- if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Title | plainify }}",
+  "url": "{{ .Permalink }}"
+  {{ with .Description }},"description": "{{ . }}"{{ end }}
+}
+</script>
+{{- end }}
+{{- end }}

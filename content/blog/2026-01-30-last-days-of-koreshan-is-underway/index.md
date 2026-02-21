@@ -6,6 +6,7 @@ date: 2026-01-30T12:00:00
 tags: ["production"]
 slug: "last-days-of-koreshan-is-underway"
 instagram_url: "https://www.instagram.com/p/DUJl7a9ko58/"
+description: "Last Days of Koreshan is in production — a short film about a South Florida cult awaiting their leader's resurrection in 1908."
 ---
 
 Been teasing this for a while. But pieces are moving, and Last Days of Koreshan is underway! Many moving pieces, but first let me introduce you to the story:

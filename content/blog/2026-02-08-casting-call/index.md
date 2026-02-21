@@ -6,6 +6,7 @@ date: 2026-02-08T12:00:00
 tags: ["casting"]
 slug: "casting-call"
 instagram_url: "https://www.instagram.com/p/DUhLc0eDE1Y/"
+description: "South Florida actors wanted for Last Days of Koreshan — paid roles in a historical drama short film set in 1908 Estero."
 ---
 
 Are you a South Florida based actor seeking a dramatic role? Look no further! Last Days of Koreshan is seeking to hire followers of the cult / believers in Koreshanity. Ultra Low budget, paid short film.

@@ -6,6 +6,7 @@ date: 2026-02-19T12:00:00
 tags: ["production"]
 slug: "have-you-heard-about-the-koreshans"
 instagram_url: "https://www.instagram.com/p/DU63pYpDKeI/"
+description: "Before Florida Man, there were the Koreshans. Last Days explores how utopian idealism crumbles under a false prophet's promises."
 ---
 
 Before there was Florida Man, there was a society with peculiar beliefs seeking refuge in the hostile swamps of South Florida. "Last Days" is a film made in and about that community and why it didn't pan out exactly as their leader had prophesied.

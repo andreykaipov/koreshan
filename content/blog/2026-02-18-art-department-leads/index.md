@@ -6,6 +6,7 @@ date: 2026-02-18T12:00:00
 tags: ["production"]
 slug: "art-department-leads"
 instagram_url: "https://www.instagram.com/p/DU3xSM_Et5r/"
+description: "Meet the art department leads for Last Days of Koreshan — production design, SFX sculpture, and wardrobe for 1908 Florida."
 ---
 
 Crew Announcements: Introducing Art Department leads for Last Days of Koreshan!

@@ -6,6 +6,7 @@ date: 2026-02-01T12:00:00
 tags: ["crowdfunding"]
 slug: "seedandspark-campaign-announcement"
 instagram_url: "https://www.instagram.com/p/DUOsoKzEpwj/"
+description: "Last Days of Koreshan launches a Seed&Spark crowdfunding campaign to raise $7,700 for the film's art department."
 ---
 
 Its official: in two weeks Last Days of Koreshan will be launching a Seed&Spark campaign to raise $7,700 for the art department for Last Days of Koreshan!
