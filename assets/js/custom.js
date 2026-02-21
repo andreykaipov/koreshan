@@ -33,7 +33,9 @@ $(document).ready(function () {
     ? taglineData.arg
     : splitLines(taglineData.arg);
   var argRecentKey = 'recentArg';
-  var argUnlocked = localStorage.getItem('arg_illumination_seen') || localStorage.getItem('arg_seven_sisters');
+  function argUnlocked() {
+    return localStorage.getItem('arg_illumination_seen') || localStorage.getItem('arg_seven_sisters');
+  }
 
   function pickFrom(pool, key) {
     var recent = JSON.parse(localStorage.getItem(key) || '[]');
@@ -56,9 +58,22 @@ $(document).ready(function () {
     var unlocked = visitCount > funnyThreshold;
     var lastTier = localStorage.getItem(lastTierKey) || 'funny';
 
-    // ARG tier: 50% chance if mysteries have been discovered
-    if (argUnlocked && argTags.length && Math.random() < 0.50) {
-      return pickFrom(argTags, argRecentKey);
+    // When ARG is unlocked, rotate: serious → arg → funny → arg → serious → ...
+    // ARG taglines appear twice as often as the others.
+    if (argUnlocked() && argTags.length && unlocked) {
+      if (lastTier === 'serious') {
+        localStorage.setItem(lastTierKey, 'arg1');
+        return pickFrom(argTags, argRecentKey);
+      } else if (lastTier === 'arg1') {
+        localStorage.setItem(lastTierKey, 'funny');
+        return pickFrom(funnyTags, funnyRecentKey);
+      } else if (lastTier === 'funny') {
+        localStorage.setItem(lastTierKey, 'arg2');
+        return pickFrom(argTags, argRecentKey);
+      } else {
+        localStorage.setItem(lastTierKey, 'serious');
+        return pickFrom(seriousTags, seriousRecentKey);
+      }
     }
 
     if (!unlocked || lastTier === 'funny') {
@@ -201,7 +216,7 @@ $('.modal-background').click(function () {
   }
 })();
 
-// --- Hero Emblem: Seven Sisters (click the angel 7 times) ---
+// --- Hero Emblem: Seven Sisters (click the angel 5 times — five days of vigil) ---
 $(document).ready(function () {
   var clicks = 0, timer;
   var $emblem = $('.hero-emblem');
@@ -210,7 +225,13 @@ $(document).ready(function () {
     e.preventDefault();
     clicks++;
     clearTimeout(timer);
-    if (clicks >= 7) {
+    if (clicks >= 5) {
+      // Flash subliminal clue during screen inversions
+      var clue = document.createElement('div');
+      clue.className = 'arg-flash arg-flash-emblem';
+      clue.textContent = '/planetary-court/';
+      document.body.appendChild(clue);
+
       $('body').css('filter', 'invert(1) sepia(1)');
       setTimeout(function () { $('body').css('filter', ''); }, 200);
       setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 350);
@@ -218,9 +239,9 @@ $(document).ready(function () {
       setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 650);
       setTimeout(function () { $('body').css('filter', ''); }, 800);
       setTimeout(function () { $('body').css('filter', 'invert(1)'); }, 950);
-      setTimeout(function () { $('body').css('filter', ''); }, 1100);
+      setTimeout(function () { $('body').css('filter', ''); clue.remove(); }, 1100);
       $('#tagline').fadeOut(200, function () {
-        $(this).html('Seven sisters. Seven truths. <em>One still waits.</em>').fadeIn(600);
+        $(this).html('Seven sisters. Seven truths. <a href="/planetary-court/" style="color:inherit !important;text-decoration:none !important"><em>One still waits.</em></a>').fadeIn(600);
       });
       localStorage.setItem('arg_seven_sisters', 'true');
       // Pause the tagline cycler, resume after 30 seconds
@@ -320,11 +341,12 @@ $(document).ready(function () {
   function resetVigil() {
     if (vigilActive) return; // don't dismiss — only a click on the overlay dismisses
     clearTimeout(vigilTimer);
+    if (document.hidden) return; // don't start timer while tab is unfocused
     vigilTimer = setTimeout(startVigil, idleTime);
   }
 
   function startVigil() {
-    if (vigilActive || document.hidden) return;
+    if (vigilActive || document.hidden || !document.hasFocus()) return;
     vigilActive = true;
     var el = document.createElement('div');
     el.id = 'arg-vigil';
@@ -335,10 +357,9 @@ $(document).ready(function () {
       '<p class="arg-vigil-line" style="animation-delay:8s">December 22, 1908.</p>' +
       '<p class="arg-vigil-line" style="animation-delay:12s">The body in the tub. The sisters in prayer.</p>' +
       '<p class="arg-vigil-line" style="animation-delay:16s">How long will you wait?</p>' +
-      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:20s">They waited seven days.</p>' +
-      '<p class="arg-vigil-line" style="animation-delay:24s">The angel watches.</p>' +
-      '<p class="arg-vigil-line" style="animation-delay:28s">She will answer.</p>' +
-      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:34s">Speak their name.</p>' +
+      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:20s">They waited five days.</p>' +
+      '<p class="arg-vigil-line" style="animation-delay:24s">The messenger watches. The messenger listens.</p>' +
+      '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:30s">How will you answer?</p>' +
       '</div>';
     document.body.appendChild(el);
     localStorage.setItem('arg_vigil_kept', 'true');
@@ -357,6 +378,20 @@ $(document).ready(function () {
   ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(function (evt) {
     document.addEventListener(evt, resetVigil, { passive: true });
   });
+
+  // Pause idle timer when tab/window loses focus; restart when it returns.
+  // Use both visibilitychange AND blur/focus because on macOS, Cmd+Tab
+  // may not trigger visibilitychange if the window is still partially visible.
+  function pauseVigil() {
+    clearTimeout(vigilTimer);
+    if (vigilActive) dismissVigil();
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) pauseVigil(); else resetVigil();
+  });
+  window.addEventListener('blur', pauseVigil);
+  window.addEventListener('focus', resetVigil);
+
   resetVigil();
 })();
 

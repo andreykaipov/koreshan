@@ -190,8 +190,16 @@ code {
   color: var(--color-blood) !important;
 }
 
+#tagline a {
+  color: inherit !important;
+}
+
 a:hover {
   color: var(--color-blood-dark) !important;
+}
+
+#tagline a:hover {
+  color: inherit !important;
 }
 
 hr {
