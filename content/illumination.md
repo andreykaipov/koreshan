@@ -20,10 +20,10 @@ The details of that night have been told many ways. Some say he was knocked unco
 
 1. *God is both male and female, a biune deity.*
 2. *The universe is a cell, and we live on its inner surface.*
-3. *Immortality is attainable through celibacy and devotion.*
-4. *The sun is at the center of the hollow Earth, not beyond it.*
-5. *Reincarnation is the natural process of spiritual evolution.*
-6. *A New Jerusalem must be built to prepare for the coming age.*
+3. *The sun is at the center of the hollow Earth, not beyond it.*
+4. *Reincarnation is the natural process of spiritual evolution.*
+5. *Immortality is attainable through celibacy and devotion.*
+6. *A New Jerusalem shall rise to usher in the coming age.*
 
 <div class="revelation">
 The seventh truth was never published in any Koreshan text.<br>
