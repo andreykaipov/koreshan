@@ -1,6 +1,7 @@
 ---
 title: "The Planetary Court"
 type: bare
+hide_title: true
 aliases:
   - /planetarycourt/
 build:

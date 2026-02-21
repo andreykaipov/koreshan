@@ -1,6 +1,7 @@
 ---
 title: "The Flaming Sword"
 type: bare
+hide_title: true
 aliases:
   - /flamingsword/
 build:

@@ -1,6 +1,7 @@
 ---
 title: "The Illumination"
 type: bare
+hide_title: true
 build:
   list: never
   render: always
