@@ -318,8 +318,8 @@ $(document).ready(function () {
   var idleTime = 180 * 1000; // 180s
 
   function resetVigil() {
+    if (vigilActive) return; // don't dismiss — only a click on the overlay dismisses
     clearTimeout(vigilTimer);
-    if (vigilActive) dismissVigil();
     vigilTimer = setTimeout(startVigil, idleTime);
   }
 

@@ -668,7 +668,7 @@ img {
 .arg-hero-whisper {
   font-family: "victorian-orchid", serif;
   font-size: 0.7rem;
-  color: rgba(74, 72, 54, 0.15);
+  color: rgba(74, 72, 54, 0.07);
   letter-spacing: 0.1em;
   margin-top: 0.75rem;
   font-style: italic;
@@ -676,7 +676,7 @@ img {
 }
 
 .arg-hero-whisper:hover {
-  color: rgba(74, 72, 54, 0.35);
+  color: rgba(74, 72, 54, 0.18);
 }
 
 @keyframes arg-flicker {
@@ -940,7 +940,7 @@ img {
 }
 
 .arg-bottom-whisper.arg-bottom-visible {
-  color: rgba(74, 72, 54, 0.3);
+  color: rgba(74, 72, 54, 0.12);
 }
 
 /* =========================
