@@ -445,8 +445,14 @@ $(document).ready(function () {
   var lastHaunt = 0;
   // ARG pages get much more frequent hauntings
   var isArgPage = /\/(flaming-sword|illumination|planetary-court)(\/|$)/.test(window.location.pathname);
-  var cooldown = isArgPage ? 5000 : 15000;
-  var hauntChance = isArgPage ? 0.05 : 0.006;
+  // Pages with data-haunt attribute get configurable haunting intensity
+  var hauntAttr = document.body.getAttribute('data-haunt');
+  var isHauntedPage = !!hauntAttr;
+  // data-haunt="heavy" → ARG-level frequency; data-haunt="true"/"medium" → in-between
+  var isHeavyHaunt = isArgPage || hauntAttr === 'heavy';
+  var isMediumHaunt = isHauntedPage && !isHeavyHaunt;
+  var cooldown = isHeavyHaunt ? 5000 : isMediumHaunt ? 8000 : 15000;
+  var hauntChance = isHeavyHaunt ? 0.05 : isMediumHaunt ? 0.025 : 0.006;
 
   var whispers = [
     'She is still waiting…',

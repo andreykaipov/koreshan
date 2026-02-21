@@ -4,19 +4,24 @@
 
 {{ define "main" }}
 <div class="container">
-    <ul>
-        {{ range .Pages.ByPublishDate.Reverse }}
-        {{ if .Date }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }} |
-                {{ .Title | markdownify }}</a>
-        </li>
+    {{ $prevYear := "" }}
+    {{ range .Pages.ByPublishDate.Reverse }}
+    {{ $currYear := .Date.Format "2006" }}
+    <li class="post-item" style="display: flex; gap: 0;">
+        {{ if .Params.date }}
+        <span style="flex-shrink: 0; width: 3.5rem; text-align: left;">{{ if ne $currYear $prevYear }}{{ $currYear }}{{
+            end }}</span>
+        {{ if eq .Params.date_display "year" }}
+        <span style="flex-shrink: 0; width: 4rem;"></span>
         {{ else }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-        </li>
+        <span style="flex-shrink: 0; width: 2.5rem; text-align: left;">{{ .Date.Format "Jan" }}</span>
+        <span style="flex-shrink: 0; width: 1.5rem; text-align: right;">{{ .Date.Format "2" }}</span>
         {{ end }}
+        <span style="flex-shrink: 0; width: 1.5rem;"></span>
         {{ end }}
-    </ul>
+        <span><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></span>
+    </li>
+    {{ $prevYear = $currYear }}
+    {{ end }}
 </div>
 {{ end }}

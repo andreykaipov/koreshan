@@ -11,7 +11,7 @@
     {{ partial "head/css.html" . }}
 </head>
 
-<body>
+<body{{ with .Params.haunt }} data-haunt="{{ . }}" {{ end }}>
     <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
     <script type="text/x-koreshan-archive">
     Diary of Evelyn Bubbett
@@ -116,6 +116,6 @@
         </div>
     </section>
     {{ partial "footer/scripts.html" . }}
-</body>
+    </body>
 
 </html>
