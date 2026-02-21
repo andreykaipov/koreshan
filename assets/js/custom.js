@@ -523,13 +523,19 @@ $(document).ready(function () {
     span.textContent = replacement;
     range.insertNode(span);
 
-    setTimeout(function () {
-      // Restore: replace the span with the original word as text
+    var restored = false;
+    function restore() {
+      if (restored) return;
+      restored = true;
       var text = document.createTextNode(pick.word);
       span.parentNode.replaceChild(text, span);
       // Normalize to merge adjacent text nodes back together
       target.normalize();
-    }, 2500);
+    }
+
+    // Snap back immediately if the user hovers over it
+    span.addEventListener('mouseenter', restore);
+    setTimeout(restore, 2500);
   }
 
   document.addEventListener('mousemove', haunt, { passive: true });
