@@ -15,10 +15,10 @@ description: "Archival materials on Empress Victoria Gratia, Cyrus Teed's prophe
 
 The Empress, Victoria Gratia, and I
 
-![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/1.jpg)
+![Archival document about Victoria Gratia, page 1](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/1.jpg)
 
-![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/2.jpg)
+![Archival document about Victoria Gratia, page 2](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/2.jpg)
 
-![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/3.jpg)
+![Archival document about Victoria Gratia, page 3](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/3.jpg)
 
-![](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/4.jpg)
+![Archival document about Victoria Gratia, page 4](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/4.jpg)

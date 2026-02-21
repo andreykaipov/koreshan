@@ -29,14 +29,14 @@ Sister Lydia”
 
 Courtesy of @floridamemory & Florida State Archives
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/1.jpg)
+![Members of the Koreshan Unity at the burial of Cyrus Teed, December 27, 1908](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/1.jpg)
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/2.jpg)
+![Koreshan Unity followers at the stone vault of Cyrus Teed](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/2.jpg)
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/3.jpg)
+![Anastasia's testament of faith sealed in the mausoleum wall](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/3.jpg)
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/4.jpg)
+![The stone vault where Cyrus Teed was laid to rest in Estero](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/4.jpg)
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/5.jpg)
+![Archival photo of Koreshan Unity members at the burial site](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/5.jpg)
 
-![](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/6.jpg)
+![Koreshan burial site, courtesy of Florida Memory and Florida State Archives](/img/blog/2025-12-27-cyrus-teed-laid-to-rest/6.jpg)

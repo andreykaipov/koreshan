@@ -19,8 +19,8 @@ This period piece relies on world building to bring audiences to Florida in 1908
 
 Support Last Days of Koreshan today by helping us reach our goal of $7,700 for art department. Link in Bio.
 
-![](/img/blog/2026-02-18-art-department-leads/1.jpg)
+![Giovanna Espinal — Production Designer for Last Days of Koreshan](/img/blog/2026-02-18-art-department-leads/1.jpg)
 
-![](/img/blog/2026-02-18-art-department-leads/2.jpg)
+![Adrienne Tabet — SFX Sculptor for Last Days of Koreshan](/img/blog/2026-02-18-art-department-leads/2.jpg)
 
-![](/img/blog/2026-02-18-art-department-leads/3.jpg)
+![Victoria Olson — Wardrobe Designer for Last Days of Koreshan](/img/blog/2026-02-18-art-department-leads/3.jpg)

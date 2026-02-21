@@ -1,3 +1,33 @@
+/* Skip-to-content link — visible only on keyboard focus */
+.sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only-focusable:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: auto;
+  height: auto;
+  padding: 0.75em 1.5em;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: var(--color-slate);
+  color: var(--color-background);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 :root {
   --color-background: #eddcb4;
   --color-slate: #4a4836;

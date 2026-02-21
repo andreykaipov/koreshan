@@ -19,12 +19,12 @@ Now Casting for Last Days of Koreshan: the characters of Cyrus Teed, Emma Norton
 
 **Themes:** Mortality, Religious uncertainty, loyalty to false prophets.
 
-![](/img/blog/2026-02-03-now-casting/1.jpg)
+![Casting call for Cyrus Teed in Last Days of Koreshan](/img/blog/2026-02-03-now-casting/1.jpg)
 
-![](/img/blog/2026-02-03-now-casting/2.jpg)
+![Casting call for Emma Norton Teed in Last Days of Koreshan](/img/blog/2026-02-03-now-casting/2.jpg)
 
-![](/img/blog/2026-02-03-now-casting/3.jpg)
+![Casting call for Dr. J. Augustus Weimar in Last Days of Koreshan](/img/blog/2026-02-03-now-casting/3.jpg)
 
-![](/img/blog/2026-02-03-now-casting/4.jpg)
+![Casting call for Jennie Andrews in Last Days of Koreshan](/img/blog/2026-02-03-now-casting/4.jpg)
 
-![](/img/blog/2026-02-03-now-casting/5.jpg)
+![Casting call for Victoria Gratia in Last Days of Koreshan](/img/blog/2026-02-03-now-casting/5.jpg)

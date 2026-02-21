@@ -15,4 +15,4 @@ Are you a South Florida based actor seeking a dramatic role? Look no further! La
 
 Send me a DM or Email me @ hello@fried.works
 
-![](/img/blog/2026-02-08-casting-call/1.jpg)
+![Casting call flyer for Last Days of Koreshan — South Florida actors wanted](/img/blog/2026-02-08-casting-call/1.jpg)

@@ -13,16 +13,16 @@ With the purest form of devotion comes the promise of immortality through salvat
 
 “This corruptible must put on incorruption, and this mortal must put on immortality.”
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/1.jpg)
+![Koreshan teachings on immortality, page 1](/img/blog/2025-11-12-the-promise-of-immortality/1.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/2.jpg)
+![Koreshan teachings on immortality, page 2](/img/blog/2025-11-12-the-promise-of-immortality/2.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/3.jpg)
+![Koreshan teachings on immortality, page 3](/img/blog/2025-11-12-the-promise-of-immortality/3.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/4.jpg)
+![Koreshan teachings on immortality, page 4](/img/blog/2025-11-12-the-promise-of-immortality/4.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/5.jpg)
+![Koreshan teachings on immortality, page 5](/img/blog/2025-11-12-the-promise-of-immortality/5.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/6.jpg)
+![Koreshan teachings on immortality, page 6](/img/blog/2025-11-12-the-promise-of-immortality/6.jpg)
 
-![](/img/blog/2025-11-12-the-promise-of-immortality/7.jpg)
+![Koreshan teachings on immortality, page 7](/img/blog/2025-11-12-the-promise-of-immortality/7.jpg)

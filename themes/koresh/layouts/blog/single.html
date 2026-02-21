@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
     <script type="text/x-koreshan-archive">
     Diary of Evelyn Bubbett
     Sister of the Planetary Court
@@ -43,7 +44,7 @@
                     By {{ . }}
                     {{ if $.Params.date }} | {{ end }}
                     {{ end }}
-                    {{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}{{ end }}
+                    {{ if .Params.date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}</time>{{ end }}
                     {{ if .Site.Params.showReadingTime | default true }}
                     {{ if .Params.date }} | {{ end }}
                     {{ i18n "blog_readingTime" .ReadingTime }}
@@ -94,9 +95,11 @@
                 {{ end }}
             </div>
             <!-- Begin blog post content -->
-            <div class="container markdown top-pad">
+            <main id="main-content">
+            <article class="container markdown top-pad">
                 {{ .Content }}
-            </div>
+            </article>
+            </main>
             <!-- End blog post content -->
             {{ with .Site.GetPage "/blog" }}
             <div class="container top-pad">

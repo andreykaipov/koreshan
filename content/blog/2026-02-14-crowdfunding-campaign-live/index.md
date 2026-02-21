@@ -15,8 +15,8 @@ Will you support the Koreshan vision?
 
 [**Support us on Seed&Spark →**](https://seedandspark.com/fund/last-days-of-koreshan)
 
-![](/img/blog/2026-02-14-crowdfunding-campaign-live/1.jpg)
+![Last Days of Koreshan crowdfunding campaign is live on Seed&Spark](/img/blog/2026-02-14-crowdfunding-campaign-live/1.jpg)
 
-![](/img/blog/2026-02-14-crowdfunding-campaign-live/2.jpg)
+![Seed&Spark campaign goal of $7,700 for art department](/img/blog/2026-02-14-crowdfunding-campaign-live/2.jpg)
 
-![](/img/blog/2026-02-14-crowdfunding-campaign-live/3.jpg)
+![Support Last Days of Koreshan on Seed&Spark](/img/blog/2026-02-14-crowdfunding-campaign-live/3.jpg)

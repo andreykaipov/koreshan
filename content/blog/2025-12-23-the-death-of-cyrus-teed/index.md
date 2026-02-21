@@ -14,8 +14,8 @@ description: "Archival accounts of Cyrus Teed's death on December 22, 1908 — t
 
 He apparently has been dead for more than 24 hours, in fact his death is stated by his friends to have occurred as 9.30 a.m. on 22nd
 
-![](/img/blog/2025-12-23-the-death-of-cyrus-teed/1.jpg)
+![Archival account of Cyrus Teed's death, December 22, 1908, page 1](/img/blog/2025-12-23-the-death-of-cyrus-teed/1.jpg)
 
-![](/img/blog/2025-12-23-the-death-of-cyrus-teed/2.jpg)
+![Archival account of Cyrus Teed's death, December 22, 1908, page 2](/img/blog/2025-12-23-the-death-of-cyrus-teed/2.jpg)
 
-![](/img/blog/2025-12-23-the-death-of-cyrus-teed/3.jpg)
+![Archival account of Cyrus Teed's death, December 22, 1908, page 3](/img/blog/2025-12-23-the-death-of-cyrus-teed/3.jpg)

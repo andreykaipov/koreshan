@@ -2,6 +2,13 @@
 <h1 class="bold-title">Page Not Found</h1>
 {{ end }}
 
+{{ define "head" }}
+    {{ partial "head/metadata.html" . }}
+    <meta name="robots" content="noindex, nofollow">
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/css.html" . }}
+{{ end }}
+
 {{ define "main" }}
 <div class="container has-text-centered top-pad" style="padding-bottom: 4rem;">
     <div class="markdown" style="max-width: 36rem; margin: 0 auto;">

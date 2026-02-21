@@ -14,6 +14,6 @@ Tis the last day of November. December brings great things.
 
 “Remember me for who I was, not who I am”
 
-![](/img/blog/2025-11-30-december-brings-great-things/1.jpg)
+![Koreshan Unity archival reflection, November 1890, page 1](/img/blog/2025-11-30-december-brings-great-things/1.jpg)
 
-![](/img/blog/2025-11-30-december-brings-great-things/2.jpg)
+![Koreshan Unity archival reflection, November 1890, page 2](/img/blog/2025-11-30-december-brings-great-things/2.jpg)

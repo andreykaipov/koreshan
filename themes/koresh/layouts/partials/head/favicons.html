@@ -1,3 +1,6 @@
 {{ with .Site.Params.favicon }}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ . | relURL }}">
 <link rel="shortcut icon" href="{{ . | relURL }}">
+<link rel="apple-touch-icon" href="{{ . | relURL }}">
+<meta name="theme-color" content="#eddcb4">
 {{ end }}

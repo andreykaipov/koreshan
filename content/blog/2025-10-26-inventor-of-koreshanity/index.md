@@ -15,6 +15,6 @@ Inventor of Koreshanity, Immortal Son.
 
 Business Cards, Florida State Archives, N2009-3, Member Files: Teed, Cyrus, Box 232, Folder 1
 
-![](/img/blog/2025-10-26-inventor-of-koreshanity/1.jpg)
+![Business card of Cyrus Teed — Inventor of Koreshanity, Florida State Archives](/img/blog/2025-10-26-inventor-of-koreshanity/1.jpg)
 
-![](/img/blog/2025-10-26-inventor-of-koreshanity/2.jpg)
+![Business card of Cyrus Teed — Immortal Son, Florida State Archives](/img/blog/2025-10-26-inventor-of-koreshanity/2.jpg)

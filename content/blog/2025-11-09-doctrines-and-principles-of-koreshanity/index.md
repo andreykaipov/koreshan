@@ -13,18 +13,18 @@ A General Summary of the Doctrines and Principles of the Religio-Science
 
 Koreshanity has come to fulfil the hope of the world in the liberation from the curse of mortality, marriage, and capitalism.
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/1.jpg)
+![Doctrines and Principles of Koreshanity, page 1](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/1.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/2.jpg)
+![Doctrines and Principles of Koreshanity, page 2](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/2.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/3.jpg)
+![Doctrines and Principles of Koreshanity, page 3](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/3.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/4.jpg)
+![Doctrines and Principles of Koreshanity, page 4](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/4.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/5.jpg)
+![Doctrines and Principles of Koreshanity, page 5](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/5.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/6.jpg)
+![Doctrines and Principles of Koreshanity, page 6](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/6.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/7.jpg)
+![Doctrines and Principles of Koreshanity, page 7](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/7.jpg)
 
-![](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/8.jpg)
+![Doctrines and Principles of Koreshanity, page 8](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/8.jpg)

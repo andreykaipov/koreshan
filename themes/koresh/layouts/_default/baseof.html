@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
     <script type="text/x-koreshan-archive">
         From the private correspondence of Henry D. Silverfriend
         Estero, Florida — November 2, 1907
@@ -42,8 +43,10 @@
         <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
             {{ partial "nav.html" . }}
 
+            <main id="main-content">
             {{ block "main" . }}
             {{ end }}
+            </main>
 
             {{ block "footer" . }}
             {{ partial "top-icon-with-hr.html" . }}

@@ -15,6 +15,6 @@ If you're interested in contributing, filling out this brief survey (link & QR o
 
 If you want to save time on the launch day, you can also create a Seed&Spark account now and follow my profile for updates.
 
-![](/img/blog/2026-02-01-seedandspark-campaign-announcement/1.jpg)
+![Seed&Spark crowdfunding campaign announcement for Last Days of Koreshan](/img/blog/2026-02-01-seedandspark-campaign-announcement/1.jpg)
 
-![](/img/blog/2026-02-01-seedandspark-campaign-announcement/2.jpg)
+![QR code and survey link for the Last Days of Koreshan campaign](/img/blog/2026-02-01-seedandspark-campaign-announcement/2.jpg)

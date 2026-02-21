@@ -13,6 +13,6 @@ description: "A visit to Estero, Florida — the historic home of the Koreshan U
 
 What a lovely afternoon in Estero.
 
-![](/img/blog/2025-12-21-an-afternoon-in-estero/1.jpg)
+![Koreshan Unity settlement in Estero, Florida](/img/blog/2025-12-21-an-afternoon-in-estero/1.jpg)
 
-![](/img/blog/2025-12-21-an-afternoon-in-estero/2.jpg)
+![Koreshan State Park, the historic site of the Koreshan commune](/img/blog/2025-12-21-an-afternoon-in-estero/2.jpg)

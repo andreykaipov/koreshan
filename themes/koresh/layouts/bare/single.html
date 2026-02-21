@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <main id="main-content">
     <section id="top" class="section">
         <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
 
@@ -23,6 +24,7 @@
             {{ partial "footer/text.html" . }}
         </div>
     </section>
+    </main>
     {{ partial "footer/scripts.html" . }}
 </body>
 

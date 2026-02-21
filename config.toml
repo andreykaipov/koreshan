@@ -3,6 +3,7 @@ theme                  = "koresh"
 DefaultContentLanguage = "en"
 buildFuture            = true
 googleAnalytics        = "G-PYJLD53W7J"
+enableRobotsTXT        = true
 
 [permalinks]
 blog = "/news/:slug/"
