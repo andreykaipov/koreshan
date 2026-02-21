@@ -11,7 +11,7 @@ description: "A summary of Koreshanity's core doctrines — liberation from mort
 
 A General Summary of the Doctrines and Principles of the Religio-Science
 
-Koreshanity has come to fulfil the hope of the world in the liberation from the curse of mortality, marriage, and capitalism.
+Koreshanity has come to fulfil the hope of the world in the liberation from the curse of mortality, marriage, and capitalism. Continue reading in [Part 2: The Promise of Immortality](/news/the-promise-of-immortality/).
 
 ![Doctrines and Principles of Koreshanity, page 1](/img/blog/2025-11-09-doctrines-and-principles-of-koreshanity/1.jpg)
 

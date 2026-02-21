@@ -13,7 +13,7 @@ description: "Archival materials on Empress Victoria Gratia, Cyrus Teed's prophe
 
 <p class="arg-hero-whisper">Victoria was foretold. The angel watches. Seven times, she answers.</p>
 
-The Empress, Victoria Gratia, and I
+The Empress, Victoria Gratia, and I. She was the prophesied vessel for [Cyrus Teed's](/news/inventor-of-koreshanity/) soul — a belief that would be tested upon [his death](/news/the-death-of-cyrus-teed/).
 
 ![Archival document about Victoria Gratia, page 1](/img/blog/2025-11-20-the-empress-victoria-gratia-and-i/1.jpg)
 

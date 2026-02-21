@@ -9,7 +9,7 @@ instagram_url: "https://www.instagram.com/p/DUrl-2DDKAc/"
 description: "The cinematic influences behind Last Days of Koreshan: Ari Aster, Michael Haneke, Robert Eggers, Peter Weir, and PT Anderson."
 ---
 
-Last Days of Koreshan takes influence from a variety of directors such as Ari Aster (Midsommar), Michael Haneke (The White Ribbon), Robert Eggers (The VVitch), Peter Weir (Picnic at Hanging Rock), PT Anderson (There Will Be Blood) and, among other films while being cut from the cloth of real Florida History.
+[Last Days of Koreshan](/news/last-days-of-koreshan-is-underway/) takes influence from a variety of directors such as Ari Aster (Midsommar), Michael Haneke (The White Ribbon), Robert Eggers (The VVitch), Peter Weir (Picnic at Hanging Rock), PT Anderson (There Will Be Blood) and, among other films while being cut from the cloth of [real Florida History](/news/an-afternoon-in-estero/).
 
 ![Ari Aster's Midsommar — influence on Last Days of Koreshan](/img/blog/2026-02-13-director-influences/1.jpg)
 

@@ -9,7 +9,7 @@ instagram_url: "https://www.instagram.com/p/DU63pYpDKeI/"
 description: "Before Florida Man, there were the Koreshans. Last Days explores how utopian idealism crumbles under a false prophet's promises."
 ---
 
-Before there was Florida Man, there was a society with peculiar beliefs seeking refuge in the hostile swamps of South Florida. "Last Days" is a film made in and about that community and why it didn't pan out exactly as their leader had prophesied.
+Before there was Florida Man, there was a society with peculiar beliefs seeking refuge in the hostile swamps of South Florida. ["Last Days"](/news/last-days-of-koreshan-is-underway/) is a film made in and about that community and why it didn't pan out exactly as their leader had prophesied.
 
 Based on a true story, this short explores how utopian idealism can crumble when unfulfilled promises are made by false prophets. Although it occurred over a century ago, the tale of the Koreshans is one both overlooked and quite prescient towards today's climate.
 

@@ -12,7 +12,7 @@ description: "Archival accounts of Cyrus Teed's death on December 22, 1908 — t
 
 <p class="arg-hero-whisper">Seven truths were spoken. Only six were written. The Flaming Sword knows the rest.</p>
 
-He apparently has been dead for more than 24 hours, in fact his death is stated by his friends to have occurred as 9.30 a.m. on 22nd
+He apparently has been dead for more than 24 hours, in fact his death is stated by his friends to have occurred as 9.30 a.m. on 22nd. Five days later, [Cyrus Teed was laid to rest](/news/cyrus-teed-laid-to-rest/)
 
 ![Archival account of Cyrus Teed's death, December 22, 1908, page 1](/img/blog/2025-12-23-the-death-of-cyrus-teed/1.jpg)
 

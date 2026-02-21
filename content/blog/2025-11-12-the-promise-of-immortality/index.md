@@ -9,7 +9,7 @@ instagram_url: "https://www.instagram.com/p/DQ-UycEEqRh/"
 description: "Koreshan teachings on devotion and the promise of immortality — this corruptible must put on incorruption."
 ---
 
-With the purest form of devotion comes the promise of immortality through salvation. 
+With the purest form of devotion comes [the promise of immortality](/news/doctrines-and-principles-of-koreshanity/) through salvation. 
 
 “This corruptible must put on incorruption, and this mortal must put on immortality.”
 

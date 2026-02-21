@@ -9,7 +9,7 @@ instagram_url: "https://www.instagram.com/p/DUTIruIDr8V/"
 description: "Now casting paid roles for Last Days of Koreshan — a historical drama influenced by Robert Eggers, Ari Aster, and Peter Weir."
 ---
 
-Now Casting for Last Days of Koreshan: the characters of Cyrus Teed, Emma Norton Teed, Dr. J. Augustus Weimar, Jennie Andrews and Empress Victoria Gratia! Paid, non-union roles. Inquire in my DMs or send me an email!
+Now Casting for [Last Days of Koreshan](/news/last-days-of-koreshan-is-underway/): the characters of Cyrus Teed, Emma Norton Teed, Dr. J. Augustus Weimar, Jennie Andrews and Empress Victoria Gratia! Paid, non-union roles. Inquire in my DMs or send me an email!
 
 **Logline:** When their leader passes away, a South Florida cult waits for the moment of his resurrection.
 

@@ -11,7 +11,7 @@ images: /img/blog/an-afternoon-in-estero/crew-announcements-introducing-art-depa
 description: "A visit to Estero, Florida — the historic home of the Koreshan Unity settlement and the setting of Last Days of Koreshan."
 ---
 
-What a lovely afternoon in Estero.
+What a lovely afternoon in Estero — the historic home of the [Koreshan Unity settlement](/news/cyrus-teed-laid-to-rest/) and the setting for our upcoming [short film](/news/last-days-of-koreshan-is-underway/).
 
 ![Koreshan Unity settlement in Estero, Florida](/img/blog/2025-12-21-an-afternoon-in-estero/1.jpg)
 

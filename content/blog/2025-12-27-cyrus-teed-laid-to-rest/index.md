@@ -12,7 +12,7 @@ description: "On December 27, 1908, Cyrus Teed was laid to rest. His followers s
 
 <p class="arg-hero-whisper">Anastasia's testament was sealed in the wall. The hurricane took the stone. It did not take the words. /flaming-sword/</p>
 
-Cyrus Teed was laid to rest today, December 27, 1908
+Cyrus Teed was laid to rest today, December 27, 1908 — five days after [his death](/news/the-death-of-cyrus-teed/). His followers still awaited the transfer of his soul to [Victoria Gratia](/news/the-empress-victoria-gratia-and-i/)
 
 “In compliance with the law, and only for such reason, the body of Cyrus R. Teed i placed in this stone vault. 
 We the disciples of Koresh, Shepherd, Stone of Israel, Know that this sepulcher cannot hold his body, for he will overcome death, and in his immortal body will rise triumphant from the tomb; And thus shall be fulfilled the saying: 

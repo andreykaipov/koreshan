@@ -17,7 +17,7 @@ Crew Announcements: Introducing Art Department leads for Last Days of Koreshan!
 
 This period piece relies on world building to bring audiences to Florida in 1908. Movies ain't cheap and these talented artists need supplies to make their magic happen.
 
-Support Last Days of Koreshan today by helping us reach our goal of $7,700 for art department. Link in Bio.
+Support Last Days of Koreshan today by helping us reach our goal of $7,700 for art department. [**Support us on Seed&Spark →**](/news/crowdfunding-campaign-live/)
 
 ![Giovanna Espinal — Production Designer for Last Days of Koreshan](/img/blog/2026-02-18-art-department-leads/1.jpg)
 
