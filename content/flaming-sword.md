@@ -1,6 +1,8 @@
 ---
 title: "The Flaming Sword"
 type: bare
+aliases:
+  - /flamingsword/
 build:
   list: never
   render: always

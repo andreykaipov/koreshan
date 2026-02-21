@@ -1,6 +1,8 @@
 ---
 title: "The Planetary Court"
 type: bare
+aliases:
+  - /planetarycourt/
 build:
   list: never
   render: always
