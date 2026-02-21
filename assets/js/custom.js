@@ -443,8 +443,10 @@ $(document).ready(function () {
 // messages at screen edges and brief text possessions.
 (function () {
   var lastHaunt = 0;
-  var cooldown = 15000; // minimum 15s between hauntings
-  var hauntChance = 0.006; // ~0.4% per event
+  // ARG pages get much more frequent hauntings
+  var isArgPage = /\/(flaming-sword|illumination|planetary-court)(\/|$)/.test(window.location.pathname);
+  var cooldown = isArgPage ? 5000 : 15000;
+  var hauntChance = isArgPage ? 0.05 : 0.006;
 
   var whispers = [
     'She is still waiting…',
@@ -487,9 +489,9 @@ $(document).ready(function () {
 
     // Koreshan replacement words, roughly grouped by length
     var koreshWords = {
-      short: ['tub', 'sin', 'ark', 'vow', 'orb'],
-      medium: ['vigil', 'sword', 'unity', 'seven', 'hollow', 'Estero', 'Koresh'],
-      long: ['Victoria', 'concavity', 'illumination', 'planetary', 'messenger', 'celestial', 'rectilineator'],
+      short: ['tub', 'sin', 'ark', 'vow', 'orb', 'ash', 'rib', 'elm', 'woe', 'fog', 'urn', 'hymn'],
+      medium: ['vigil', 'sword', 'unity', 'seven', 'hollow', 'Estero', 'Koresh', 'biune', 'vesper', 'cipher', 'ember', 'relic', 'ritual', 'schism', 'zealot', 'vision', 'temple'],
+      long: ['Victoria', 'concavity', 'illumination', 'planetary', 'messenger', 'celestial', 'rectilineator', 'cosmogony', 'mausoleum', 'transfigure', 'resurrection', 'prophecy', 'sepulcher', 'Damkohler', 'Anastasia'],
     };
 
     // Find word boundaries in the text node

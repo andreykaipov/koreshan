@@ -13,17 +13,17 @@
 
 <body>
     <main id="main-content">
-    <section id="top" class="section">
-        <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
+        <section id="top" class="section">
+            <div class="section {{ if .Site.Params.fadeIn | default true }} fade-in two {{ end }}">
 
-            <div class="container markdown top-pad">
-                {{ .Content }}
+                <div class="container markdown top-pad">
+                    {{ .Content }}
+                </div>
+
+                {{ partial "top-icon-with-hr.html" . }}
+                {{ partial "footer/text.html" . }}
             </div>
-
-            {{ partial "top-icon-with-hr.html" . }}
-            {{ partial "footer/text.html" . }}
-        </div>
-    </section>
+        </section>
     </main>
     {{ partial "footer/scripts.html" . }}
 </body>

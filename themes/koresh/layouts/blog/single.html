@@ -44,7 +44,8 @@
                     By {{ . }}
                     {{ if $.Params.date }} | {{ end }}
                     {{ end }}
-                    {{ if .Params.date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}</time>{{ end }}
+                    {{ if .Params.date }}<time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format
+                        (.Site.Params.dateFormat | default ":date_medium") }}</time>{{ end }}
                     {{ if .Site.Params.showReadingTime | default true }}
                     {{ if .Params.date }} | {{ end }}
                     {{ i18n "blog_readingTime" .ReadingTime }}
@@ -96,9 +97,9 @@
             </div>
             <!-- Begin blog post content -->
             <main id="main-content">
-            <article class="container markdown top-pad">
-                {{ .Content }}
-            </article>
+                <article class="container markdown top-pad">
+                    {{ .Content }}
+                </article>
             </main>
             <!-- End blog post content -->
             {{ with .Site.GetPage "/blog" }}
