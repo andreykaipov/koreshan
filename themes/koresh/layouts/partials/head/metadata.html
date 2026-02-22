@@ -9,8 +9,8 @@
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <title>
-    {{ .Title | plainify }}{{ if ne (.Title | plainify) (.Site.Title | plainify) }} - {{ .Site.Title | plainify }}{{ end
-    }}
+    {{ if .IsHome }}Last Days of Koreshan | A South Florida Cult Story{{ else }}{{ .Title | plainify }}{{ if ne (.Title
+    | plainify) (.Site.Title | plainify) }} - {{ .Site.Title | plainify }}{{ end }}{{ end }}
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
 
