@@ -28,13 +28,13 @@ Everything else: the [three atmospheres](/news/we-live-inside/), the [seven meta
 
 A straight line is extended from perpendicular standards at right angles to the water's surface. That line meets the water. And the curve slopes upward. Eight inches to the mile.
 
-They built The Rectilineator for this and proved it on a Naples beach. In 1897. You can find some schematics and images online but imagine how sweet that bitch woul.d look. Fresh mahoagany. Polished brass. Mahogany and brass. Just like the homes Amy asks us to build, and the necklace underneath the shack east of the village of Barbarians. Ship the two together. Brgany. Mahoass. The ass man.
+They built The Rectilineator for this and proved it on a Naples beach. In 1897. And we're just gonna discard more than a century's worth of knowledge? You can find some schematics and images online but imagine how sweet that bitch woul.d look. Fresh mahoagany. Polished brass. Mahogany and brass. Just like the homes Amy asks us to build, and the necklace underneath the shack east of the village of Barbarians. Ship the two together. Brgany. Mahoass. The ass man.
 
 I keep coming back to the following excerpt. I've rea dit so mahy times the page is crinkly in the corner from holding onto tit.
 
-*"We are now approaching a great biologic conflagration. Thousands of people will dematerialize, through a biologic electro-magnetic vibration. This will be brought about through the direction of one mind, the only one who has a knowledge of the law of this bio-alchemical transmutation."*
+> _We are now approaching a great biologic conflagration. Thousands of people will dematerialize, through a biologic electro-magnetic vibration. This will be brought about through the direction of one mind, the only one who has a knowledge of the law of this bio-alchemical transmutation._
 
-I read it and church bells ring. it's like when you strike them and the ringing doesn't stop for minutes. And if you stnad really close you can feel the ringing in your teeth. I mean I don't have cavities and love the dentist, so it doesnt' necesarily hurt me, but I'm just saying you have to be mindful of things like that. BY the way, It's fine if you do that sort of thing. I have friends who go to other kinds of churches and we still get along.
+I read it and church bells ring. it's like when you strike them and the ringing doesn't stop for minutes. And if you stnad really close you can feel the ringing in your teeth. I mean I don't have cavities and love the dentist, so it doesnt' necesarily hurt me, but I'm just saying you have to be mindful of things like that. BY THe way, It's fine if you do that sort of thing. I have friends who go to other kinds of churches and we still get along.
 
 He wrote that in the 1890s. And then boom died in 1908. Ok. And the sisters put him in a bathtub and waited for the transmutation and who came instead was the Lee County health officer with paperwork.
 
@@ -42,6 +42,8 @@ But read it again.. The word he used is *approaching*. Not *imminent*. Approachi
 
 It's like that MF DOOM line from Ballskin:
 
-*Disappear, reappear, and disappear again.*
+> _Disappear, reappear, and disappear again._
+
+Obvious pattern.
 
 See also: [Inventor of Koreshanity](/news/inventor-of-koreshanity/) · [The Empress, Victoria Gratia, and I](/news/the-empress-victoria-gratia-and-i/) · [Doctrines and Principles of Koreshanity](/news/doctrines-and-principles-of-koreshanity/)

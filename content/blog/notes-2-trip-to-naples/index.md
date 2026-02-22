@@ -16,7 +16,7 @@ I went to Naples. I went to the beach (tell em bring out the whole ocean). I sto
 
 Something on my ankles. Not ants in my pants. A pulling. I know how that sounds. _Why doesn't someone pull me...?_ If you focus, and I mean really focus by clearing your mind before hand and getting a good night's sleep, you can feel the ground was curving toward something instead of away from it. If you know you know. It's like that primal intuitive sensation (the amygdala, had to google that admittedly) from before we rotted our brains from endless sex at our fingertips. But you can feel it curve toward your body.
 
-In 1897, Prof. U.G. Morrow supervised the geodetic survey. The Koreshans placed perpendicular standards at the edge of quiet water. Horizontal bars of that sweet well-seasoned [mahogany and brass](/news/the-cellular-cosmogony/), adjusted to precision. They extended a chord from the top of the uprights at right angles to two points at the surface of the water.
+Prof. U.G. Morrow supervised his geodetic survey in 1897, . The Koreshans placed perpendicular standards at the edge of quiet water. Horizontal bars of that sweet well-seasoned [mahogany and brass](/news/the-cellular-cosmogony/), adjusted to precision. They extended a chord from the top of the uprights at right angles to two points at the surface of the water.
 
 And guess what we all already now it. The line met the water.
 
