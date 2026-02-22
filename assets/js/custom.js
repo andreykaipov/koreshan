@@ -260,9 +260,9 @@ $(document).ready(function () {
   });
 });
 
-// --- Title Glitch (rare, ~8% of page loads) ---
+// --- Title Glitch (rare, ~10% of page loads) ---
 (function () {
-  if (Math.random() > 0.08) return;
+  if (Math.random() > 0.10) return;
   $(document).ready(function () {
     var $t = $('.bold-title');
     if (!$t.length) return;
@@ -285,7 +285,7 @@ $(document).ready(function () {
         );
         setTimeout(function () { $t.html(orig).removeClass('arg-glitch'); }, 3000);
       }, 60);
-    }, Math.random() * 10000 + 5000);
+    }, Math.random() * 2000 + 500); // delay of 0.5s to 2.5s
   });
 })();
 
