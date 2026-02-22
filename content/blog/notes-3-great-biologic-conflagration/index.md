@@ -14,7 +14,7 @@ I keep going to bed late man. Whenever I start to taste metal att he back of my 
 
 Koresh wrote that we're approaching a [great biologic conflagration](/news/the-cellular-cosmogony/). Thousands will dematerialize through electromagnetic vibration directed by one mind.
 
-> *You will come to find that we are all one mind* <br>
+> *And you will come to find that we are all one mind* <br>
 > *Capable of all that's imagined and all conceivable* <br>
 > *- Reflection, TOOL*
 
