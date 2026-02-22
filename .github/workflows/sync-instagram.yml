@@ -32,6 +32,8 @@ jobs:
 
       - name: Sync Instagram posts
         id: sync
+        env:
+          INSTAGRAM_SESSION: ${{ secrets.INSTAGRAM_SESSION }}
         run: python scripts/sync_instagram.py
 
       - name: Commit and push changes

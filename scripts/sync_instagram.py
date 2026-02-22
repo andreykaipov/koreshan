@@ -16,13 +16,16 @@ Detects already-synced posts by scanning instagram_url in existing frontmatter.
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import textwrap
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -33,6 +36,8 @@ import instaloader
 # ---------------------------------------------------------------------------
 LOOKBACK_DAYS = 3  # Only check posts from the last N days
 MAX_VIDEO_SIZE_MB = 20  # Compress videos to stay under Cloudflare's 25MB limit
+DELAY_BETWEEN_ACCOUNTS = 5  # Seconds to wait between fetching different accounts
+MAX_CONNECTION_ATTEMPTS = 3  # Don't retry forever on 429s
 INSTAGRAM_ACCOUNTS = [
     {
         "username": "fried.works",
@@ -390,6 +395,44 @@ def sync_account(L: instaloader.Instaloader, account: dict, synced: set[str]) ->
     return new_count
 
 
+def _try_login(L: instaloader.Instaloader) -> None:
+    """
+    Attempt to authenticate with Instagram using one of these methods
+    (checked in order):
+
+    1. INSTAGRAM_SESSION env var — base64-encoded session file previously
+       exported with ``instaloader --login <user> --sessionfile <file>``.
+    2. INSTAGRAM_USER / INSTAGRAM_PASS env vars — plain username + password.
+
+    Falls back to anonymous access when no credentials are set.
+    """
+    session_b64 = os.environ.get("INSTAGRAM_SESSION", "").strip()
+    if session_b64:
+        try:
+            raw = base64.b64decode(session_b64)
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".session")
+            tmp.write(raw)
+            tmp.close()
+            L.load_session_from_file(username="_", filename=tmp.name)
+            os.unlink(tmp.name)
+            print(f"Loaded Instagram session (logged in as {L.context.username})")
+            return
+        except Exception as e:
+            print(f"Warning: could not load INSTAGRAM_SESSION: {e}")
+
+    ig_user = os.environ.get("INSTAGRAM_USER", "").strip()
+    ig_pass = os.environ.get("INSTAGRAM_PASS", "").strip()
+    if ig_user and ig_pass:
+        try:
+            L.login(ig_user, ig_pass)
+            print(f"Logged in to Instagram as {ig_user}")
+            return
+        except Exception as e:
+            print(f"Warning: Instagram login failed: {e}")
+
+    print("Running without Instagram login (anonymous, lower rate limits)")
+
+
 def sync() -> int:
     """
     Main sync function. Returns the number of new posts synced.
@@ -397,7 +440,7 @@ def sync() -> int:
     synced = load_synced_shortcodes()
     print(f"Already synced: {len(synced)} posts")
 
-    # Initialize Instaloader (no login needed for public profiles)
+    # Initialize Instaloader
     L = instaloader.Instaloader(
         download_pictures=False,
         download_videos=False,
@@ -406,10 +449,21 @@ def sync() -> int:
         download_comments=False,
         save_metadata=False,
         compress_json=False,
+        max_connection_attempts=MAX_CONNECTION_ATTEMPTS,
     )
 
+    # Disable the iPhone API — GitHub Actions datacenter IPs get
+    # rate-limited much harder on that endpoint.
+    L.context.iphone_support = False
+
+    # Authenticate if credentials are available (much higher rate limits).
+    _try_login(L)
+
     total = 0
-    for account in INSTAGRAM_ACCOUNTS:
+    for idx, account in enumerate(INSTAGRAM_ACCOUNTS):
+        if idx > 0:
+            print(f"\nWaiting {DELAY_BETWEEN_ACCOUNTS}s before next account...")
+            time.sleep(DELAY_BETWEEN_ACCOUNTS)
         try:
             count = sync_account(L, account, synced)
             total += count
