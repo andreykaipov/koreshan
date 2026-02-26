@@ -25,7 +25,7 @@ The whole of Copernican astronomy is built on an optical artifact and not one of
 
 Their own man. An eminent astronomer at Cambridge, saying in print that the entire discipline stands on authority. Not measurement. Authority. The say-so of men who inherited an assumption and never checked it. Because you can't.
 
-I read this quote six months ago online and it made me so angry I literally got up and went to go for a walk. Walking through the park after work, all these people running by, every one of them believes the Earth is convex because a teacher told them so, and that teacher believed it because another teacher told THEM so, and so it goes back and back and back and back to Copernicus, who guessed, and nobody since then has ever laid a piece of tinted mahogany against the water and looked at where the line goes.
+I read this quote six months ago online and it made me so angry I literally got up and went to go for a walk. Walking through the park after work, all these people running by, every one of them believes the Earth is convex because a teacher told them so, and that teacher believed it because another teacher told THEM so, and so it goes back and back and back and back to Copernicus, who guessed, and nobody since then has ever laid a piece of tinted mahogany against the water and looked at where the line goes. Well, now it's time to bring sexy back.
 
 Koresh looked. He called the astronomers "mountebanks". The Lord himself said "fools and blind". Koresh quoted it because, he wrote, "it was the best way to exasperate people and set them thinking".
 
