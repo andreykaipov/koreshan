@@ -3,7 +3,7 @@ type: member
 title: Marcela Herrera
 role: Actor, Emma Norton
 photo: /img/team/img_9302.jpeg
-weight: 2
+weight: 1
 website: https://marcelaherreraactress.com/
 instagram: https://www.instagram.com/actressmarcelaherrera/
 ---
