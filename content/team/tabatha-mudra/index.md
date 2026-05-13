@@ -1,7 +1,7 @@
 ---
 type: member
 title: Tabatha Mudra
-role: Cinematographer & Producer
+role: Cinematographer, Producer
 photo: /img/team/tabatha-mudra.png
 weight: 0
 image_width: 20rem
