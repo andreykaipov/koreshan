@@ -3,7 +3,7 @@ type: member
 title: Tabatha Mudra
 role: Cinematographer, Producer
 photo: /img/team/tabatha-mudra.png
-weight: 0
+weight: -1
 image_width: 20rem
 website: https://tabathamudraphotovideo.com/
 instagram: https://www.instagram.com/thetabathamudra/
