@@ -16,7 +16,7 @@ The book is alive!
 
 And I don't mean that as one of those woohoo poetry flunkies. I mean that every time I open the Cellular Cosmogony, the sentences rearrange themselves into configurations that weren't there the last time I read it. As in, there's still something new I learn every time. 
 
-Koresh composed it from his articles in *The Flaming Sword*, publishd by the Guiding Star out of Estero. The place where [he would die](/news/the-death-of-cyrus-teed/) and be [laid to rest](/news/cyrus-teed-laid-to-rest/) in a bathtub while the sisters prayed and the flies circled. The capital of the world.
+Koresh composed it from his articles in *The Flaming Sword*, published by the Guiding Star out of Estero. The place where [he would die](/news/the-death-of-cyrus-teed/) and be [laid to rest](/news/cyrus-teed-laid-to-rest/) in a bathtub while the sisters prayed and the flies circled. The capital of the world.
 
 The premise fit in two sentences:
 
