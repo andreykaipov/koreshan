@@ -891,8 +891,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: default; /* not dismissable until the full message has revealed */
   animation: arg-fade-in 3s ease forwards;
+}
+
+/* Added by JS once the full message has unfolded (~35s in). */
+#arg-vigil.arg-vigil-dismissable {
+  cursor: pointer;
 }
 
 .arg-vigil-inner {

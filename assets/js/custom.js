@@ -330,16 +330,25 @@ $(document).ready(function () {
 // ============================================================
 
 // --- The Vigil: idle watcher ---
-// If you sit on the homepage for 3+ minutes without interacting,
+// If you sit on the homepage for 1+ minute without interacting,
 // the screen dims and a message appears — like the followers
 // waiting by Teed's bathtub.
+//
+// Once-per-user: only marked "seen" after the user explicitly clicks
+// to dismiss (after the full text has revealed). Refresh / close / blur
+// / AFK all give them another chance on a future visit — so they're
+// guaranteed to actually witness it before it goes away forever.
 (function () {
   if (!$('.hero-emblem').length) return; // homepage only
+  if (localStorage.getItem('arg_vigil_seen') === 'true') return; // already witnessed
   var vigilTimer, vigilActive = false;
-  var idleTime = 180 * 1000; // 180s
+  var idleTime = 60 * 1000; // 60s
+  // Last line has animation-delay:30s plus its own fade-in (~4s).
+  // Give a small buffer before allowing dismissal.
+  var fullRevealTime = 35 * 1000;
 
   function resetVigil() {
-    if (vigilActive) return; // don't dismiss — only a click on the overlay dismisses
+    if (vigilActive) return; // vigil persists once shown — only a click dismisses
     clearTimeout(vigilTimer);
     if (document.hidden) return; // don't start timer while tab is unfocused
     vigilTimer = setTimeout(startVigil, idleTime);
@@ -362,29 +371,38 @@ $(document).ready(function () {
       '<p class="arg-vigil-line arg-ill-dim" style="animation-delay:30s">How will you answer?</p>' +
       '</div>';
     document.body.appendChild(el);
+    // Breadcrumb that the vigil was kept (for other ARG logic).
     localStorage.setItem('arg_vigil_kept', 'true');
-    el.addEventListener('click', dismissVigil);
+    // Don't allow dismissal until the full text has revealed —
+    // prevents accidental clicks from killing the moment early.
+    setTimeout(function () {
+      el.classList.add('arg-vigil-dismissable');
+      el.addEventListener('click', dismissVigil);
+    }, fullRevealTime);
   }
 
   function dismissVigil() {
     var el = document.getElementById('arg-vigil');
     if (!el) return;
     vigilActive = false;
+    // Only NOW do we mark it as seen — explicit acknowledgment.
+    // If they refreshed, closed the tab, or went AFK, the flag was
+    // never set and they get another chance next visit.
+    localStorage.setItem('arg_vigil_seen', 'true');
     el.classList.add('arg-ill-out');
     setTimeout(function () { el.remove(); }, 1200);
-    resetVigil();
   }
 
   ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(function (evt) {
     document.addEventListener(evt, resetVigil, { passive: true });
   });
 
-  // Pause idle timer when tab/window loses focus; restart when it returns.
-  // Use both visibilitychange AND blur/focus because on macOS, Cmd+Tab
-  // may not trigger visibilitychange if the window is still partially visible.
+  // Pause the idle timer when the tab/window is hidden, but DO NOT
+  // remove an active vigil — it should patiently wait for the user
+  // to return, just like the followers waited by the tub.
   function pauseVigil() {
+    if (vigilActive) return; // leave the vigil standing
     clearTimeout(vigilTimer);
-    if (vigilActive) dismissVigil();
   }
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) pauseVigil(); else resetVigil();
