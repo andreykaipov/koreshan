@@ -14,6 +14,10 @@ Where is Cyrus Teed? Did he theocracize? Did he drift into the gulf?
 
 This weekend, hopefully, we’ll find our Messiah. Open Auditions for various roles, but really honing to find our Leader for Last Days of Koreshan. Paid, non-union.
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DVyMLUgDmzj/" style="max-width:540px; width:100%; margin:auto;"></blockquote><script async src="//www.instagram.com/embed.js"></script>
+
+
+
 Auditions: March 14, 1-3 [@1310gallery](https://www.instagram.com/1310gallery/) in Fort Lauderdale
 
 Shoot days: May 1-5
