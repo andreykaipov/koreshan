@@ -4,7 +4,7 @@ group: crew
 title: Victoria Olson
 role: Wardrobe Designer
 photo: /img/team/victoria_elphaba.png
-weight: 4
+weight: 3
 ---
 Victoria Olson is a costumer/stylist/Designer working her way from Off-Off Broadway to Broadway. She has served as assistant to designer Ann Roth on many Broadway shows and film Hair, The Island and Rock of Ages.
 
