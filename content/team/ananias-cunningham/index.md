@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Ananias Cunningham
 role: Actor, Ash
 photo: /img/team/ananias-cunningham.jpg

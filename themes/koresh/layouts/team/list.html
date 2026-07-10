@@ -2,17 +2,17 @@
 <div class="container markdown top-pad">
     {{ .Content }}
 </div>
+{{ $ctx := . }}
+{{ $columWidth := cond .Site.Params.team.useTwoColumns "is-half" "is-one-third" }}
+{{ $width := cond .Site.Params.team.useTwoColumns "490x" "302x" }}
+{{ range $group := slice (dict "key" "cast" "label" "Cast") (dict "key" "crew" "label" "Crew") }}
+{{ $members := where $ctx.Pages "Params.group" $group.key }}
+{{ with $members }}
 <div class="container">
     <div class="section">
+        <h2 class="title is-2 has-text-centered">{{ $group.label }}</h2>
         <div class="columns is-multiline">
-            {{ $numberOfPages := len .Pages}}
-            {{ range .Pages.ByWeight }}
-            {{ $width := "302x" }}
-            {{ $columWidth := "is-one-third" }}
-            {{ if .Site.Params.team.useTwoColumns }}
-            {{ $columWidth = "is-half" }}
-            {{ $width = "490x" }}
-            {{ end}}
+            {{ range .ByWeight }}
             <div class="column {{ $columWidth }}">
                 <div class="card">
                     {{ if .Resources.ByType "image" }}
@@ -42,4 +42,6 @@
         </div>
     </div>
 </div>
+{{ end }}
+{{ end }}
 {{ end }}

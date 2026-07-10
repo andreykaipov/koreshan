@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Shamari Bryan
 role: Assistant Set Decorator
 photo: /img/team/shamari-bryant.webp

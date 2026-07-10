@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Ana Marie Calise
 role: Actor, Victoria Gratia
 photo: /img/team/ana-marie-calise.jpg

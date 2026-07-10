@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Joshua 'Jestic' Felipe
 role: Grip & Electric
 photo: /img/team/jestic_1080px.jpg

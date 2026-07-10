@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Nina Herzog
 role: Actor, Vesta
 photo: /img/team/nina-herzog.jpg

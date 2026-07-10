@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Mila Sumrall
 role: Actor, Christine
 photo: /img/team/sumrallmilaheadshot_1500px.png

@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Lyn Millner
 role: Consultant
 photo: /img/team/lyn-millner.png

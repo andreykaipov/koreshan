@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Cookie Colletti
 role: Actor, Jennie Andrews
 photo: /img/team/cookie-colletti.jpg

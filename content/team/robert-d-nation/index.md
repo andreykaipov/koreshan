@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Robert D. Nation
 role: Actor, County Doctor
 photo: /img/team/robert-d.-nation.jpg

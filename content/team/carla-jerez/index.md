@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Carla Jerez
 role: Actor, Anna
 photo: /img/team/carla-jerez_1500px.png

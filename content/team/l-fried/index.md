@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: L. Fried
 role: Director, Writer, Producer
 photo: /img/team/lfried.jpg

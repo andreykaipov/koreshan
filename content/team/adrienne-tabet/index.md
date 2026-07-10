@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Adrienne Tabet
 role: SFX Sculptor
 photo: /img/team/adrienne-tabet.png

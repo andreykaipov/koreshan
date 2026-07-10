@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Johnisha Williams
 role: Assistant Set Decorator
 photo: /img/team/img_6537.jpeg

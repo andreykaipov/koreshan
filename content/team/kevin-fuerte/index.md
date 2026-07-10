@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Kevin Fuerte
 role: Gaffer
 photo: /img/team/kevin-fuerte.jpeg

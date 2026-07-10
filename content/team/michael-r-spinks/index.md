@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Michael R. Spinks
 role: Actor, Cyrus Teed
 photo: /img/team/michael-spinks.jpg

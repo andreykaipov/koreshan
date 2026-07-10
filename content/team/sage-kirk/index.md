@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Sage Kirk
 role: Hair/Makeup Artist
 photo: /img/team/screenshot-2026-07-09-at-10.44.25 am.png

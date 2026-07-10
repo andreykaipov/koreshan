@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Nicole Santiago
 role: 1st Assistant Camera
 photo: /img/team/img-4676-1_orig.jpg

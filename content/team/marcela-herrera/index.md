@@ -1,5 +1,6 @@
 ---
 type: member
+group: cast
 title: Marcela Herrera
 role: Actor, Emma Norton
 photo: /img/team/img_9302.jpeg

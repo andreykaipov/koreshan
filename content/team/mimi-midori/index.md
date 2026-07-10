@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Mimi Midori
 role: Assistant Director
 photo: /img/team/mimi_color.jpeg

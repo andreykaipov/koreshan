@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Victoria Olson
 role: Wardrobe Designer
 photo: /img/team/victoria_elphaba.png

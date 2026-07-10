@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Chris Rapalo
 role: DIT / Scriptsupervisor
 photo: /img/team/chrisrapalo_1473092142_79.webp

@@ -5,17 +5,17 @@
         <h2 class="title is-2 has-text-centered">
             {{ .Title | markdownify }}
         </h2>
+        {{ $columWidth := cond .Site.Params.team.useTwoColumns "is-half" "is-one-third" }}
+        {{ $teamPage := . }}
+        {{ range $group := slice (dict "key" "cast" "label" "Cast") (dict "key" "crew" "label" "Crew") }}
+        {{ $members := where $teamPage.Pages "Params.group" $group.key }}
+        {{ with $members }}
         <div class="section">
+            <h3 class="title is-3 has-text-centered">{{ $group.label }}</h3>
             <div class="columns is-multiline">
-                {{ $totalProjects := (len .Pages) }}
-                {{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default $totalProjects }}
-                {{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
-                {{ $columWidth := "is-one-third" }}
-                {{ if .Site.Params.team.useTwoColumns }}
-                  {{ $columWidth = "is-half" }}
-                {{ end}}
+                {{ range .ByWeight }}
                 <div class="column {{ $columWidth }}">
-                    <div class="card" data-target="#project-{{ $index }}">
+                    <div class="card" data-target="#project-{{ .File.ContentBaseName }}">
                         <div class="card-content has-text-centered top-pad">
                             <h1>{{ if .Params.external_link }}<a href="{{ .Params.external_link }}">{{ .Title | markdownify }}</a>{{ else }}<span class="team-name">{{ .Title | markdownify }}</span>{{ end }}</h1>
                             {{ if .Params.role }}
@@ -27,10 +27,7 @@
                 {{ end }}
             </div>
         </div>
-        {{ if lt $numberOfProjectsToShow $totalProjects }}
-        <div class="container has-text-centered top-pad">
-            <a href="{{ .Permalink }}">{{ i18n "index_projects_allProjects" . }}</a>
-        </div>
+        {{ end }}
         {{ end }}
     </div>
     <!-- End Team container -->
@@ -39,11 +36,10 @@
 <!-- End Team section -->
 <div class="container"><hr class="section-divider"></div>
 <!-- Team modals (outside section to avoid stacking context issues) -->
-{{ $numberOfProjectsToShow := .Site.Params.home.numberOfProjectsToShow | default (len .Pages) }}
-{{ range $index, $element := .Pages.ByWeight | first $numberOfProjectsToShow }}
+{{ range .Pages.ByWeight }}
 {{ if not .Params.external_link }}
 {{ $page := . }}
-<div class="modal" id="project-{{ $index }}">
+<div class="modal" id="project-{{ .File.ContentBaseName }}">
     <div class="modal-background"></div>
     <div class="modal-card">
         {{ with .Title }}
@@ -83,7 +79,7 @@
             {{ end }}
         </section>
     </div>
-    <button class="modal-close is-large" aria-label="close" data-target="#project-{{ $index }}"></button>
+    <button class="modal-close is-large" aria-label="close" data-target="#project-{{ .File.ContentBaseName }}"></button>
 </div>
 {{ end }}
 {{ end }}

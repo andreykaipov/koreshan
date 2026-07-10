@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Tristan Wauchope
 role: Behind the Scenes Photographer & Videographer
 photo: /img/team/c-1721884010791-tristan_wauchope_1000016264.jpg

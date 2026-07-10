@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Andrey Kaipov
 role: Web Developer
 photo: /img/team/andrey.png

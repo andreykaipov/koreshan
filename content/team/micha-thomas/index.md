@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Micha Thomas
 role: Sound Operator
 photo: /img/team/micha-thomas.png

@@ -1,5 +1,6 @@
 ---
 type: member
+group: crew
 title: Tabatha Mudra
 role: Cinematographer, Producer
 photo: /img/team/tabatha-mudra.png
