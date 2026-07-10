@@ -3,7 +3,7 @@ type: member
 title: Nina Herzog
 role: Actor, Vesta
 photo: /img/team/nina-herzog.jpg
-weight: 0
+weight: 5
 website: https://www.iamninaherzog.com/
 instagram: https://www.instagram.com/iamninaherzog/
 ---
