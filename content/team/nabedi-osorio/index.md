@@ -4,7 +4,7 @@ group: crew
 title: Nabedi Osorio
 role: Swing / Production Assistant
 photo: /img/team/nabedi.jpeg
-weight: 3
+weight: 5
 instagram: https://www.instagram.com/nabedi
 ---
 Producer
