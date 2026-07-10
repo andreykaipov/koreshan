@@ -97,6 +97,7 @@ collections:
     public_folder: "/img/blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", required: false, hint: "Leave blank to auto-generate from the title. Only fill this in to override the URL. IMPORTANT: if you used Duplicate to create this post, clear this field (or change it) so it doesn't reuse the original post's URL." }
       - { label: "Author", name: "author", widget: "string", default: "L. Fried" }
       - label: "Category"
         name: "category"
