@@ -4,7 +4,7 @@ author: Tristan Wauchope
 category: news
 date: 2026-05-11T15:22:00.000-04:00
 instagram_url: https://www.instagram.com/p/DYNDf_xFfU6/
-slug: have-you-heard-about-the-koreshans
+slug: an-intimate-look-inside-with-tristan-wauchope
 tags:
   - production
 description: Before Florida Man, there were the Koreshans. Last Days explores

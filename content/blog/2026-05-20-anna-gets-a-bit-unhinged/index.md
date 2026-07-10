@@ -4,7 +4,7 @@ author: Carla Jerez
 category: news
 date: 2026-05-20T14:22:00.000-04:00
 instagram_url: https://www.instagram.com/reel/DYj-zzOO6Hf/
-slug: have-you-heard-about-the-koreshans
+slug: anna-gets-a-bit-unhinged
 tags:
   - production
 description: Before Florida Man, there were the Koreshans. Last Days explores

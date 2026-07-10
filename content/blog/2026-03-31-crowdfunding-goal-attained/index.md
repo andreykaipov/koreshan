@@ -4,7 +4,7 @@ author: L. Fried
 category: news
 date: 2026-03-31T13:00:00.000-04:00
 instagram_url: https://www.instagram.com/reel/DWjn-NcDi4p/
-slug: have-you-heard-about-the-koreshans
+slug: crowdfunding-goal-attained
 tags:
   - crowdfunding
   - production

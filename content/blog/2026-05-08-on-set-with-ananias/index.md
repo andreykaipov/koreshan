@@ -4,7 +4,7 @@ author: Ananias Cunningham
 category: news
 date: 2026-05-08T15:22:00.000-04:00
 instagram_url: https://www.instagram.com/reel/DYE3-iMux7f/
-slug: have-you-heard-about-the-koreshans
+slug: on-set-with-ananias
 tags:
   - production
 description: Before Florida Man, there were the Koreshans. Last Days explores

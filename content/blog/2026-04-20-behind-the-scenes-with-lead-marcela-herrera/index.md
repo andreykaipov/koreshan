@@ -4,7 +4,7 @@ author: Marcela Herrera
 category: news
 date: 2026-04-20T10:22:00.000-04:00
 instagram_url: https://www.instagram.com/reel/DXV9ye_jfAr/
-slug: have-you-heard-about-the-koreshans
+slug: behind-the-scenes-with-lead-marcela-herrera
 tags:
   - production
 description: Before Florida Man, there were the Koreshans. Last Days explores

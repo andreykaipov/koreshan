@@ -4,7 +4,7 @@ author: L. Fried
 category: news
 date: 2026-03-24T12:00:00.000-04:00
 instagram_url: https://www.instagram.com/reel/DWSla92DGnm/
-slug: have-you-heard-about-the-koreshans
+slug: miss-gratia-we-wait-for-your-arrival
 tags:
   - production
 description: Before Florida Man, there were the Koreshans. Last Days explores
