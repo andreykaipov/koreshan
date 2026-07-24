@@ -3,7 +3,7 @@ title: "Cast Highlight: Marcela Herrera"
 slug: ""
 author: L.Fried
 category: news
-date: 2026-05-11T15:22:00.000-04:00
+date: 2026-07-13T15:22:00.000-04:00
 tags:
   - production
 instagram_url: https://www.instagram.com/p/DawYbcaDCaV
@@ -20,21 +20,8 @@ Gaffer [@kfuerte](https://www.instagram.com/kfuerte/)
 
 More highlights, stills and shoutouts coming soon!
 
-Made possible by
-[@browardarts](https://www.instagram.com/browardarts/)
-Community Foundation of Broward
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DawYbcaDCaV" style="max-width:540px; width:100%; margin:auto;"></blockquote><script async src="//www.instagram.com/embed.js">
 
-With help from
-[@filmflorida](https://www.instagram.com/filmflorida/)
-[@filmlauderdale](https://www.instagram.com/filmlauderdale/)
 
-Shot on location:
-[@samplemcdougaldhouse](https://www.instagram.com/samplemcdougaldhouse/)
-
-Archival imagery
-State archives of Florida / [@floridamemory](https://www.instagram.com/floridamemory/)
-
-Last Days of Koreshan
-[\#floridafilm](https://www.instagram.com/explore/tags/floridafilm/) [\#historicalfilm](https://www.instagram.com/explore/tags/historicalfilm/) [\#indie](https://www.instagram.com/explore/tags/indie/) [\#independentfilm](https://www.instagram.com/explore/tags/independentfilm/)
 
 [](https://www.instagram.com/explore/tags/floridafilm/)
