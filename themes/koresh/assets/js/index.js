@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 // Modal closer
-$('.card').click(function () {
+$('.card[data-target]').click(function () {
   $($(this).attr('data-target')).addClass('is-active')
   $('html').addClass('modal-open')
 })
