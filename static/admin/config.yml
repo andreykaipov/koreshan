@@ -23,6 +23,7 @@ collections:
         file: "content/home/index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Teaser Video (YouTube URL)", name: "teaser", widget: "string", required: false, hint: "Paste a YouTube link (e.g. https://www.youtube.com/watch?v=…). Shows an embedded player near the top of the page. Leave blank to hide it." }
           - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
 
       - name: "taglines"

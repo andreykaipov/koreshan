@@ -69,6 +69,8 @@
     <main id="main-content">
         {{ with .Site.GetPage "/home" }}
         {{ $home := . }}
+        <!-- Teaser video section -->
+        {{ partial "home/teaser.html" . }}
         {{ $pages := .Resources.ByType "page" }}
 
         {{ with .Site.GetPage "/blog" }}

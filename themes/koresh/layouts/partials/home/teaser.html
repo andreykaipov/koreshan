@@ -1,0 +1,28 @@
+{{ with .Params.teaser }}
+{{ $url := . }}
+{{ $id := "" }}
+{{ if strings.Contains $url "youtu.be/" }}
+{{ $id = index (split (index (split $url "youtu.be/") 1) "?") 0 }}
+{{ else if strings.Contains $url "v=" }}
+{{ $id = index (split (index (split $url "v=") 1) "&") 0 }}
+{{ else if strings.Contains $url "embed/" }}
+{{ $id = index (split (index (split $url "embed/") 1) "?") 0 }}
+{{ else }}
+{{ $id = $url }}
+{{ end }}
+{{ with $id }}
+<div class="section" id="teaser">
+  <div class="container">
+    <div class="teaser-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ . }}?rel=0" title="Last Days of Koreshan — Teaser"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <hr>
+</div>
+{{ end }}
+{{ end }}
