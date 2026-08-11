@@ -549,10 +549,9 @@ img {
 }
 
 .sponsors-heading {
-  font-size: 0.85rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.65;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
   margin-bottom: 1.25rem;
 }
 
@@ -571,8 +570,8 @@ img {
 }
 
 .sponsor img {
-  max-height: 60px;
-  max-width: 180px;
+  max-height: 80px;
+  max-width: 240px;
   width: auto;
   height: auto;
   object-fit: contain;

@@ -124,7 +124,7 @@
                 {{ end }}
                 {{ with .Params.sponsors }}
                 <div class="sponsors">
-                    <h3 class="sponsors-heading has-text-centered">Supported by</h3>
+                    <h3 class="sponsors-heading has-text-centered">{{ $.Params.sponsorsHeading | default "Funded in part by" }}</h3>
                     <div class="sponsors-grid">
                         {{ range . }}
                         {{ if .url }}
