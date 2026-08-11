@@ -1,14 +1,14 @@
 ---
 title: Support
 weight: 50
-sponsorsHeading: "Funded in part by"
+sponsorsHeading: Made possible with support from
 sponsors:
-  - name: "Broward County Cultural Division"
-    logo: "/img/sponsors/broward-cultural-division.png"
-    url: "https://www.broward.org/Arts"
-  - name: "Community Foundation of Broward"
-    logo: "/img/sponsors/community-foundation-broward.png"
-    url: "https://www.cfbroward.org"
+  - name: Broward County Cultural Division
+    logo: /img/sponsors/broward-cultural-division.png
+    url: https://www.broward.org/Arts
+  - name: Community Foundation of Broward
+    logo: /img/sponsors/community-foundation-broward.png
+    url: https://www.cfbroward.org
 ---
 Based on a true story, *Last Days of Koreshan* explores how utopian idealism can crumble when unfulfilled promises are made by false prophets. Although it occurred over a century ago, the tale of the Koreshans is one both overlooked and quite prescient towards today's climate.
 
