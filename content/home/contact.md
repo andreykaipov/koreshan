@@ -2,6 +2,6 @@
 title: "Contact"
 ---
 
-Are you interested in the potential of this project? Would you like to collaborate?
+Interested in the film? Want to collaborate, host a screening, or learn more?
 
-Send your headshots, resumes, and inquiries to the email below.
+We'd love to hear from you. Please reach out to the email below. :)
