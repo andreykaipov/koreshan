@@ -9,7 +9,7 @@ sponsors:
   - name: Community Foundation of Broward
     logo: /img/sponsors/community-foundation-broward.png
     url: https://www.cfbroward.org
-supportersHeading: With additional support from
+supportersHeading: Additional supporters
 supporters:
   - name: Jane & John Doe
   - name: The Example Family Foundation

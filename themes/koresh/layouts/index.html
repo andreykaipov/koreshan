@@ -122,9 +122,10 @@
                     {{ .Content }}
                 </div>
                 {{ end }}
+                {{ $section := . }}
                 {{ with .Params.sponsors }}
                 <div class="sponsors">
-                    <h3 class="sponsors-heading has-text-centered">{{ $.Params.sponsorsHeading | default "Funded in part by" }}</h3>
+                    <h3 class="sponsors-heading has-text-centered">{{ $section.Params.sponsorsHeading | default "Funded in part by" }}</h3>
                     <div class="sponsors-grid">
                         {{ range . }}
                         {{ if .url }}
@@ -142,7 +143,7 @@
                 {{ end }}
                 {{ with .Params.supporters }}
                 <div class="supporters">
-                    <h3 class="supporters-heading has-text-centered">{{ $.Params.supportersHeading | default "With additional support from" }}</h3>
+                    <h3 class="supporters-heading has-text-centered">{{ $section.Params.supportersHeading | default "Additional supporters" }}</h3>
                     <ul class="supporters-list has-text-centered">
                         {{ range . }}
                         <li class="supporter">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</li>
