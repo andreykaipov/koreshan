@@ -24,6 +24,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Teaser Video (YouTube URL)", name: "teaser", widget: "string", required: false, hint: "Paste a YouTube link (e.g. https://www.youtube.com/watch?v=…). Shows an embedded player near the top of the page. Leave blank to hide it." }
+          - { label: "Teaser Width (%)", name: "teaserWidth", widget: "number", required: false, default: 100, value_type: "int", min: 20, max: 100, step: 5, hint: "Width of the teaser video as a percentage of the page (100 = full page width)." }
           - { label: "Tagline (appears below title)", name: "body", widget: "markdown" }
 
       - name: "taglines"

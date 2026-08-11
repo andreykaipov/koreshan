@@ -10,10 +10,11 @@
 {{ else }}
 {{ $id = $url }}
 {{ end }}
+{{ $width := $.Params.teaserWidth | default 100 }}
 {{ with $id }}
-<div class="section" id="teaser">
+<div class="section teaser-section" id="teaser">
   <div class="container">
-    <div class="teaser-embed">
+    <div class="teaser-embed" style="max-width: {{ $width }}%;">
       <iframe src="https://www.youtube-nocookie.com/embed/{{ . }}?rel=0" title="Last Days of Koreshan — Teaser"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
