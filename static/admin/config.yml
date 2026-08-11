@@ -56,10 +56,23 @@ collections:
       - name: "support"
         label: "Support"
         file: "content/home/support.md"
+        media_folder: "/static/img/sponsors"
+        public_folder: "/img/sponsors"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Display Order", name: "weight", widget: "number", hint: "Lower = appears earlier" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Sponsors / Logos"
+            name: "sponsors"
+            widget: "list"
+            required: false
+            label_singular: "Sponsor"
+            summary: "{{fields.name}}"
+            hint: "Logos shown in a centered 'Supported by' row at the bottom of the Support section. Add a logo image and (optionally) a link."
+            fields:
+              - { label: "Name", name: "name", widget: "string", hint: "Used for the image alt text / tooltip. Shown as text if no logo is uploaded." }
+              - { label: "Logo", name: "logo", widget: "image", required: false, choose_url: false, hint: "Upload the sponsor's logo. Transparent PNG or SVG works best." }
+              - { label: "Link", name: "url", widget: "string", required: false, hint: "Optional. Makes the logo clickable (opens in a new tab)." }
 
       - name: "contact"
         label: "Contact"

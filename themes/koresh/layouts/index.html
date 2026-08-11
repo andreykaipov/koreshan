@@ -122,6 +122,24 @@
                     {{ .Content }}
                 </div>
                 {{ end }}
+                {{ with .Params.sponsors }}
+                <div class="sponsors">
+                    <h3 class="sponsors-heading has-text-centered">Supported by</h3>
+                    <div class="sponsors-grid">
+                        {{ range . }}
+                        {{ if .url }}
+                        <a class="sponsor" href="{{ .url }}" target="_blank" rel="noopener noreferrer"{{ with .name }} title="{{ . }}"{{ end }}>
+                            {{ if .logo }}<img src="{{ .logo }}" alt="{{ .name | default "Sponsor" }}" loading="lazy">{{ else }}<span class="sponsor-name">{{ .name }}</span>{{ end }}
+                        </a>
+                        {{ else }}
+                        <span class="sponsor">
+                            {{ if .logo }}<img src="{{ .logo }}" alt="{{ .name | default "Sponsor" }}" loading="lazy">{{ else }}<span class="sponsor-name">{{ .name }}</span>{{ end }}
+                        </span>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
             </div>
             <!-- End About container-->
             {{ partial "top-icon.html" . }}

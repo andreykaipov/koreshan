@@ -544,6 +544,53 @@ img {
   border: 0;
 }
 
+.sponsors {
+  margin-top: 2.5rem;
+}
+
+.sponsors-heading {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 1.25rem;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 3rem;
+}
+
+.sponsor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor img {
+  max-height: 60px;
+  max-width: 180px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+a.sponsor:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.sponsor-name {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
 .watch-past {
   background-color: rgba(74, 72, 54, 0.06);
   opacity: 0.9;
