@@ -1,7 +1,8 @@
 ---
 type: member
+group: cast
 title: Ted deChatelet
-role: actor, Tucker
+role: Actor, Tucker
 photo: /img/team/tedheadshot.jpg
 weight: 7
 website: https://www.fau.edu/artsandletters/theatre/more-about-us/our-faculty/ted-dechatelet/

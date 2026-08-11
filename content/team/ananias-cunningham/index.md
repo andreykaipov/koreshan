@@ -5,7 +5,7 @@ title: Ananias Cunningham
 role: Actor, Ash
 photo: /img/team/ananias-cunningham.jpg
 weight: 6
-website: www.youtube.com/@OutdoorKidAnanias
+website: https://www.youtube.com/@OutdoorKidAnanias
 instagram: https://www.instagram.com/outdoor_kid_ananias/
 ---
 Hi 👋🏼 I’m Outdoor Kid!
