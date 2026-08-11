@@ -74,6 +74,17 @@ collections:
               - { label: "Name", name: "name", widget: "string", hint: "Used for the image alt text / tooltip. Shown as text if no logo is uploaded." }
               - { label: "Logo", name: "logo", widget: "image", required: false, choose_url: false, hint: "Upload the sponsor's logo. Transparent PNG or SVG works best." }
               - { label: "Link", name: "url", widget: "string", required: false, hint: "Optional. Makes the logo clickable (opens in a new tab)." }
+          - { label: "Additional Supporters Heading", name: "supportersHeading", widget: "string", required: false, default: "With additional support from", hint: "Heading shown above the text-only supporters list (e.g. donors or funders without a logo)." }
+          - label: "Additional Supporters (text only)"
+            name: "supporters"
+            widget: "list"
+            required: false
+            label_singular: "Supporter"
+            summary: "{{fields.name}}"
+            hint: "Text-only list shown after the sponsor logos. Use for donors or funders without a logo."
+            fields:
+              - { label: "Name", name: "name", widget: "string", hint: "The supporter's name as it should appear." }
+              - { label: "Link", name: "url", widget: "string", required: false, hint: "Optional. Makes the name clickable (opens in a new tab)." }
 
       - name: "contact"
         label: "Contact"

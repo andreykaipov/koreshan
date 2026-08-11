@@ -140,6 +140,16 @@
                     </div>
                 </div>
                 {{ end }}
+                {{ with .Params.supporters }}
+                <div class="supporters">
+                    <h3 class="supporters-heading has-text-centered">{{ $.Params.supportersHeading | default "With additional support from" }}</h3>
+                    <ul class="supporters-list has-text-centered">
+                        {{ range . }}
+                        <li class="supporter">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
             </div>
             <!-- End About container-->
             {{ partial "top-icon.html" . }}
