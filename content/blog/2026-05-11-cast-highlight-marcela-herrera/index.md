@@ -20,7 +20,7 @@ Gaffer [@kfuerte](https://www.instagram.com/kfuerte/)
 
 More highlights, stills and shoutouts coming soon!
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DawYbcaDCaV" style="max-width:540px; width:100%; margin:auto;"></blockquote><script async src="//www.instagram.com/embed.js">
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DawYbcaDCaV" style="max-width:540px; width:100%; margin:auto;"></blockquote>
 
 
 

@@ -36,6 +36,6 @@ Photos: [@tristanwauchope](https://www.instagram.com/tristanwauchope/), photo &
 
 
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DbCEL7OibaY/" style="max-width:540px; width:100%; margin:auto;"></blockquote><script async src="//www.instagram.com/embed.js">
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DbCEL7OibaY/" style="max-width:540px; width:100%; margin:auto;"></blockquote>
 
 [](https://www.instagram.com/explore/tags/floridafilm/)

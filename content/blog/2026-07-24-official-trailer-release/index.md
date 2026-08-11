@@ -9,7 +9,7 @@ instagram_url: https://www.instagram.com/reel/Da1IlkSh6Aw/
 ---
 One cannot express doubt in these unpredictable times….what is certain is a WIP screening in September…
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Da1IlkSh6Aw/" style="max-width:540px; width:100%; margin:auto;"></blockquote><script async src="//www.instagram.com/embed.js">
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Da1IlkSh6Aw/" style="max-width:540px; width:100%; margin:auto;"></blockquote>
 
 [@actressmarcelaherrera](https://www.instagram.com/actressmarcelaherrera/) | Emma
 [@mike.ground.904](https://www.instagram.com/mike.ground.904/) | Cyrus Teed aka Koresh
