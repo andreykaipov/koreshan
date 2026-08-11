@@ -516,7 +516,9 @@ img {
 
 #watch .card h1 {
   font-size: 1.3rem;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
+  padding: 0 0.75rem;
 }
 
 .watch-clickable {
