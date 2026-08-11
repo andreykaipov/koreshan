@@ -5,6 +5,10 @@
 
 <!-- Custom JavaScript -->
 {{ range .Site.Params.customJS -}}
-    {{ $script := resources.Get . | minify }}
-    <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ $script := resources.Get . | minify }}
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 {{- end }}
+
+<!-- Instagram embeds: load embed.js once globally so hand-authored posts
+     don't need (or break on) their own inline <script> tags. -->
+<script async src="//www.instagram.com/embed.js"></script>

@@ -6,10 +6,11 @@
         <h2 class="title is-2 has-text-centered">{{ i18n "index_blog_latestPosts" . }}</h2>
         {{ range first 1 .Pages.ByPublishDate.Reverse }}
         <div class="summary">
-            {{ if .Params.date }}<p class="post-data">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}</p>{{ end }}
+            {{ if .Params.date }}<p class="post-data">{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium")
+                }}</p>{{ end }}
             <h3 class="title is-3 latest-post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
-           <div class="markdown">
-                {{ .Summary }}
+            <div class="markdown">
+                {{ .Summary | replaceRE "<script[^>]*instagram\\.com/embed\\.js[^>]*></script>" "" | replaceRE "<script[^>]*instagram\\.com/embed\\.js[^>]*>" "" | safeHTML }}
                 {{ if .Truncated }}
                 <a href="{{ .Permalink }}">{{ i18n "index_blog_readMore" . }}</a>
                 {{ end }}
@@ -26,8 +27,8 @@
         {{if .Site.Params.home.allPostsArchiveFormat}}
         {{ partialCached "blog/archive.html" .}}
         {{else}}
-            {{ partialCached "blog/li.html" . }}
-            {{end}}
+        {{ partialCached "blog/li.html" . }}
+        {{end}}
     </div>
 </div>
 {{ else }}

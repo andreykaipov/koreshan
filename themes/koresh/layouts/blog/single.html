@@ -98,7 +98,7 @@
             <!-- Begin blog post content -->
             <main id="main-content">
                 <article class="container markdown top-pad">
-                    {{ .Content }}
+                    {{ .Content | replaceRE "<script[^>]*instagram\\.com/embed\\.js[^>]*></script>" "" | replaceRE "<script[^>]*instagram\\.com/embed\\.js[^>]*>" "" | safeHTML }}
                 </article>
             </main>
             <!-- End blog post content -->
