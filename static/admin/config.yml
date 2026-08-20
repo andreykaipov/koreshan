@@ -74,6 +74,12 @@ collections:
               - { label: "Name", name: "name", widget: "string", hint: "Used for the image alt text / tooltip. Shown as text if no logo is uploaded." }
               - { label: "Logo", name: "logo", widget: "image", required: false, choose_url: false, hint: "Upload the sponsor's logo. Transparent PNG or SVG works best." }
               - { label: "Link", name: "url", widget: "string", required: false, hint: "Optional. Makes the logo clickable (opens in a new tab)." }
+          - label: "Sponsor Text Lines"
+            name: "sponsorLines"
+            widget: "list"
+            required: false
+            field: { label: "Line", name: "line", widget: "string" }
+            hint: "Extra text-only lines shown directly under the sponsor logos (e.g. specific funds within a foundation). One line per entry."
           - { label: "Additional Supporters Heading", name: "supportersHeading", widget: "string", required: false, default: "Additional supporters", hint: "Heading shown above the text-only supporters list (e.g. donors or funders without a logo)." }
           - label: "Additional Supporters (text only)"
             name: "supporters"

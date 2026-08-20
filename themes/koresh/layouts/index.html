@@ -139,6 +139,13 @@
                         {{ end }}
                         {{ end }}
                     </div>
+                    {{ with $section.Params.sponsorLines }}
+                    <ul class="sponsor-lines has-text-centered">
+                        {{ range . }}
+                        <li class="sponsor-line">{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
                 </div>
                 {{ end }}
                 {{ with .Params.supporters }}

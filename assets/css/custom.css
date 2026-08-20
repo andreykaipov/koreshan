@@ -590,6 +590,18 @@ a.sponsor:hover img {
   opacity: 0.8;
 }
 
+.sponsor-lines {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.sponsor-lines .sponsor-line {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
 .supporters {
   margin-top: 2.5rem;
 }

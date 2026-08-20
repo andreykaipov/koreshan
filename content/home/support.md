@@ -9,8 +9,9 @@ sponsors:
   - name: Community Foundation of Broward
     logo: /img/sponsors/community-foundation-broward.png
     url: https://www.cfbroward.org
-  - name: Helen and Frank Stoykov Charitable Endowment Fund
-  - name: Mary and Alex Mackenzie Community Impact Fund
+sponsorLines:
+  - Helen and Frank Stoykov Charitable Endowment Fund
+  - Mary and Alex Mackenzie Community Impact Fund
 supportersHeading: ""
 supporters: []
 ---
